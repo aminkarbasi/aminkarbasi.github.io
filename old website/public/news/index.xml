@@ -1,0 +1,350 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>News on IID Group</title>
+    <link>/news/</link>
+    <description>Recent content in News on IID Group</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Thu, 09 Jun 2022 00:00:00 +0000</lastBuildDate><atom:link href="/news/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Qinghao Liang won Best Paper award at Graphs in Biomedical Imaging</title>
+      <link>/news/grail-2022.md/</link>
+      <pubDate>Thu, 09 Jun 2022 00:00:00 +0000</pubDate>
+      
+      <guid>/news/grail-2022.md/</guid>
+      <description>Qinghao Liang, Javid Dadashkarimi, Wei Dai, Amin Karbasi, Joseph Chang, Harrison H. Zhou, and Dustin Scheinost won best paper award at 4th Workshop on GRaphs in biomedicAl Image anaLysis (GRAIL) at MICCAI 2022 for the paper &amp;ldquo;Transforming connectomes to “any” parcellation via graph matching&amp;rdquo;.</description>
+    </item>
+    
+    <item>
+      <title>Jane Received a Graduate Fellowship for STEM diversity from NSA</title>
+      <link>/news/jane-2022.md/</link>
+      <pubDate>Wed, 09 Mar 2022 00:00:00 +0000</pubDate>
+      
+      <guid>/news/jane-2022.md/</guid>
+      <description>Jane Lee received Graduate Fellowship for STEM diversity from NSA.</description>
+    </item>
+    
+    <item>
+      <title>Amin Karbasi wins Bell Labs Prize for Brain Mapping Technology</title>
+      <link>/news/bell-2022.md/</link>
+      <pubDate>Tue, 09 Nov 2021 00:00:00 +0000</pubDate>
+      
+      <guid>/news/bell-2022.md/</guid>
+      <description>Prof. Amin Karbasi and Mehraveh Salehi (Ph.D. ’19, Electrical Engineering) won second place at Nokia’s Bell Labs Prize ceremony Tuesday for their work on understanding how information flows in the human brain based on different cognitive tasks. The team says their innovation makes a concrete connection between artificial intelligence and natural intelligence.
+The Bell Labs Prize recognizes disruptive innovations that solve the key challenges facing humanity. Eight months ago, numerous academics from across the world applied to work with Nokia researchers to help advance their innovations.</description>
+    </item>
+    
+    <item>
+      <title>Chris Harshaw Graduated</title>
+      <link>/news/chris-2021.md/</link>
+      <pubDate>Mon, 27 Sep 2021 00:00:00 +0000</pubDate>
+      
+      <guid>/news/chris-2021.md/</guid>
+      <description>Chris Harshaw Graduated with his PhD thesis entitled “Algorithmic Advances for the Design and Analysis of Randomized Experiments”.
+Adviserr: Daniel Spielman and Amin Karbasi
+Abstract: Randomized experiments are the gold standard for investigating the causal effect of treatment on a population. In this dissertation, we present algorithmic advances for three different problems arising in the design and analysis of randomized experiments: covariate balancing, variance estimation, and bipartite experiments. In the first chapter, we describe an inherent trade-off between covariate balancing and robustness, which we formulate as a distributional discrepancy problem.</description>
+    </item>
+    
+    <item>
+      <title>NSF invests The Institute for Learning-enabled Optimization at Scale</title>
+      <link>/news/karbasi-21.md/</link>
+      <pubDate>Mon, 21 Jun 2021 00:00:00 +0000</pubDate>
+      
+      <guid>/news/karbasi-21.md/</guid>
+      <description>The TILOS mission is to make impossible optimizations possible, at scale and in practice. Our research will pioneer learning-enabled optimizations that transform chip design, robotics, networks and other use domains that are vital to our nation’s health, prosperity and welfare. TILOS is a National Science Foundation funded National Artificial Intelligence (AI) Research Institute: TILOS
+TIIOS is a partnership of faculty from University of California, San Diego, Massachusetts Institute of Technology, National University, University of Pennsylvania, University of Texas at Austin, and Yale University.</description>
+    </item>
+    
+    <item>
+      <title>ICML 2021 Workshop on Overparameterization: Pitfalls &amp; Opportunities</title>
+      <link>/news/icml-2021.md/</link>
+      <pubDate>Sun, 30 May 2021 00:00:00 +0000</pubDate>
+      
+      <guid>/news/icml-2021.md/</guid>
+      <description>Yasaman Bahri Research Scientist
+Google Research, Brain Team
+Quanquan Gu Department of Computer Science
+University of California, Los Angeles
+Amin Karbasi Yale Institute for Network Science Yale University
+Hanie Sedghi Research Scientist
+Google Brain
+Brief Description and Outline Modern machine learning models are often highly overparameterized. The prime examples of late are neural network architectures that can achieve state-of-the-art performance while having many more parameters than the number of training examples.</description>
+    </item>
+    
+    <item>
+      <title>Mingrui Zhang Graduated</title>
+      <link>/news/mingrui-2021.md/</link>
+      <pubDate>Sat, 10 Apr 2021 00:00:00 +0000</pubDate>
+      
+      <guid>/news/mingrui-2021.md/</guid>
+      <description>Mingrui Zhang Graduated with his PhD thesis entitled “Scalable Projection-Free Optimization”.
+Adviserr: Amin Karbasi
+Abstract: As a projection-free algorithm, Frank-Wolfe (FW) method, also known as conditional gradient, has recently received considerable attention in the machine learning community. In this dissertation1, we study several topics on the FW variants for scalable projection-free optimization. We first propose 1-SFW, the first projection-free method that requires only one sample per iteration to update the optimization variable and yet achieves the best known complexity bounds for convex, non-convex, and monotone DR-submodular settings.</description>
+    </item>
+    
+    <item>
+      <title>ICML 2020 Tutorial on Submodular Optimization: From Discrete to Continuous and Back</title>
+      <link>/news/icml-20.md/</link>
+      <pubDate>Sat, 30 May 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/news/icml-20.md/</guid>
+      <description>Hamed Hassani School of Engineering and Applied Sciences
+University of Pennsylvania
+Philadelphia, PA 19104
+Amin Karbasi Yale Institute for Network Science Yale University New Haven, CT 06520
+Slides Module 1 Module 2 Module 3 Module 4 Videos Part I Part II Part III Part IV Brief Description and Outline This tutorial will cover recent advancements in discrete optimization methods for large-scale machine learning. Traditionally, machine learning has been harnessing convex optimization to design fast algorithms with provable guarantees for a broad range of applications.</description>
+    </item>
+    
+    <item>
+      <title>Amin Karbasi is promoted to Associate Professor</title>
+      <link>/news/amin-2020.md/</link>
+      <pubDate>Thu, 30 Apr 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/news/amin-2020.md/</guid>
+      <description>Amin Karbasi is promoted to Associate Professor.</description>
+    </item>
+    
+    <item>
+      <title>Hunala is launched!</title>
+      <link>/news/hunala-2020.md/</link>
+      <pubDate>Thu, 30 Apr 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/news/hunala-2020.md/</guid>
+      <description>Yale app Hunala aims to be ‘Waze for coronavirus’ Yale News: A team of Yale researchers has developed a new app, Hunala, that aims to be the “Waze for coronavirus Led by Sterling Professor Nicholas Christakis, a physician and social networks expert, with colleagues in the Yale School of Engineering and Applied Science, the free app provides a daily snapshot of personal and regional risk for COVID-19 infection based on data from the Centers for Disease Control and Prevention and users’ self-reported health and demographic information.</description>
+    </item>
+    
+    <item>
+      <title>Marko Mitrovic Graduated</title>
+      <link>/news/marko-2020.md/</link>
+      <pubDate>Fri, 10 Apr 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/news/marko-2020.md/</guid>
+      <description>Student: Marko Mitrovic
+Dissertation Title: Modern Challenges for Machine Learning Applications of Submodularity: Privacy, Scalability, and Sequences
+Date: Thursday, March 5, 2020 Time: 4:00 PM Location: Room 335, 3rd floor, 17 Hillhouse Avenue
+Advisor: Amin Karbasi
+Other committee members:
+Dan Spielman Dragomir Radev Yaron Singer (Harvard) Abstract :In a nutshell, submodularity covers the class of all problems that exhibit some form of diminishing returns. From a theoretical perspective, this notion of diminishing returns is extremely useful as the resulting mathematical properties allow for provably efficient optimization.</description>
+    </item>
+    
+    <item>
+      <title>Lin Chen Graduated</title>
+      <link>/news/lin-2020.md/</link>
+      <pubDate>Tue, 10 Mar 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/news/lin-2020.md/</guid>
+      <description>The final doctoral examination for Lin Chen will take place on Wednesday, March 11th, at 2:00pm in HLH17, Room 335.
+The title of the thesis is: Online Optimization: Convex and Submodular Functions
+Advisor: Amin Karbasi
+Members of the Committee are:
+Professor Negahban Professor Spielman Abstract: In the first part, we study switching-constrained online convex optimization (OCO), where the player has a limited number of opportunities to change her action. While the discrete analog of this online learning task has been studied extensively, previous work in the continuous setting has neither established the minimax rate nor algorithmically achieved it.</description>
+    </item>
+    
+    <item>
+      <title>Brain Initiative Trainee Award 2020</title>
+      <link>/news/dadashkarimi-20.md/</link>
+      <pubDate>Fri, 21 Feb 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/news/dadashkarimi-20.md/</guid>
+      <description>Javid Dadashkarimi won Brain Initiative Trainee Award for `A web-based toolkit for visualizing and interpreting complex connectomic results in BISWeb &amp;lsquo;. This award is given to students who had significant research impact that can create a dynamic understanding of brain function.</description>
+    </item>
+    
+    <item>
+      <title>Mehraveh Salehi Graduated</title>
+      <link>/news/mehraveh-19.md/</link>
+      <pubDate>Tue, 10 Sep 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/news/mehraveh-19.md/</guid>
+      <description>Mehraveh Salehi Graduated with her PhD thesis entitled “Individualized and Task-Specific Human Brain Mapping”.
+The final doctoral examination for Mehraveh Salehi took place on Tuesday, September 3rd, at 11:00am at YINS, 17 Hillhouse, 3rd floor.
+The title of the thesis is: Individualized and Task-Specific Functional Brain Mapping
+Adviserr:
+Amin Karbasi Todd Constable Members of the Committee are:
+Professor Papademetris Professor Tassiulas Professor Jeff Bilmes Abstract: Understanding the human brain, with its remarkable ability to control higher thought, behavior, and memory, remains one of the greatest intellectual challenges in all of science.</description>
+    </item>
+    
+    <item>
+      <title>NSF CAREER Award 2019</title>
+      <link>/news/karbasi-19a.md/</link>
+      <pubDate>Sun, 21 Apr 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/news/karbasi-19a.md/</guid>
+      <description>Amin Karbasi won NSF CAREER Award 2019: link
+ABSTRACT: The difficulty of searching through a massive amount of data in order to quickly make an informed decision is one of today&amp;rsquo;s most ubiquitous challenges. Many scientific and engineering models feature data with inherently discrete characteristics, where discrete means that the data takes on a finite set of possible values. Examples of such data include phrases in text to objects in an image.</description>
+    </item>
+    
+    <item>
+      <title>Facebook-Main Award 2019 for Mehraveh Salehi</title>
+      <link>/news/mehraveh-19b.md/</link>
+      <pubDate>Wed, 03 Apr 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/news/mehraveh-19b.md/</guid>
+      <description>Facebook-Main Award for Mehraveh Salehi. Congratulations Mehraveh! She wins FACEBOOK-MAIN AWARD as a leading woman in AI-Neuroscience. Here is her very accessible presentation on the role of submodularity on decoding brain states.</description>
+    </item>
+    
+    <item>
+      <title>Ivy 3-Minute Thesis Competition Award</title>
+      <link>/news/mehraveh-19c.md/</link>
+      <pubDate>Wed, 03 Apr 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/news/mehraveh-19c.md/</guid>
+      <description>On April 25, 2019, Columbia University and the United Nations hosted the first Ivy-wide 3-Minute Thesis Competition to celebrate the diverse scholarly work that PhD students are doing across the Ivy League community. Following opening remarks by Elliott Harris, UN Assistant Secretary-General and Chief Economist, fourteen PhD students from Brown University, Columbia University, Cornell University, Dartmouth College, Princeton University, the University of Pennsylvania and Yale gave presentations about their research in just 3 minutes.</description>
+    </item>
+    
+    <item>
+      <title>Amazon Research Award</title>
+      <link>/news/karbasi-19b.md/</link>
+      <pubDate>Thu, 17 Jan 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/news/karbasi-19b.md/</guid>
+      <description>Amin Karbasi won Amazon Research Award! link
+The ARA program funds projects conducted primarily by PhD students or post docs, under the supervision of the faculty member awarded the funds. To encourage collaboration and the sharing of insights, each funded proposal team is assigned an appropriate Amazon research contact. We also invite ARA recipients to speak at Amazon offices worldwide about their work and to meet with our research groups face-to-face, and encourage ARA recipients to publish their research outcome and commit related code to open-source code repositories.</description>
+    </item>
+    
+    <item>
+      <title>Understanding Ourselves Through Neuroimaging and Algorithms</title>
+      <link>/news/mehraveh-18a.md/</link>
+      <pubDate>Tue, 15 Jan 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/news/mehraveh-18a.md/</guid>
+      <description>Understanding Ourselves Through Neuroimaging and Algorithms: link
+Combining neuroscience with algorithms and network science, Yale researchers have developed a method of analyzing the neuronal connections of individual brains that allow them to successfully predict the subjects’ IQs, their sex, and even tasks they were performing at the time of the brain scan.
+In a collaboration between the labs of Amin Karbasi, assistant professor of electrical engineering &amp;amp; computer science and Todd Constable, professor of radiology and biomedical imaging and of neurosurgery, the researchers analyzed the functional MRI scans of more than 100 subjects from the Human Connectome Project, a five-year effort to create a network map of the human brain.</description>
+    </item>
+    
+    <item>
+      <title>ONR Young Investigator Award 2019</title>
+      <link>/news/karbasi-18a.md/</link>
+      <pubDate>Thu, 20 Dec 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/news/karbasi-18a.md/</guid>
+      <description>Amin Karbasi won ONR Young Investigator Award 2019
+Area: Robust and Interactive Information Gathering in Dynamic Environments.</description>
+    </item>
+    
+    <item>
+      <title>ISIT 2018 Tutorial on Submodularity</title>
+      <link>/news/isit-18a.md/</link>
+      <pubDate>Mon, 03 Sep 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/news/isit-18a.md/</guid>
+      <description>ISIT 2018 Tutorial on Submodularity in Information and Data Science.
+Submodularity is a structural property over functions that has received significant attention in the mathematics community, owing to their natural and wide ranging applicability. In particular, numerous challenging problems in information theory, machine learning, and artificial intelligence rely on optimization techniques for which submodularity is key to solving them efficiently.We will start by defining submodularity and polymatroidality — we will survey a surprisingly diverse set of functions that are submodular and operations that preserve submodularity.</description>
+    </item>
+    
+    <item>
+      <title>CVPR 2018 Tutorial on Big Data Summarization</title>
+      <link>/news/cvp4-18a.md/</link>
+      <pubDate>Fri, 25 May 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/news/cvp4-18a.md/</guid>
+      <description>CVPR 2018 tutorial on Big Data Summarization: Algorithms and Applications.
+The increasing amounts of data in computer vision requires robust tools to extract most important information from large collections of data. The summarization problem addresses this challenge by finding a small subset of most informative data points from large datasets. However, summarization often leads to optimization programs that are nonconvex and NP-hard. While (non)convex programming and submodular optimization have been studied intensively in mathematics, successful and effective applications of them for the problem of information summarization along with new theoretical results have recently emerged.</description>
+    </item>
+    
+    <item>
+      <title>Google PhD felloswhip</title>
+      <link>/news/lin-18a.md/</link>
+      <pubDate>Thu, 24 May 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/news/lin-18a.md/</guid>
+      <description>Lin Chen received Google PhD felloswhip 2018. Congrats Lin.</description>
+    </item>
+    
+    <item>
+      <title>AFOSR Young Investigator Research Award 2018</title>
+      <link>/news/karbasi-17a.md/</link>
+      <pubDate>Wed, 11 Oct 2017 00:00:00 +0000</pubDate>
+      
+      <guid>/news/karbasi-17a.md/</guid>
+      <description>Amin Karbasi won AFOSR Young Investigator Research Award 2018!
+ARLINGTON, Virginia &amp;ndash; The Air Force Office of Scientific Research today announced it will award approximately $19.9 million in grants to 45 scientists and engineers from 38 research institutions and small businesses who submitted winning research proposals through the Air Force&amp;rsquo;s Young Investigator Research Program (YIP).
+The YIP is open to scientists and engineers at research institutions across the United States who received Ph.</description>
+    </item>
+    
+    <item>
+      <title>NIPS 2017 workshop</title>
+      <link>/news/nips-17.md/</link>
+      <pubDate>Mon, 09 Oct 2017 00:00:00 +0000</pubDate>
+      
+      <guid>/news/nips-17.md/</guid>
+      <description>We are organizing a workshop at NIPS 2017 on Discrete Structures in Machine Learning.
+Abstract: Traditionally, machine learning has been focused on methods where objects reside in continuous domains. The goal of this workshop is to advance state-of-the-art methods in machine learning that involve discrete structures.
+Models with ultimately discrete solutions play an important role in machine learning. At its core, statistical machine learning is concerned with making inferences from data, and when the underlying variables of the data are discrete, both the tasks of model inference as well as predictions using the inferred model are inherently discrete algorithmic problems.</description>
+    </item>
+    
+    <item>
+      <title>Simons Research Fellowship 2017</title>
+      <link>/news/simons-16.md/</link>
+      <pubDate>Sat, 02 Sep 2017 00:00:00 +0000</pubDate>
+      
+      <guid>/news/simons-16.md/</guid>
+      <description>Amin Karbasi received Simons Research Fellowship 2017 for the “Foundations of Machine Learning” program: link
+T​he goal of this program is to grow the reach and impact of CS theory within machine learning.
+One central component of the program will be ​formalizing basic questions in developing areas of practice​, and gaining fundamental insights into these. Target areas of particular interest are ​interactive learning​ and representation learning. Interactive learning consists of scenarios in which the communication between human and learner is richer than a one-­way transmission of labeled examples; this happens, for instance, in teaching, or explanation-based learning, and in crowdsourcing.</description>
+    </item>
+    
+    <item>
+      <title>Microsoft Azure Research Award 2017</title>
+      <link>/news/azure-17.md/</link>
+      <pubDate>Sat, 01 Jul 2017 00:00:00 +0000</pubDate>
+      
+      <guid>/news/azure-17.md/</guid>
+      <description>Amin Karbasi Received Microsoft Azure Research Award 2017</description>
+    </item>
+    
+    <item>
+      <title>MICCAI Young Scientist Award</title>
+      <link>/news/mehraveh-17a.md/</link>
+      <pubDate>Mon, 09 Jan 2017 00:00:00 +0000</pubDate>
+      
+      <guid>/news/mehraveh-17a.md/</guid>
+      <description>MICCAI Young Scientist Award for ”A Submodular Approach to Create Individualized Parcellations of Human Brain”</description>
+    </item>
+    
+    <item>
+      <title>Grainger Award 2017</title>
+      <link>/news/frontier-16.md/</link>
+      <pubDate>Mon, 19 Sep 2016 00:00:00 +0000</pubDate>
+      
+      <guid>/news/frontier-16.md/</guid>
+      <description>Grainger Award 2017 from National Academy of Engineering for Advancement of Interdisciplinary Research.
+Amin Karbasi (Yale University) and Amit Surana (United Technologies Research Center) have received a Grainger Grant to “develop a unified approach for saliency detection in heterogeneous temporal data.” The grant will support the team’s interdisciplinary research to develop algorithms for compressing massive amounts of time—varying data into small salient or informative datasets to allow faster decision making. For example, if salient or significant images in particular frames can be identified from terabytes of video stream, the original video can be summarized using a much smaller set of frames, enabling much faster video processing for surveillance applications such as anomaly detection and activity classification.</description>
+    </item>
+    
+    <item>
+      <title>AISTATS Best Student Paper Award</title>
+      <link>/news/aistats-15.md/</link>
+      <pubDate>Sun, 13 Sep 2015 00:00:00 +0000</pubDate>
+      
+      <guid>/news/aistats-15.md/</guid>
+      <description>Our paper Tradeoffs for Space, Time, Data and Risk in Unsupervised Learning received the Best Student Paper Award from the 18th International Conference on Artificial Intelligence and Statistics (AISTATS), 2015.</description>
+    </item>
+    
+    <item>
+      <title>Google Faculty Research Award</title>
+      <link>/news/google-16.md/</link>
+      <pubDate>Tue, 01 Sep 2015 00:00:00 +0000</pubDate>
+      
+      <guid>/news/google-16.md/</guid>
+      <description>Amin Karbasi received Google Faculty Research Award 2015:link
+Awardees:
+Adnan Darwiche, University of California, Los Angeles Alexandr Andoni, Columbia University Amin Karbasi, Yale University Amir Ali Ahmadi, Princeton University Animashree Anandkumar, University of California, Irvine Barna Saha, University of Massachusetts - Amherst Emmanuel Abbe, Princeton University Fei Sha, University of California, Los Angeles J. Zico Kolter, Carnegie Mellon University Lei Xing, Stanford University Li Ma, Duke University Marc Deisenroth, Imperial College London Mehryar Mohri, New York University Michela Milano, University of Bologna Raquel Urtasun, University of Toronto Stefanie Jegelka, Massachusetts Institute of Technology Anirban Dasgupta - Indian Institute of Technology Gandhinagar Ronojoy Adhikari - Institute of Mathematical Sciences Chennai </description>
+    </item>
+    
+    <item>
+      <title>IEEE Data Storage Best Student Paper Award</title>
+      <link>/news/ieee-15.md/</link>
+      <pubDate>Thu, 12 Sep 2013 00:00:00 +0000</pubDate>
+      
+      <guid>/news/ieee-15.md/</guid>
+      <description>Our paper Noise-Enhanced Associative Memories received the IEEE Data Storage Best Student Paper Award.
+IEEE Data Storage Best Student Paper Award for 2013
+Awardees: Amin Karbasi, Amir Hesam Salavati, Amin Shokrollahi and Lar R. Varshney
+Paper: “Noise-Enhanced Associative Memories,” Proceedings of Neural Information Processing Systems, pp. 1682–1690, 2013. NIPS Proceedings
+Abstract: Recent advances in associative memory design through structured pattern sets and graph-based inference algorithms have allowed reliable learning and recall of an exponential number of patterns.</description>
+    </item>
+    
+  </channel>
+</rss>

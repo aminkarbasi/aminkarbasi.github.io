@@ -1,0 +1,728 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Icmls on IID Group</title>
+    <link>/icml/</link>
+    <description>Recent content in Icmls on IID Group</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Sat, 30 May 2020 00:00:00 +0000</lastBuildDate><atom:link href="/icml/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Lazier Than Lazy Greedy</title>
+      <link>/icml/publications/baharan-15a/</link>
+      <pubDate>Sat, 03 Jan 2015 00:00:00 +0000</pubDate>
+      
+      <guid>/icml/publications/baharan-15a/</guid>
+      <description>Abstract Is it possible to maximize a monotone submodular function faster than the widely used lazy greedy algorithm (also known as accelerated greedy), both in theory and practice? In this paper, we develop the first linear-time algorithm for maximizing a general monotone submodular function subject to a cardinality constraint. We show that our randomized algorithm, STOCHASTIC-GREEDY, can achieve a (1 − 1/e − ε) approximation guarantee, in expectation, to the optimum solution in time linear in the size of the data and independent of the cardinality constraint.</description>
+    </item>
+    
+    <item>
+      <title>Fast Constrained Submodular Maximization: Personalized Data Summarization</title>
+      <link>/icml/publications/baharan-16b/</link>
+      <pubDate>Sun, 03 Jan 2016 00:00:00 +0000</pubDate>
+      
+      <guid>/icml/publications/baharan-16b/</guid>
+      <description>Abstract Can we summarize multi-category data based on user preferences in a scalable manner? Many utility functions used for data summarization satisfy submodularity, a natural diminishing returns property. We cast personalized data summarization as an instance of a general submodular maximization problem subject to multiple constraints. We develop the first practical and FAst coNsTrained submOdular Maximization algorithm, FANTOM, with strong theoretical guarantees. FANTOM maximizes a submodular function (not necessarily monotone) subject to intersection of a p-system and l knapsacks constrains.</description>
+    </item>
+    
+    <item>
+      <title>Submodular maximization with cardinality constraints</title>
+      <link>/icml/publications/3/</link>
+      <pubDate>Fri, 03 Jan 2014 00:00:00 +0000</pubDate>
+      
+      <guid>/icml/publications/3/</guid>
+      <description>Abstract We consider the problem of maximizing a (non-monotone) submodular function subject to a cardi- nality constraint. In addition to capturing well-known combinatorial optimization problems, e.g., Max- k-Coverage and Max-Bisection, this problem has applications in other more practical settings such as natural language processing, information retrieval, and machine learning. In this work we present im- proved approximations for two variants of the cardinality constraint for non-monotone functions. When at most k elements can be chosen, we improve the current best 1/e − o(1) approximation to a factor that is in the range [1/e + 0.</description>
+    </item>
+    
+    <item>
+      <title>Fast multi-stage submodular maximization: Extended version</title>
+      <link>/icml/publications/4/</link>
+      <pubDate>Fri, 03 Jan 2014 00:00:00 +0000</pubDate>
+      
+      <guid>/icml/publications/4/</guid>
+      <description>Abstract Motivated by extremely large-scale machine learning problems, we introduce a new multi- stage algorithmic framework for submodular maximization (called MULTGREED), where at each stage we apply an approximate greedy proce- dure to maximize surrogate submodular functions. The surrogates serve as proxies for a target sub- modular function but require less memory and are easy to evaluate. We theoretically analyze the per- formance guarantee of the multi-stage framework and give examples on how to design instances of MULTGREED for a broad range of natural sub- modular functions.</description>
+    </item>
+    
+    <item>
+      <title>Streaming submodular maximization: massive data summarization on the fly</title>
+      <link>/icml/publications/5/</link>
+      <pubDate>Fri, 03 Jan 2014 00:00:00 +0000</pubDate>
+      
+      <guid>/icml/publications/5/</guid>
+      <description>Abstract How can one summarize a massive data set &amp;ldquo;on the fly&amp;rdquo;, i.e., without even having seen it in its entirety? In this paper, we address the problem of extracting representative elements from a large stream of data. I.e., we would like to select a subset of say k data points from the stream that are most representative according to some objective function. Many natural notions of &amp;ldquo;representativeness&amp;rdquo; satisfy submodularity, an intuitive notion of diminishing returns.</description>
+    </item>
+    
+    <item>
+      <title>On Streaming and Communication Complexity of the Set Cover Problem</title>
+      <link>/icml/publications/6/</link>
+      <pubDate>Fri, 03 Jan 2014 00:00:00 +0000</pubDate>
+      
+      <guid>/icml/publications/6/</guid>
+      <description>Abstract Wedevelopthefirststreamingalgorithmandthefirsttwo-partycom- munication protocol that uses a constant number of passes/rounds and sublin- ear space/communication for logarithmic approximation to the classic Set Cover problem. Specifically, for n elements and m sets, our algorithm/protocol achieves a space bound of $O(m · n^δ log^2 n log m)$ using O(4^{1/δ} ) passes/rounds while achieving an approximation factor of $O(4^{1/δ} log n)$ in polynomial time (for $δ = Ω(1/ {log n})$). If we allow the algorithm/protocol to spend exponential time per pass/round, we achieve an approximation factor of O(41/δ).</description>
+    </item>
+    
+    <item>
+      <title>Streaming algorithms for submodular function maximization</title>
+      <link>/icml/publications/7/</link>
+      <pubDate>Sat, 03 Jan 2015 00:00:00 +0000</pubDate>
+      
+      <guid>/icml/publications/7/</guid>
+      <description>Abstract We consider the problem of maximizing a nonnegative submodular set function $f:2^{ℝ+}$ subject to a p-matchoid constraint in the single-pass streaming setting. Previous work in this context has considered streaming algorithms for modular functions and monotone submodular functions. The main result is for submodular functions that are {\em non-monotone}. We describe deterministic and randomized algorithms that obtain a $Ω(1/p)$-approximation using O(klogk)-space, where k is an upper bound on the cardinality of the desired set.</description>
+    </item>
+    
+    <item>
+      <title>Online Submodular Maximization with Preemption</title>
+      <link>/icml/publications/8/</link>
+      <pubDate>Sat, 03 Jan 2015 00:00:00 +0000</pubDate>
+      
+      <guid>/icml/publications/8/</guid>
+      <description>Abstract Submodular function maximization has been studied extensively in recent years under various constraints and models. The problem plays a major role in various disciplines. We study a natural online variant of this problem in which elements arrive one-by-one and the algorithm has to maintain a solution obeying certain constraints at all times. Upon arrival of an element, the algorithm has to decide whether to accept the element into its solution and may preempt previously chosen elements.</description>
+    </item>
+    
+    <item>
+      <title>Streaming Weak Submodularity: Interpreting Neural Networks on the Fly</title>
+      <link>/icml/publications/9/</link>
+      <pubDate>Tue, 03 Jan 2017 00:00:00 +0000</pubDate>
+      
+      <guid>/icml/publications/9/</guid>
+      <description>Abstract In many machine learning applications, it is important to explain the predictions of a black-box classifier. For example, why does a deep neural network assign an image to a particular class? We cast interpretability of black-box classifiers as a combinatorial maximization problem and propose an efficient streaming algorithm to solve it subject to cardinality constraints. By extending ideas from Badanidiyuru et al. [2014], we provide a constant factor approximation guarantee for our algorithm in the case of random stream order and a weakly submodular objective function.</description>
+    </item>
+    
+    <item>
+      <title>Distributed Submodular Maximization</title>
+      <link>/icml/publications/10/</link>
+      <pubDate>Sun, 03 Jan 2016 00:00:00 +0000</pubDate>
+      
+      <guid>/icml/publications/10/</guid>
+      <description>Abstract Many large-scale machine learning problems–clustering, non-parametric learning, kernel machines, etc.–require selecting a small yet representative subset from a large dataset. Such problems can often be reduced to maximizing a submodular set function subject to various constraints. Classical approaches to submodular optimization require centralized access to the full dataset, which is impractical for truly large-scale problems. In this paper, we consider the problem of submodular function maximization in a distributed fashion.</description>
+    </item>
+    
+    <item>
+      <title>Distributed Submodular Cover: Succinctly Summarizing Massive Data</title>
+      <link>/icml/publications/11/</link>
+      <pubDate>Sat, 03 Jan 2015 00:00:00 +0000</pubDate>
+      
+      <guid>/icml/publications/11/</guid>
+      <description>Abstract How can one find a subset, ideally as small as possible, that well represents a massive dataset? I.e., its corresponding utility, measured according to a suitable utility function, should be comparable to that of the whole dataset. In this paper, we formalize this challenge as a submodular cover problem. Here, the utility is assumed to exhibit submodularity, a natural diminishing returns condition preva- lent in many data summarization applications. The classical greedy algorithm is known to provide solutions with logarithmic approximation guarantees compared to the optimum solution.</description>
+    </item>
+    
+    <item>
+      <title>Fast Distributed Submodular Cover: Public-Private Data Summarization</title>
+      <link>/icml/publications/12/</link>
+      <pubDate>Sun, 03 Jan 2016 00:00:00 +0000</pubDate>
+      
+      <guid>/icml/publications/12/</guid>
+      <description>Abstract In this paper, we introduce the public-private framework of data summarization motivated by privacy concerns in personalized recommender systems and online social services. Such systems have usually access to massive data generated by a large pool of users. A major fraction of the data is public and is visible to (and can be used for) all users. However, each user can also contribute some private data that should not be shared with other users to ensure her privacy.</description>
+    </item>
+    
+    <item>
+      <title>Distributed Submodular Maximization: Identifying Representative Elements in Massive Data</title>
+      <link>/icml/publications/13/</link>
+      <pubDate>Thu, 03 Jan 2013 00:00:00 +0000</pubDate>
+      
+      <guid>/icml/publications/13/</guid>
+      <description>Abstract Many large-scale machine learning problems (such as clustering, non-parametric learning, kernel machines, etc.) require selecting, out of a massive data set, a manageable yet representative subset. Such problems can often be reduced to maximizing a submodular set function subject to cardinality constraints. Classical approaches require centralized access to the full data set; but for truly large-scale problems, rendering the data centrally is often impractical. In this paper, we con- sider the problem of submodular function maximization in a distributed fashion.</description>
+    </item>
+    
+    <item>
+      <title>Randomized Composable Core-sets for Distributed Submodular Maximization</title>
+      <link>/icml/publications/14/</link>
+      <pubDate>Sat, 03 Jan 2015 00:00:00 +0000</pubDate>
+      
+      <guid>/icml/publications/14/</guid>
+      <description>Abstract An effective technique for solving optimization problems over massive data sets is to partition the data into smaller pieces, solve the problem on each piece and compute a representative solution from it, and finally obtain a solution inside the union of the representative solutions for all pieces. This technique can be captured via the concept of {\em composable core-sets}, and has been recently applied to solve diversity maximization problems as well as several clustering problems.</description>
+    </item>
+    
+    <item>
+      <title>Fast greedy algorithms in mapreduce and streaming</title>
+      <link>/icml/publications/15/</link>
+      <pubDate>Thu, 03 Jan 2013 00:00:00 +0000</pubDate>
+      
+      <guid>/icml/publications/15/</guid>
+      <description>Abstract Greedy algorithms are practitioners’ best friends—they are intu- itive, simple to implement, and often lead to very good solutions. However, implementing greedy algorithms in a distributed setting is challenging since the greedy choice is inherently sequential, and it is not clear how to take advantage of the extra processing power. Our main result is a powerful sampling technique that aids in parallelization of sequential algorithms. We then show how to use this primitive to adapt a broad class of greedy algorithms to the MapReduce paradigm; this class includes maximum cover and submodular maximization subject to p-system constraints.</description>
+    </item>
+    
+    <item>
+      <title>A new framework for distributed submodular maximization </title>
+      <link>/icml/publications/16/</link>
+      <pubDate>Sun, 03 Jan 2016 00:00:00 +0000</pubDate>
+      
+      <guid>/icml/publications/16/</guid>
+      <description>Abstract A wide variety of problems in machine learning, including exemplar clustering, document summarization, and sensor placement, can be cast as constrained submodular maximization problems. A lot of recent effort has been devoted to developing distributed algorithms for these problems. However, these results suffer from high number of rounds, suboptimal approximation ratios, or both. We develop a framework for bringing existing algorithms in the sequential setting to the distributed setting, achieving near optimal approximation ratios for many settings in only a constant number of MapReduce rounds.</description>
+    </item>
+    
+    <item>
+      <title>Stochastic Submodular Maximization: The Case of Coverage Functions</title>
+      <link>/icml/publications/17/</link>
+      <pubDate>Tue, 03 Jan 2017 00:00:00 +0000</pubDate>
+      
+      <guid>/icml/publications/17/</guid>
+      <description>Abstract Stochastic optimization of continuous objectives is at the heart of modern ma- chine learning. However, many important problems are of discrete nature and often involve submodular objectives. We seek to unleash the power of stochastic continuous optimization, namely stochastic gradient descent and its variants, to such discrete problems. We first introduce the problem of stochastic submodular optimization, where one needs to optimize a submodular objective which is given as an expectation.</description>
+    </item>
+    
+    <item>
+      <title>Gradient Methods for Submodular Maximization</title>
+      <link>/icml/publications/18/</link>
+      <pubDate>Tue, 03 Jan 2017 00:00:00 +0000</pubDate>
+      
+      <guid>/icml/publications/18/</guid>
+      <description>Abstract In this paper, we study the problem of maximizing continuous submodular func- tions that naturally arise in many learning applications such as those involving utility functions in active learning and sensing, matrix approximations and network inference. Despite the apparent lack of convexity in such functions, we prove that stochastic projected gradient methods can provide strong approximation guarantees for maximizing continuous submodular functions with convex constraints. More specifically, we prove that for monotone continuous DR-submodular functions, all fixed points of projected gradient ascent provide a factor 1/2 approximation to the global maxima.</description>
+    </item>
+    
+    <item>
+      <title>A class of submodular functions for document summarization,</title>
+      <link>/icml/publications/19/</link>
+      <pubDate>Mon, 03 Jan 2011 00:00:00 +0000</pubDate>
+      
+      <guid>/icml/publications/19/</guid>
+      <description>Abstract We design a class of submodular functions meant for document summarization tasks. These functions each combine two terms, one which encourages the summary to be representative of the corpus, and the other which positively rewards diversity. Critically, our functions are monotone nondecreasing and submodular, which means that an efficient scalable greedy optimization scheme has a constant factor guarantee of optimality. When evaluated on DUC 2004-2007 corpora, we obtain better than existing state-of-art results in both generic and query-focused document summarization.</description>
+    </item>
+    
+    <item>
+      <title>Submodularity for data selection in statistical machine translation</title>
+      <link>/icml/publications/20/</link>
+      <pubDate>Fri, 03 Jan 2014 00:00:00 +0000</pubDate>
+      
+      <guid>/icml/publications/20/</guid>
+      <description>Abstract We introduce submodular optimization to the problem of training data subset selection for statistical machine translation (SMT). By explicitly formulating data selection as a submodular program, we ob- tain fast scalable selection algorithms with mathematical performance guarantees, re- sulting in a unified framework that clarifies existing approaches and also makes both new and many previous approaches easily accessible. We present a new class of submodular functions designed specifically for SMT and evaluate them on two differ- ent translation tasks.</description>
+    </item>
+    
+    <item>
+      <title>Temporal corpus summarization using submodular word coverage</title>
+      <link>/icml/publications/21/</link>
+      <pubDate>Tue, 03 Jan 2012 00:00:00 +0000</pubDate>
+      
+      <guid>/icml/publications/21/</guid>
+      <description>Abstract In many areas of life, we now have almost complete electronic archives reaching back for well over two decades. This includes, for example, the body of research papers in computer science, all news articles written in the US, and most people’s personal email. However, we have only rather limited methods for analyzing and understanding these collections. While keyword-based retrieval systems allow efficient access to individual documents in archives, we still lack methods for understanding a corpus as a whole.</description>
+    </item>
+    
+    <item>
+      <title>Greed is good: Near-optimal submodular maximization via greedy optimization</title>
+      <link>/icml/publications/22/</link>
+      <pubDate>Tue, 03 Jan 2017 00:00:00 +0000</pubDate>
+      
+      <guid>/icml/publications/22/</guid>
+      <description>Abstract It is known that greedy methods perform well for maximizing monotone submodular functions. At the same time, such methods perform poorly in the face of non-monotonicity. In this paper, we show—arguably, surprisingly—that invoking the classical greedy algorithm O( k)-times leads to the (currently) fastest deterministic algorithm, called REPEATEDGREEDY, for maximizing a general submodular function subject to k-independent system constraints. REPEATEDGREEDY √√ achieves $(1 + O(1/{\sqrt{k}}))k$ approximation using $O(nr \sqrt{k})$ function evaluations (here, n and r de- note the size of the ground set and the maximum size of a feasible solution, respectively).</description>
+    </item>
+    
+    <item>
+      <title>Submodular dictionary selection for sparse representation</title>
+      <link>/icml/publications/23/</link>
+      <pubDate>Sun, 03 Jan 2010 00:00:00 +0000</pubDate>
+      
+      <guid>/icml/publications/23/</guid>
+      <description>Abstract We develop an efficient learning framework to construct signal dictionaries for sparse represen- tation by selecting the dictionary columns from multiple candidate bases. By sparse, we mean that only a few dictionary elements, compared to the ambient signal dimension, can exactly repre- sent or well-approximate the signals of interest. We formulate both the selection of the dictionary columns and the sparse representation of signals as a joint combinatorial optimization problem.</description>
+    </item>
+    
+    <item>
+      <title>Submodular meets spectral: Greedy algorithms for subset selection, sparse approximation and dictionary selection</title>
+      <link>/icml/publications/24/</link>
+      <pubDate>Sun, 03 Jan 2016 00:00:00 +0000</pubDate>
+      
+      <guid>/icml/publications/24/</guid>
+      <description>Abstract We study the problem of selecting a subset of k random variables from a large set, in order to obtain the best linear prediction of another vari- able of interest. This problem can be viewed in the context of both feature selection and sparse approximation. We analyze the performance of widely used greedy heuristics, using insights from the maximization of submodular functions and spectral analysis. We introduce the submod- ularity ratio as a key quantity to help understand why greedy algorithms perform well even when the variables are highly correlated.</description>
+    </item>
+    
+    <item>
+      <title>RESTRICTED STRONG CONVEXITY IMPLIES WEAK SUBMODULARITY</title>
+      <link>/icml/publications/25/</link>
+      <pubDate>Wed, 03 Jan 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/icml/publications/25/</guid>
+      <description>Abstract We connect high-dimensional subset selection and submodular maxi- mization. Our results extend the work of Das and Kempe [In ICML (2011) 1057–1064] from the setting of linear regression to arbitrary objective func- tions. For greedy feature selection, this connection allows us to obtain strong multiplicative performance bounds on several methods without statistical modeling assumptions. We also derive recovery guarantees of this form un- der standard assumptions. Our work shows that greedy algorithms perform within a constant factor from the best possible subset-selection solution for a broad class of general objective functions.</description>
+    </item>
+    
+    <item>
+      <title>Maximizing the spread of in uence through a social network</title>
+      <link>/icml/publications/26/</link>
+      <pubDate>Fri, 03 Jan 2003 00:00:00 +0000</pubDate>
+      
+      <guid>/icml/publications/26/</guid>
+      <description>Abstract Models for the processes by which ideas and influence propagate through a social network have been studied in a number of do- mains, including the diffusion of medical and technological innova- tions, the sudden and widespread adoption of various strategies in game-theoretic settings, and the effects of “word of mouth” in the promotion of new products. Recently, motivated by the design of viral marketing strategies, Domingos and Richardson posed a fun- damental algorithmic problem for such social network processes: if we can try to convince a subset of individuals to adopt a new product or innovation, and the goal is to trigger a large cascade of further adoptions, which set of individuals should we target?</description>
+    </item>
+    
+    <item>
+      <title>An online algorithm for maximizing submodular functions,</title>
+      <link>/icml/publications/27/</link>
+      <pubDate>Sat, 03 Jan 2009 00:00:00 +0000</pubDate>
+      
+      <guid>/icml/publications/27/</guid>
+      <description>Abstract We present an algorithm for solving a broad class of online resource allocation problems. Our online algorithm can be applied in environments where abstract jobs arrive one at a time, and one can complete the jobs by investing time in a number of abstract activities, according to some schedule. We assume that the fraction of jobs completed by a schedule is a monotone, submodular function of a set of pairs (v,τ), where τ is the time invested in activity v.</description>
+    </item>
+    
+    <item>
+      <title>Linear submodular bandits and their application to diversified retrieva</title>
+      <link>/icml/publications/28/</link>
+      <pubDate>Mon, 03 Jan 2011 00:00:00 +0000</pubDate>
+      
+      <guid>/icml/publications/28/</guid>
+      <description>Abstract Diversified retrieval and online learning are two core research areas in the design of modern information retrieval systems. In this paper, we propose the linear sub- modular bandits problem, which is an online learning setting for optimizing a gen- eral class of feature-rich submodular utility models for diversified retrieval. We present an algorithm, called LSBGREEDY, and prove that it efficiently converges to a near-optimal model. As a case study, we applied our approach to the setting of personalized news recommendation, where the system must recommend small sets of news articles selected from tens of thousands of available articles each day.</description>
+    </item>
+    
+    <item>
+      <title>Online submodular minimization for combinatorial structures</title>
+      <link>/icml/publications/29/</link>
+      <pubDate>Mon, 03 Jan 2011 00:00:00 +0000</pubDate>
+      
+      <guid>/icml/publications/29/</guid>
+      <description>Abstract Most results for online decision problems with structured concepts, such as trees or cuts, as- sume linear costs. In many settings, how- ever, nonlinear costs are more realistic. Ow- ing to their non-separability, these lead to much harder optimization problems. Going beyond linearity, we address online approx- imation algorithms for structured concepts that allow the cost to be submodular, i.e., nonseparable. In particular, we show regret bounds for three Hannan-consistent strategies that capture different settings.</description>
+    </item>
+    
+    <item>
+      <title>Dynamic resource allocation in conservation planning</title>
+      <link>/icml/publications/30/</link>
+      <pubDate>Mon, 03 Jan 2011 00:00:00 +0000</pubDate>
+      
+      <guid>/icml/publications/30/</guid>
+      <description>Abstract Consider the problem of protecting endangered species by selecting patches of land to be used for conservation purposes. Typically, the availability of patches changes over time, and recommendations must be made dynamically. This is a chal- lenging prototypical example of a sequential optimization problem under uncertainty in computational sustainability. Ex- isting techniques do not scale to problems of realistic size. In this paper, we develop an efficient algorithm for adaptively making recommendations for dynamic conservation planning, and prove that it obtains near-optimal performance.</description>
+    </item>
+    
+    <item>
+      <title>Online submodular set cover, ranking, and repeated active learning</title>
+      <link>/icml/publications/31/</link>
+      <pubDate>Mon, 03 Jan 2011 00:00:00 +0000</pubDate>
+      
+      <guid>/icml/publications/31/</guid>
+      <description>Abstract We propose an online prediction version of submodular set cover with connections to ranking and repeated active learning. In each round, the learning algorithm chooses a sequence of items. The algorithm then receives a monotone submodu- lar function and suffers loss equal to the cover time of the function: the number of items needed, when items are selected in order of the chosen sequence, to achieve a coverage constraint. We develop an online learning algorithm whose loss con- verges to approximately that of the best sequence in hindsight.</description>
+    </item>
+    
+    <item>
+      <title>Learning optimally diverse rankings over large document collections</title>
+      <link>/icml/publications/32/</link>
+      <pubDate>Sun, 03 Jan 2010 00:00:00 +0000</pubDate>
+      
+      <guid>/icml/publications/32/</guid>
+      <description>Abstract Most learning to rank research has assumed that the utility of presenting different documents to users is independent, producing learned ranking functions that often return redundant results. The few approaches that avoid this repetition have rather unsatisfyingly lacked theoretical foundations, or do not scale. We present a learning-to-rank formulation that optimizes the fraction of satisfied users, with a scalable algorithm that also explicitly takes document similarity and ranking context into account.</description>
+    </item>
+    
+    <item>
+      <title>Randomized sensing in adversarial environment</title>
+      <link>/icml/publications/33/</link>
+      <pubDate>Mon, 03 Jan 2011 00:00:00 +0000</pubDate>
+      
+      <guid>/icml/publications/33/</guid>
+      <description>Abstract How should we manage a sensor network to opti- mally guard security-critical infrastructure? How should we coordinate search and rescue helicopters to best locate survivors after a major disaster? In both applications, we would like to control sensing resources in uncertain, adversarial environments. In this paper, we introduce RSENSE, an efficient algo- rithm which guarantees near-optimal randomized sensing strategies whenever the detection perfor- mance satisfies submodularity, a natural diminishing returns property, for any fixed adversarial scenario.</description>
+    </item>
+    
+    <item>
+      <title>Influence maximization in dynamic social networks</title>
+      <link>/icml/publications/34/</link>
+      <pubDate>Thu, 03 Jan 2013 00:00:00 +0000</pubDate>
+      
+      <guid>/icml/publications/34/</guid>
+      <description>Abstract Abstract—Social influence and influence diffusion has been widely studied in online social networks. However, most existing works on influence diffusion focus on static networks. In this paper, we study the problem of maximizing influence diffusion in a dynamic social network. Specifically, the network changes over time and the changes can be only observed by periodically probing some nodes for the update of their connections. Our goal then is to probe a subset of nodes in a social network so that the actual influence diffusion process in the network can be best uncovered with the probing nodes.</description>
+    </item>
+    
+    <item>
+      <title>Online submodular maximization under a matroid constraint with application to learning assignments</title>
+      <link>/icml/publications/35/</link>
+      <pubDate>Fri, 03 Jan 2014 00:00:00 +0000</pubDate>
+      
+      <guid>/icml/publications/35/</guid>
+      <description>Abstract Which ads should we display in sponsored search in order to maximize our revenue? How should we dynamically rank information sources to maximize the value of the ranking? These applications exhibit strong diminishing returns: Redundancy decreases the marginal utility of each ad or information source. We show that these and other problems can be formalized as repeatedly selecting an assignment of items to positions to maximize a sequence of monotone submodular functions that arrive one by one.</description>
+    </item>
+    
+    <item>
+      <title>Optimal greedy diversity for recommendation</title>
+      <link>/icml/publications/36/</link>
+      <pubDate>Sat, 03 Jan 2015 00:00:00 +0000</pubDate>
+      
+      <guid>/icml/publications/36/</guid>
+      <description>Abstract The need for diversification manifests in various recommendation use cases. In this work, we pro- pose a novel approach to diversifying a list of rec- ommended items, which maximizes the utility of the items subject to the increase in their diversity. From a technical perspective, the problem can be viewed as maximization of a modular function on the polytope of a submodular function, which can be solved optimally by a greedy method.</description>
+    </item>
+    
+    <item>
+      <title>Eficient online multi-robot exploration via distributed sequential greedy assignment</title>
+      <link>/icml/publications/37/</link>
+      <pubDate>Sun, 03 Jan 2016 00:00:00 +0000</pubDate>
+      
+      <guid>/icml/publications/37/</guid>
+      <description>Abstract This work addresses the problem of efficient on- line exploration and mapping using multi-robot teams via a distributed algorithm for planning for multi-robot exploration— distributed sequential greedy assignment (DSGA)—based on the sequential greedy assignment (SGA) algorithm. SGA permits bounds on suboptimality but requires all robots to plan in series. Rather than plan for robots sequentially as in SGA, DSGA assigns plans to subsets of robots during a fixed number of rounds.</description>
+    </item>
+    
+    <item>
+      <title>Stochastic conditional gradient methods: From convex minimization to submodular maximization</title>
+      <link>/icml/publications/38/</link>
+      <pubDate>Wed, 03 Jan 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/icml/publications/38/</guid>
+      <description>Abstract This paper considers stochastic optimization problems for a large class of objective functions, including convex and continuous submodular. Stochastic proximal gradient methods have been widely used to solve such problems; however, their applicability remains limited when the prob- lem dimension is large and the projection onto a convex set is computationally costly. Instead, stochastic conditional gradient algorithms are proposed as an alternative solution which rely on (i) Approximating gradients via a simple averaging technique requiring a single stochastic gradient evaluation per iteration; (ii) Solving a linear program to compute the descent/ascent direction.</description>
+    </item>
+    
+    <item>
+      <title>Projection-free online optimization with stochastic gradient: From convexity to submodularity,</title>
+      <link>/icml/publications/39/</link>
+      <pubDate>Wed, 03 Jan 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/icml/publications/39/</guid>
+      <description>Abstract Online optimization has been a successful framework for solving large-scale problems under computational constraints and partial information. Current methods for online convex optimization require either a projection or exact gradient computation at each step, both of which can be prohibitively expensive for large-scale applications. At the same time, there is a growing trend of non-convex optimization in machine learning community and a need for online methods. Continuous submodular functions, which exhibit a natural diminishing returns condition, have recently been proposed as a broad class of non-convex functions which may be efficiently optimized.</description>
+    </item>
+    
+    <item>
+      <title>Online continuous submodular maximization</title>
+      <link>/icml/publications/40/</link>
+      <pubDate>Wed, 03 Jan 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/icml/publications/40/</guid>
+      <description>Abstract In this paper, we consider an online optimization process, where the objective functions are not convex (nor concave) but instead belong to a broad class of continuous submodular functions. We first propose a variant of the Frank-Wolfe algorithm that has access to the full gradient of the objective functions. We √ against a (1 − 1/e)-approximation to the best feasible solution in hindsight. However, in many scenarios, T ) (where T is the horizon of the online optimization problem) only an unbiased estimate of the gradients are available.</description>
+    </item>
+    
+    <item>
+      <title>Stochastic conditional gradient&#43;&#43;</title>
+      <link>/icml/publications/41/</link>
+      <pubDate>Thu, 03 Jan 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/icml/publications/41/</guid>
+      <description>Abstract In this paper, we consider the general non-oblivious stochastic optimization where the underly- ing stochasticity may change during the optimization procedure and depends on the point at which the function is evaluated. We develop Stochastic Frank-Wolfe++ (SFW++), an efficient variant of the conditional gradient method for minimizing a smooth non-convex function subject to a convex body constraint. We show that SFW++ converges to an ǫ-first order stationary point by using O(1/ǫ3) stochastic gradients.</description>
+    </item>
+    
+    <item>
+      <title>Optimal algorithms for continuous non-monotone submodular and dr-submodular maximization</title>
+      <link>/icml/publications/42/</link>
+      <pubDate>Wed, 03 Jan 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/icml/publications/42/</guid>
+      <description>Abstract In this paper we study the fundamental problems of maximizing abcontinuous non-monotone submodular function over a hypercube, with and without coordinate- wise concavity. This family of optimization problems has several applications in machine learning, economics, and communication systems. Our main result is the first 1 -approximation algorithm for continuous submodular function maximization; 2 the approximation factor of 1 is the best possible for algorithms that use only 2 polynomially many queries.</description>
+    </item>
+    
+    <item>
+      <title>Continuous dr-submodular maximization: Structure and algorithms</title>
+      <link>/icml/publications/43/</link>
+      <pubDate>Tue, 03 Jan 2017 00:00:00 +0000</pubDate>
+      
+      <guid>/icml/publications/43/</guid>
+      <description>Abstract DR-submodular continuous functions are important objectives with wide real-world applications spanning MAP inference in determinantal point processes (DPPs), and mean-field inference for probabilistic submodular models, amongst others. DR-submodularity captures a subclass of non-convex functions that enables both exact minimization and approximate maximization in polynomial time. In this work we study the problem of maximizing non-monotone continuous DR- submodular functions under general down-closed convex constraints. We start by investigating geometric properties that underlie such objectives, e.</description>
+    </item>
+    
+    <item>
+      <title>Submodular functions: from discrete to continuous domains</title>
+      <link>/icml/publications/44/</link>
+      <pubDate>Tue, 03 Jan 2017 00:00:00 +0000</pubDate>
+      
+      <guid>/icml/publications/44/</guid>
+      <description>Abstract Submodular set-functions have many applications in combinatorial optimization, as they can be minimized and approximately maximized in polynomial time. A key element in many of the algorithms and analyses is the possibility of extending the submodular set-function to a convex function, which opens up tools from convex optimization. Submodularity goes beyond set-functions and has naturally been considered for problems with multiple labels or for functions defined on continuous domains, where it corresponds essentially to cross second-derivatives being nonpositive.</description>
+    </item>
+    
+    <item>
+      <title>Guaranteed non-convex optimization: Submodular maximization over continuous domains</title>
+      <link>/icml/publications/45/</link>
+      <pubDate>Tue, 03 Jan 2017 00:00:00 +0000</pubDate>
+      
+      <guid>/icml/publications/45/</guid>
+      <description>Abstract Submodular continuous functions are a category of (generally) non-convex/non-concave functions with a wide spectrum of applications. We characterize these functions and demonstrate that they can be maximized efficiently with approximation guarantees. Specifically, i) We introduce the weak DR property that gives a unified characterization of submodularity for all set, integer-lattice and continuous functions; ii) for maximizing monotone DR-submodular continuous functions under general down-closed convex constraints, we propose a Frank-Wolfe variant with (1-1/e) approximation guarantee, and sub-linear convergence rate; iii) for maximizing general non-monotone submodular continuous functions subject to box constraints, we propose a DoubleGreedy algorithm with 1/3 approximation guarantee.</description>
+    </item>
+    
+    <item>
+      <title>Adaptive Submodularity: Theory and Applications in Active Learning and Stochastic Optimization</title>
+      <link>/icml/publications/46/</link>
+      <pubDate>Sun, 03 Jan 2016 00:00:00 +0000</pubDate>
+      
+      <guid>/icml/publications/46/</guid>
+      <description>Abstract Many problems in artificial intelligence require adaptively making a sequence of decisions with uncertain outcomes under partial observability. Solving such stochastic optimization problems is a fundamental but notoriously difficult challenge. In this paper, we introduce the concept of adaptive submodularity, generalizing submodular set functions to adaptive policies. We prove that if a problem satisfies this property, a simple adaptive greedy algorithm is guaranteed to be competitive with the optimal policy.</description>
+    </item>
+    
+    <item>
+      <title>Submodular surrogates for value of information</title>
+      <link>/icml/publications/47/</link>
+      <pubDate>Sat, 03 Jan 2015 00:00:00 +0000</pubDate>
+      
+      <guid>/icml/publications/47/</guid>
+      <description>Abstract How should we gather information to make effective decisions? A classical answer to this fundamental problem is given by the decision-theoretic value of information. Unfortunately, optimizing this objective is intractable, and myopic (greedy) approximations are known to perform poorly. In this paper, we introduce DIRECT, an efficient yet near-optimal algorithm for nonmyopically optimizing value of information. Crucially, DIRECT uses a novel surrogate objective that is: (1) aligned with the value of information problem (2) efficient to evaluate and (3) adaptive submod- ular.</description>
+    </item>
+    
+    <item>
+      <title>Learning sparse combinatorial representations via two-stage submodular maximization</title>
+      <link>/icml/publications/48/</link>
+      <pubDate>Sun, 03 Jan 2016 00:00:00 +0000</pubDate>
+      
+      <guid>/icml/publications/48/</guid>
+      <description>Abstract We consider the problem of learning sparse rep- resentations of data sets, where the goal is to re- duce a data set in manner that optimizes mul- tiple objectives. Motivated by applications of data summarization, we develop a new model which we refer to as the two-stage submodu- lar maximization problem. This task can be viewed as a combinatorial analogue of repre- sentation learning problems such as dictionary learning and sparse regression.</description>
+    </item>
+    
+    <item>
+      <title>An Analysis of Approximations for Maximizing Submodular Set Functions—I</title>
+      <link>/icml/publications/49/</link>
+      <pubDate>Sat, 03 Jan 1987 00:00:00 +0000</pubDate>
+      
+      <guid>/icml/publications/49/</guid>
+      <description>Abstract LetN be a finite set andz be a real-valued function defined on the set of subsets ofN that satisfies z(S)+z(T)≥z(S⋃T)+z(S⋂T) for allS, T inN. Such a function is called submodular. We consider the problem maxS⊂N{a(S):|S|≤K,z(S) submodular}.
+Several hard combinatorial optimization problems can be posed in this framework. For example, the problem of finding a maximum weight independent set in a matroid, when the elements of the matroid are colored and the elements of the independent set can have no more thanK colors, is in this class.</description>
+    </item>
+    
+    <item>
+      <title>Accelerated greedy algorithms for maximizing submodular set functions</title>
+      <link>/icml/publications/50/</link>
+      <pubDate>Tue, 03 Jan 1978 00:00:00 +0000</pubDate>
+      
+      <guid>/icml/publications/50/</guid>
+      <description>Abstract Given a finite set E and a real valued function f on P(E) (the power set of E) the optimal subset problem (P) is to find S ⊂ E maximizing f over P(E). Many combinatorial optimization problems can be formulated in these terms. Here, a family of approximate solution methods is studied : the greedy algorithms.
+After having described the standard greedy algorithm (SG) it is shown that, under certain assumptions (namely : submodularity of f) the computational complexity of (SG) can often be significantly reduced, thus leading to an accelerated greedy algorithm (AG).</description>
+    </item>
+    
+    <item>
+      <title>Submodular Maximization With Cardinality Constraints</title>
+      <link>/icml/publications/51/</link>
+      <pubDate>Fri, 03 Jan 2014 00:00:00 +0000</pubDate>
+      
+      <guid>/icml/publications/51/</guid>
+      <description>Abstract We consider the problem of maximizing a (non-monotone) submodular function subject to a cardi- nality constraint. In addition to capturing well-known combinatorial optimization problems, e.g., Max- k-Coverage and Max-Bisection, this problem has applications in other more practical settings such as natural language processing, information retrieval, and machine learning. In this work we present im- proved approximations for two variants of the cardinality constraint for non-monotone functions. When at most k elements can be chosen, we improve the current best 1/e − o(1) approximation to a factor that is in the range [1/e + 0.</description>
+    </item>
+    
+    <item>
+      <title>Differentially Private Submodular Maximization: Data Summarization in Disguise</title>
+      <link>/icml/publications/52/</link>
+      <pubDate>Tue, 03 Jan 2017 00:00:00 +0000</pubDate>
+      
+      <guid>/icml/publications/52/</guid>
+      <description>Abstract Many data summarization applications are cap- tured by the general framework of submodular maximization. As a consequence, a wide range of efficient approximation algorithms have been developed. However, when such applications in- volve sensitive data about individuals, their pri- vacy concerns are not automatically addressed. To remedy this problem, we propose a gen- eral and systematic study of differentially private submodular maximization. We present privacy- preserving algorithms for both monotone and non-monotone submodular maximization under cardinality, matroid, and p-extendible system constraints, with guarantees that are competitive with optimal solutions.</description>
+    </item>
+    
+    <item>
+      <title>Regularized Submodular Maximization at Scale</title>
+      <link>/icml/publications/70/</link>
+      <pubDate>Fri, 03 Jan 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/icml/publications/70/</guid>
+      <description>Abstract In this paper, we propose scalable methods for maximizing a regularized submodular function f=g−ℓ expressed as the difference between a monotone submodular function g and a modular function ℓ. Indeed, submodularity is inherently related to the notions of diversity, coverage, and representativeness. In particular, finding the mode of many popular probabilistic models of diversity, such as determinantal point processes, submodular probabilistic models, and strongly log-concave distributions, involves maximization of (regularized) submodular functions.</description>
+    </item>
+    
+    <item>
+      <title>fast algorithms for maximizing submodular functions</title>
+      <link>/icml/publications/53/</link>
+      <pubDate>Thu, 03 Jan 2013 00:00:00 +0000</pubDate>
+      
+      <guid>/icml/publications/53/</guid>
+      <description>Abstract There has been much progress recently on improved approximations for problems involving submodular objective functions, and many interesting techniques have been developed. However, the resulting algorithms are often slow and impractical. In this paper we develop algorithms that match the best known approximation guarantees, but with significantly improved running times, for maximizing a monotone submodular function f : 2[n] →; R + subject to various constraints. As in previous work, we measure the number of oracle calls to the objective function which is the dominating term in the running time.</description>
+    </item>
+    
+    <item>
+      <title>Efficient Algorithms and Lower Bound for Submodular Maximization</title>
+      <link>/icml/publications/54/</link>
+      <pubDate>Fri, 03 Jan 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/icml/publications/54/</guid>
+      <description>Abstract In this work, we study constrained submodular maximization problems and design algorithms that improve the state-of-the-art performance guarantees. We first present the \emph{adaptive decreasing threshold} algorithm, which achieves an approximation ratio of (1−1/e−ε) by performing queries per element. To the best of our knowledge, this is currently the fastest known \textbf{deterministic} algorithm, and nearly achieves the optimal approximation ratio. We also study several other well-known constrained monotone submodular maximization problems.</description>
+    </item>
+    
+    <item>
+      <title>Robust Guarantees of Stochastic Greedy Algorithms</title>
+      <link>/icml/publications/55/</link>
+      <pubDate>Tue, 03 Jan 2017 00:00:00 +0000</pubDate>
+      
+      <guid>/icml/publications/55/</guid>
+      <description>Abstract In this paper we analyze the robustness of stochastic variants of the greedy algorithm for submodular maximization. Our main result shows that for maximizing a monotone submod- ular function under a cardinality constraint, itera- tively selecting an element whose marginal con- tribution is approximately maximal in expecta- tion is a sufficient condition to obtain the opti- mal approximation guarantee with exponentially high probability, assuming the cardinality is suf- ficiently large.</description>
+    </item>
+    
+    <item>
+      <title>Constrained Non-Monotone Submodular Maximization: Offline and Secretary Algorithms</title>
+      <link>/icml/publications/56/</link>
+      <pubDate>Sun, 03 Jan 2010 00:00:00 +0000</pubDate>
+      
+      <guid>/icml/publications/56/</guid>
+      <description>Abstract Constrained submodular maximization problems have long been studied, most recently in the context of auc- tions and computational advertising, with near-optimal results known under a variety of constraints when the submodular function is monotone. The case of non-monotone submodular maximization is less well understood: the first approximation algorithms even for the unconstrained setting were given by Feige et al. (FOCS ’07). More recently, Lee et al. (STOC ’09, APPROX ’09) show how to approximately maximize non-monotone submodular functions when the constraints are given by the intersection of p matroid constraints; their algorithm is based on local-search procedures that consider p-swaps, and hence the running time may be nΩ(p), implying their algorithm is polynomial-time only for constantly many matroids.</description>
+    </item>
+    
+    <item>
+      <title>Greed Is Good: Near-Optimal Submodular Maximization via Greedy Optimization</title>
+      <link>/icml/publications/57/</link>
+      <pubDate>Tue, 03 Jan 2017 00:00:00 +0000</pubDate>
+      
+      <guid>/icml/publications/57/</guid>
+      <description>Abstract It is known that greedy methods perform well for maximizing monotone submodular functions. At the same time, such methods perform poorly in the face of non-monotonicity. In this paper, we show—arguably, surprisingly—that invoking the classical greedy algorithm O( k)-times leads to the (currently) fastest deterministic algorithm, called REPEATEDGREEDY, for maximizing a general submodular function subject to k-independent system constraints. REPEATEDGREEDY √√ achieves (1 + O(1/ k))k approximation using O(nr k) function evaluations (here, n and r de- note the size of the ground set and the maximum size of a feasible solution, respectively).</description>
+    </item>
+    
+    <item>
+      <title>Learning Sparse Combinatorial Representations via Two-stage Submodular Maximization</title>
+      <link>/icml/publications/58/</link>
+      <pubDate>Sun, 03 Jan 2016 00:00:00 +0000</pubDate>
+      
+      <guid>/icml/publications/58/</guid>
+      <description>Abstract We consider the problem of learning sparse representations of data sets, where the goal is to reduce a data set in manner that optimizes multiple objectives. Motivated by applications of data summarization, we develop a new model which we refer to as the two-stage submodular maximization problem. This task can be viewed as a combinatorial analogue of representation learning problems such as dictionary learning and sparse regression. The two-stage problem strictly generalizes the problem of cardinality constrained submodular maximization, though the objective function is not submodular and the techniques for submodular maximization cannot be applied.</description>
+    </item>
+    
+    <item>
+      <title>Probabilistic Submodular Maximization in Sub-Linear Time</title>
+      <link>/icml/publications/59/</link>
+      <pubDate>Tue, 03 Jan 2017 00:00:00 +0000</pubDate>
+      
+      <guid>/icml/publications/59/</guid>
+      <description>Abstract In this paper, we consider optimizing submodular functions that are drawn from some unknown distribution. This setting arises, e.g., in recommender systems, where the utility of a subset of items may depend on a user-specific submodular utility function. In modern applications, the ground set of items is often so large that even the widely used (lazy) greedy algorithm is not efficient enough. As a remedy, we introduce the problem of sublinear time probabilistic submodular maximization: Given training examples of functions (e.</description>
+    </item>
+    
+    <item>
+      <title>A Nearly-linear Time Algorithm for Submodular Maximization with a Knapsack Constraint</title>
+      <link>/icml/publications/60/</link>
+      <pubDate>Wed, 03 Jan 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/icml/publications/60/</guid>
+      <description>Abstract We consider the problem of maximizing a monotone submodular function subject to a knap- sack constraint. Our main contribution is an algorithm that achieves a nearly-optimal, 1−1/e−ǫ approximation, using (1/ǫ)O(1/ǫ4)nlog2 n function evaluations and arithmetic operations. Our algorithm is impractical but theoretically interesting, since it overcomes a fundamental running time bottleneck of the multilinear extension relaxation framework. This is the main approach for obtaining nearly-optimal approximation guarantees for important classes of constraints but it leads to Ω(n2) running times, since evaluating the multilinear extension is expensive.</description>
+    </item>
+    
+    <item>
+      <title>Submodular Maximization Through Barrier Functions</title>
+      <link>/icml/publications/61/</link>
+      <pubDate>Fri, 03 Jan 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/icml/publications/61/</guid>
+      <description>Abstract In this paper, we introduce a novel technique for constrained submodular maximization, inspired by barrier functions in continuous optimization. This connection not only improves the running time for constrained submodular maximization but also provides the state of the art guarantee. More precisely, for maximizing a monotone submodular function subject to the combination of a k-matchoid and ℓ-knapsack constraint (for ℓ≤k), we propose a potential function that can be approximately minimized.</description>
+    </item>
+    
+    <item>
+      <title>Submodular Streaming in All Its Glory: Tight Approximation, Minimum Memory and Low Adaptive Complexity</title>
+      <link>/icml/publications/62/</link>
+      <pubDate>Thu, 03 Jan 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/icml/publications/62/</guid>
+      <description>Abstract Streaming algorithms are generally judged by the quality of their solution, memory footprint, and computational complexity. In this paper, we study the problem of maximizing a mono- tone submodular function in the streaming set- ting with a cardinality constraint k. We first propose SIEVE-STREAMING++, which requires just one pass over the data, keeps only O(k) el- ements and achieves the tight 1/2-approximation guarantee. The best previously known stream- ing algorithms either achieve a suboptimal 1/4- approximation with ⇥(k) memory or the opti- mal 1/2-approximation with O(k log k) memory.</description>
+    </item>
+    
+    <item>
+      <title>submodular maximization meets streaming: matching, magroids and more</title>
+      <link>/icml/publications/63/</link>
+      <pubDate>Sat, 03 Jan 2015 00:00:00 +0000</pubDate>
+      
+      <guid>/icml/publications/63/</guid>
+      <description>Abstract We study the problem of finding a maximum matching in a graph given by an input stream listing its edges in some arbitrary order, where the quantity to be maximized is given by a monotone submodular function on subsets of edges. This problem, which we call maximum submodular-function matching (MSM), is a natural generalization of maximum weight matching (MWM), which is in turn a generalization of maximum cardinality matching (MCM).</description>
+    </item>
+    
+    <item>
+      <title>The one-way communication complexity of submodular maximization with applications to streaming and robustness</title>
+      <link>/icml/publications/64/</link>
+      <pubDate>Fri, 03 Jan 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/icml/publications/64/</guid>
+      <description>Abstract We consider the classical problem of maximizing a monotone submodular function subject to a cardinality constraint, which, due to its numerous applications, has recently been studied in various computational models. We consider a clean multi-player model that lies between the offline and streaming model, and study it under the aspect of one-way communication complexity. Our model captures the streaming setting (by considering a large number of players), and, in addition, two player approximation results for it translate into the robust setting.</description>
+    </item>
+    
+    <item>
+      <title>Approximability of monotone submodular function maximization under cardinality and matroid constraints in the streaming model</title>
+      <link>/icml/publications/65/</link>
+      <pubDate>Fri, 03 Jan 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/icml/publications/65/</guid>
+      <description>Abstract Maximizing a monotone submodular function under various constraints is a classical and intensively studied problem. However, in the single-pass streaming model, where the elements arrive one by one and an algorithm can store only a small fraction of input elements, there is much gap in our knowledge, even though several approximation algorithms have been proposed in the literature. In this work, we present the first lower bound on the approximation ratios for cardinality and matroid constraints that beat 1−1/e in the single-pass streaming model.</description>
+    </item>
+    
+    <item>
+      <title>Optimal Streaming Algorithms for Submodular Maximization with Cardinality Constraints</title>
+      <link>/icml/publications/66/</link>
+      <pubDate>Fri, 03 Jan 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/icml/publications/66/</guid>
+      <description>Abstract We study the problem of maximizing a non-monotone submodular function subject to a cardinality constraint in the streaming model. Our main contributions are two single-pass (semi-)streaming algorithms that use O ̃(k) · poly(1/ε) memory, where k is the size constraint. At the end of the stream, both our algorithms post-process their data structures using any offline algorithm for submodular maximization, and obtain a solution whose approximation guarantee is α − ε, where α is the approximation of the offline algorithm.</description>
+    </item>
+    
+    <item>
+      <title>Do Less, Get More: Streaming Submodular Maximization with Subsampling</title>
+      <link>/icml/publications/67/</link>
+      <pubDate>Wed, 03 Jan 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/icml/publications/67/</guid>
+      <description>Abstract In this paper, we develop the first one-pass streaming algorithm for submodular maximization that does not evaluate the entire stream even once. By carefully sub- sampling each element of the data stream, our algorithm enjoys the tightest approx- imation guarantees in various settings while having the smallest memory footprint and requiring the lowest number of function evaluations. More specifically, for a monotone submodular function and a p-matchoid constraint, our randomized algorithm achieves a 4p approximation ratio (in expectation) with O(k) memory and O(km/p) queries per element (k is the size of the largest feasible solution and m is the number of matroids used to define the constraint).</description>
+    </item>
+    
+    <item>
+      <title>streaming submodular maximization under a k-system constraint</title>
+      <link>/icml/publications/68/</link>
+      <pubDate>Fri, 03 Jan 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/icml/publications/68/</guid>
+      <description>Abstract In this paper, we propose a novel framework that converts streaming algorithms for monotone submodular maximization into streaming algo- rithms for non-monotone submodular maximiza- tion. This reduction readily leads to the currently tightest deterministic approximation ratio for sub- modular maximization subject to a k-matchoid constraint. Moreover, we propose the first stream- ing algorithm for monotone submodular maxi- mization subject to k-extendible and k-set system constraints. Together with our proposed reduction, we obtain O(k log k) and O(k2 log k) approxima- tion ratio for submodular maximization subject to the above constraints, respectively.</description>
+    </item>
+    
+    <item>
+      <title>The Power of Randomization: Distributed Submodular Maximization on Massive Datasets</title>
+      <link>/icml/publications/69/</link>
+      <pubDate>Sat, 03 Jan 2015 00:00:00 +0000</pubDate>
+      
+      <guid>/icml/publications/69/</guid>
+      <description>Abstract A wide variety of problems in machine learning, including exemplar clustering, document summarization, and sensor placement, can be cast as constrained submodular maximization problems. Unfortunately, the resulting submodular optimization problems are often too large to be solved on a single machine. We consider a distributed, greedy algorithm that combines previous approaches with randomization. The result is an algorithm that is embarrassingly parallel and achieves provable, constant factor, worst-case approximation guarantees.</description>
+    </item>
+    
+    <item>
+      <title>Parallel Double Greedy Submodular Maximization”, Pan, Jegelka, Gonzalez, Bradley, Jordan</title>
+      <link>/icml/publications/71/</link>
+      <pubDate>Fri, 03 Jan 2014 00:00:00 +0000</pubDate>
+      
+      <guid>/icml/publications/71/</guid>
+      <description>Abstract Many machine learning problems can be reduced to the maximization of sub- modular functions. Although well understood in the serial setting, the parallel maximization of submodular functions remains an open area of research with recent results [1] only addressing monotone functions. The optimal algorithm for maximizing the more general class of non-monotone submodular functions was introduced by Buchbinder et al. [2] and follows a strongly serial double-greedy logic and program analysis.</description>
+    </item>
+    
+    <item>
+      <title>Optimal Distributed Submodular Optimization via Sketching</title>
+      <link>/icml/publications/72/</link>
+      <pubDate>Wed, 03 Jan 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/icml/publications/72/</guid>
+      <description>Abstract We present distributed algorithms for several classes of submodular optimization problems such as k-cover, set cover, facility location, and probabilistic coverage. The new algorithms enjoy almost optimal space complexity, optimal approximation guarantees, optimal communication complexity (and run in only four rounds of computation), addressing major shortcomings of prior work. We first present a distributed algorithm for k-cover using only Õ(n) space per machine, and then extend it to several submodular optimization problems, improving previous results for all the above problems-e.</description>
+    </item>
+    
+    <item>
+      <title>The adaptive complexity of maximizing a submodular function</title>
+      <link>/icml/publications/73/</link>
+      <pubDate>Wed, 03 Jan 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/icml/publications/73/</guid>
+      <description>Abstract In this paper we study the adaptive complexity of submodular optimization. Informally, the adaptive complexity of a problem is the minimal number of sequential rounds required to achieve a constant factor approximation when polynomially-many queries can be executed in parallel at each round. Adaptivity is a fundamental concept that is heavily studied in computer science, largely due to the need for parallelizing computation. Somewhat surprisingly, very little is known about adaptivity in submodular optimization.</description>
+    </item>
+    
+    <item>
+      <title>An Exponential Speedup in Parallel Running Time for Submodular Maximization without Loss in Approximation</title>
+      <link>/icml/publications/74/</link>
+      <pubDate>Thu, 03 Jan 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/icml/publications/74/</guid>
+      <description>Abstract In this paper we study the adaptivity of submodular maximization. Adaptivity quantifies the number of sequential rounds that an algorithm makes when function evaluations can be executed in parallel. Adaptivity is a fundamental concept that is heavily studied across a variety of areas in computer science, largely due to the need for parallelizing computation. For the canonical problem of maximizing a monotone submodular function under a cardinality constraint, it is well known that a simple greedy algorithm achieves a 1−1/e approximation and that this approximation is optimal for polynomial-time algorithms.</description>
+    </item>
+    
+    <item>
+      <title>Submodular Maximization with Nearly-optimal Approximation and Adaptivity in Nearly-linear Time</title>
+      <link>/icml/publications/75/</link>
+      <pubDate>Wed, 03 Jan 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/icml/publications/75/</guid>
+      <description>Abstract In this paper, we study the tradeoff between the approximation guarantee and adaptivity for the problem of maximizing a monotone submodular function subject to a cardinality con- straint. The adaptivity of an algorithm is the number of sequential rounds of queries it makes to the evaluation oracle of the function, where in every round the algorithm is allowed to make polynomially-many parallel queries. Adaptivity is an important consideration in settings where the objective function is estimated using samples and in applications where adaptivity is the main running time bottleneck.</description>
+    </item>
+    
+    <item>
+      <title>Submodular Maximization with Nearly Optimal Approximation, Adaptivity and Query Complexity</title>
+      <link>/icml/publications/76/</link>
+      <pubDate>Thu, 03 Jan 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/icml/publications/76/</guid>
+      <description>Abstract Submodular optimization generalizes many classic problems in combinatorial optimization and has recently found a wide range of applications in machine learning (e.g., feature engineering and active learning). For many large-scale optimization problems, we are often concerned with the adaptivity complexity of an algorithm, which quantifies the number of sequential rounds where polynomially-many independent function evaluations can be executed in parallel. While low adaptivity is ideal, it is not sufficient for a distributed algorithm to be efficient, since in many practical applications of submodular optimization the number of function evaluations becomes prohibitively expensive.</description>
+    </item>
+    
+    <item>
+      <title>Unconstrained submodular maximization with constant adaptive complexity</title>
+      <link>/icml/publications/77/</link>
+      <pubDate>Thu, 03 Jan 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/icml/publications/77/</guid>
+      <description>Abstract In this paper, we consider the unconstrained submodular maximization problem. We propose the first algorithm for this problem that achieves a tight (1/2−ε)-approximation guarantee using O ̃(ε−1) adaptive rounds and a linear number of function evaluations. No previously known algorithm for this problem achieves an approximation ratio better than 1/3 using less than Ω(n) rounds of adaptivity, where n is the size of the ground set. Moreover, our algorithm easily extends to the maximization of a non-negative continuous DR-submodular function subject to a box constraint, and achieves a tight (1/2 − ε)-approximation guarantee for this problem while keeping the same adaptive and query complexities.</description>
+    </item>
+    
+    <item>
+      <title>Continuous Submodular Maximization: Beyond DR-Submodularity</title>
+      <link>/icml/publications/78/</link>
+      <pubDate>Fri, 03 Jan 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/icml/publications/78/</guid>
+      <description>Abstract In this paper, we propose the first continuous optimization algorithms that achieve a constant fac- tor approximation guarantee for the problem of monotone continuous submodular maximization subject to a linear constraint. We first prove that a simple variant of the vanilla coordinate ascent, called Coordinate-Ascent+, achieves a ( e-1/(2e−1) − ε)-approximation guarantee while performing O(n/ε) itera- tions, where the computational complexity of each iteration is roughly O(n/√ε + n log n) (here, n denotes the dimension of the optimization problem).</description>
+    </item>
+    
+    <item>
+      <title>ICML 2020 Tutorial on Submodular Optimization: From Discrete to Continuous and Back</title>
+      <link>/icml/icml-20.md/</link>
+      <pubDate>Sat, 30 May 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/icml/icml-20.md/</guid>
+      <description>Hamed Hassani School of Engineering and Applied Sciences
+University of Pennsylvania
+Philadelphia, PA 19104
+Amin Karbasi Yale Institute for Network Science Yale University New Haven, CT 06520
+Slides Module 1 Module 2 Module 3 Module 4 Videos Part I Part II Part III Part IV Brief Description and Outline This tutorial will cover recent advancements in discrete optimization methods for large-scale machine learning. Traditionally, machine learning has been harnessing convex optimization to design fast algorithms with provable guarantees for a broad range of applications.</description>
+    </item>
+    
+  </channel>
+</rss>

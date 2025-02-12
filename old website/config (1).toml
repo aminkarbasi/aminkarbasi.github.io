@@ -1,0 +1,160 @@
+
+theme = "coder-portfolio"
+
+DefaultContentLanguage = "en"
+
+paginate = 10
+
+pygmentsstyle = "b2"
+pygmentscodefences = true
+pygmentscodefencesguesssyntax = true
+pygmentsUseClasses = true
+
+disqusShortname = "yourdiscussshortname"
+
+[params]
+    author = "Amin Karbasi"
+    email = "amin.karbasi@yale.edu"
+    description = "Amin Karbasi's personal website"
+    keywords = "blog,developer,personal"
+    info = "Yale"
+    avatarurl = "images/group.png"
+    coursesurl = "../images/avatar.svg"
+    footercontent = "Yale University"
+    fixedbarContent = "Do you want to know me more private?→"
+    fixedbarContentAfter = "Thank You! Please share it if you like it→"
+    
+
+    publish = ""	
+    semster = ""
+    id = ""
+    link =""
+    keyword1 =""
+    keyword2 =""
+
+    hideCredits = false
+    hideCopyright = false
+
+    # Bottom sns share
+    snsShare = true
+    # Popular sns share
+    # if you want add sns. please message!
+    enableTwitterShare = true
+    enableFacebookShare = true
+    enableHatenaShare = true
+    enableLineShare = true
+    enableLinkedInShare = true
+
+    thumbnail = "images/tn.png"
+
+    # Custom CSS
+    custom_css = []
+
+    # Alignment of Mobile Menu items
+    itemscentered = true
+
+    # RTL support
+    rtl = false
+
+    langseparator = "|"
+
+[[params.social]]
+    name = "Github"
+    icon = "fab fa-github"
+    weight = 1
+    url = "https://github.com/ehsankazemi/hybrid-streaming"
+[[params.social]]
+    name = "Twitter"
+    icon = "fab fa-twitter"
+    weight = 2
+    url = "https://twitter.com/aminkarbasi/"
+[[params.social]]
+    name = "Tracker"
+    icon = "fab fa-erlang"
+    weight = 2
+    url = "http://extremetracking.com/open?login=karbasi"
+
+[[params.social]]
+    name = "Yale"
+    icon = "yale"
+    weight = 4
+    url = "https://www.yale.edu"
+
+[languages]
+    [languages.en]
+        languagecode = "en"
+        languagename = "English" # The language name to be displayed in the selector.
+        title = "IID Group"
+
+        # You can configure the theme parameter for each language.
+        [languages.en.params]
+            author = "Inference, Information,  and Decision Systems Group"
+    	    info = "/info/info.md"
+            description = "Amin Karbasi's personal website"
+            keywords = "blog,developer,personal"
+
+        [languages.en.menu] # It is possible to change the menu too.
+
+            [[languages.en.menu.main]]
+                name = "About"
+                weight = 1.0
+                url = "/"
+
+            [[languages.en.menu.main]]
+                name = "People"
+                weight = 2.0
+                url = "/people"
+
+            [[languages.en.menu.main]]
+                name = "Publications"
+                weight = 3.0
+                url = "/publications/"
+	
+            [[languages.en.menu.main]]
+                name = "Research"
+                weight = 4.0
+                url = "/research"
+
+            [[languages.en.menu.main]]
+                name = "Teaching"
+                weight = 5.0
+                url = "/courses"
+	
+           	    [[languages.en.menu.main]]
+                name = "Outreach"
+		parent = "other"
+                weight = 7.0
+                url = "/outreach/outreach.md"
+	    [[languages.en.menu.main]]
+                name = "ICML 2020"
+		parent = "other"
+                weight = 8.0
+                url = "/icml/icml-20.md"
+
+            [[languages.en.menu.main]]
+                name = "Software"
+		parent = "other"
+                weight = 3.0
+                url = "/software/software.md"
+
+	    [[languages.en.menu.main]]
+                name = "Openings"
+                weight = 9.0
+                url = "/openings/openings.md"
+
+
+            	    
+	    [[languages.en.menu.main]]
+                name = "Hunala "
+                weight = 10.0
+                url = "/hunala/hunala.md"
+	
+	    [[languages.en.menu.main]]
+                name = "Contact"
+		parent = "other"
+                weight = 4.0
+                url = "/contact/contact.md"
+
+
+
+

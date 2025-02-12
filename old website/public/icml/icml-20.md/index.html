@@ -1,0 +1,2338 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3548987469263964"
+     crossorigin="anonymous"></script>
+
+    <meta name="author" content="Inference, Information,  and Decision Systems Group">
+    <meta name="description" content="">
+    <meta name="keywords" content="blog,developer,personal">
+
+    <meta property="og:site_name" content="IID Group">
+    <meta property="og:title" content="
+  ICML 2020 Tutorial on Submodular Optimization: From Discrete to Continuous and Back - IID Group
+">
+    <meta property="og:description" content="about">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="/icml/icml-20.md/">
+    <meta property="og:image" content="images/tn.png">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:site" content="/icml/icml-20.md/">
+    <meta name="twitter:image" content="images/tn.png">
+
+    <base href="/icml/icml-20.md/">
+    <title>
+  ICML 2020 Tutorial on Submodular Optimization: From Discrete to Continuous and Back - IID Group
+</title>
+
+    <link rel="canonical" href="/icml/icml-20.md/">
+    
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+    
+    <link  rel="stylesheet" href="https://fonts.googleapis.com/css?family=Fira+Mono:400,700">
+    <link rel="stylesheet" href="/css/normalize.min.css">
+    <link rel="stylesheet" href="/css/style.min.css">
+
+    
+
+    
+
+    <link rel="icon" type="image/png" href="/images/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="/images/favicon-16x16.png" sizes="16x16">
+
+    
+      <link rel="alternate" href="/index.xml" type="application/rss+xml" title="IID Group">
+      <link href="/index.xml" rel="feed" type="application/rss+xml" title="IID Group" />
+    
+
+    <meta name="generator" content="Hugo 0.111.3">
+  </head>
+
+  <body class="">
+    <main class="wrapper">
+      
+<link href="https://fonts.googleapis.com/css?family=Baloo+Chettan+2&display=swap" rel="stylesheet">
+
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+.dropbtn {
+  background-color:  #00356B;
+  color: white;
+  padding: 8px;
+  font-size: 16px;
+  border: none;
+  border-radius:1px; 
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+  padding:4px;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 180px;
+  box-shadow: 0px 0px 0px 0px rgba(0,0,0,0.2);
+  margin-left:0px;
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 0px;
+  text-decoration: none;
+  display: block;
+  margin-left:0px;
+  margin-right:2px;
+}
+
+.dropdown-content a:hover {background-color: #ddd;}
+
+.dropdown:hover .dropdown-content {display: block;}
+
+.dropdown:hover .dropbtn {background-color: #3e8e41;}
+</style>
+</head>
+
+<nav class="navigation">
+  <section class="container">
+	  <span class="navigation-title" href="/">
+		  <img src="/images/logos/iid.png"/></a><span class="navigation-text">&nbsp;IID Group</span></span>
+    <input type="checkbox" id="menu-control"/>
+    <label class="menu-mobile  float-right " for="menu-control">
+      <span class="btn-mobile  float-right ">&#9776;</span>
+      <ul class="navigation-list">
+        
+          
+            <li class="navigation-item  align-center ">
+		
+			
+              		<a class="navigation-link" href="/">About</a>
+			
+		
+            </li>
+          
+            <li class="navigation-item  align-center ">
+		
+			
+              		<a class="navigation-link" href="/people">People</a>
+			
+		
+            </li>
+          
+            <li class="navigation-item  align-center ">
+		
+			
+              		<a class="navigation-link" href="/publications/">Publications</a>
+			
+		
+            </li>
+          
+            <li class="navigation-item  align-center ">
+		
+			
+              		<a class="navigation-link" href="/research">Research</a>
+			
+		
+            </li>
+          
+            <li class="navigation-item  align-center ">
+		
+			
+              		<a class="navigation-link" href="/courses">Teaching</a>
+			
+		
+            </li>
+          
+            <li class="navigation-item  align-center ">
+		
+			
+              		<a class="navigation-link" href="/icml/icml-20.md">Tutorial</a>
+			
+		
+            </li>
+          
+            <li class="navigation-item  align-center ">
+		 
+		<ul class="dropdown">
+			<a class="dropbtn" style="line-height:5rem;" href="#">other</a>
+		        <ul class="dropdown-content">
+		  
+			    <li class="align-center">
+			      <a style="margin-left:-1rem;" href="/openings/openings.md">Openings</a>
+			    </li>
+		  
+			    <li class="align-center">
+			      <a style="margin-left:-1rem;" href="/hunala/hunala.md">Hunala </a>
+			    </li>
+		  
+			    <li class="align-center">
+			      <a style="margin-left:-1rem;" href="/software/software.md">Software</a>
+			    </li>
+		  
+			    <li class="align-center">
+			      <a style="margin-left:-1rem;" href="/outreach/outreach.md">Outreach</a>
+			    </li>
+		  
+			    <li class="align-center">
+			      <a style="margin-left:-1rem;" href="/contact/contact.md">Contact</a>
+			    </li>
+		  
+		    </ul>
+		</ul>
+
+		
+            </li>
+          
+        
+        
+      </ul>
+    </label>
+  </section>
+</nav>
+
+
+      <div class="content">
+        
+  
+<section class="container page">
+	<article>
+		<header>
+			<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+			
+			<div></div>
+			<h1 >Title:&nbsp;ICML 2020 Tutorial on Submodular Optimization: From Discrete to Continuous and Back</h1>
+			<h1 >Speakers:&nbsp;Hamed Hassani (UPenn), Amin Karbasi (Yale)</h1>
+			<div>
+			
+
+		</header>
+
+		<div  class="x-column x-sm x-1-6" style=""  >
+		</div>
+
+			<script type="text/javascript" src="//platform.twitter.com/widgets.js"></script>
+			<div>
+			
+			<p><img src="/images/icml-2020/Hassani.jpg" alt="math fest 1" title="hassani">
+<img src="/images/icml-2020/karbasi.jpeg" alt="math fest 1" title="karbasi"></p>
+<ol>
+<li><a href="https://www.seas.upenn.edu/~hassani/">Hamed Hassani</a></li>
+</ol>
+<blockquote>
+<p>School of Engineering and Applied Sciences<br>
+University of Pennsylvania<br>
+Philadelphia, PA 19104</p>
+</blockquote>
+<ol start="2">
+<li><a href="http://iid.yale.edu/people/amin-karbasi/">Amin Karbasi</a></li>
+</ol>
+<blockquote>
+<p>Yale Institute for Network Science <br>
+Yale University <br>
+New Haven, CT 06520</p>
+</blockquote>
+<h1 id="slides">Slides</h1>
+<ol>
+<li><a href="/files/icml-2020/module1.pdf">Module 1</a></li>
+<li><a href="/files/icml-2020/module2.pdf">Module 2</a></li>
+<li><a href="/files/icml-2020/module3.pdf">Module 3</a></li>
+<li><a href="/files/icml-2020/module4.pdf">Module 4</a></li>
+</ol>
+<h1 id="videos">Videos</h1>
+<ol>
+<li><a href="https://slideslive.com/38930508/submodular-optimization-from-discrete-to-continuous-and-back-part-i?ref=account-folder-55826-folders">Part I</a></li>
+<li><a href="https://slideslive.com/38930509/submodular-optimization-from-discrete-to-continuous-and-back-part-ii?ref=account-folder-55826-folders">Part II</a></li>
+<li><a href="https://slideslive.com/38930506/submodular-optimization-from-discrete-to-continuous-and-back-part-iii?ref=account-folder-55826-folders">Part III</a></li>
+<li><a href="https://slideslive.com/38930507/submodular-optimization-from-discrete-to-continuous-and-back-part-iv?ref=account-folder-55826-folders">Part IV</a></li>
+</ol>
+<h1 id="brief-description-and-outline">Brief Description and Outline</h1>
+<p>This tutorial will cover recent advancements in discrete optimization methods for large-scale machine learning. Traditionally, machine learning has been harnessing convex optimization to design
+fast algorithms with provable guarantees for a broad range of applications. In recent years, however,
+there has been a surge of interest in applications that involve discrete optimization. For discrete
+domains, the analog of convexity is considered to be submodularity, and the evolving theory of
+submodular optimization has been a catalyst for progress in extraordinarily varied application
+areas including active learning and experimental design, vision, sparse reconstruction, graph inference, video analysis, clustering, document summarization, object detection, information retrieval,
+network inference, interpreting neural network, and discrete adversarial attacks.</p>
+<p>              <img src="/images/icml-2020/submodular.png" alt="math fest 1" title="submodular"></p>
+<p>As applications and techniques of submodular optimization mature, a fundamental gap between
+theory and application emerges. In the past decade, paradigms such as large-scale learning, distributed systems, and sequential decision making have enabled a quantum leap in the performance
+of learning methodologies. Incorporating these paradigms in discrete problems has led to fundamentally new frameworks for submodular optimization. The goal of this tutorial is to cover rigorous
+and scalable foundations for discrete optimization in complex, dynamic environments, addressing
+challenges of scalability and uncertainty, and facilitating distributed and sequential learning in
+broader discrete settings. More specifically, we will cover advancements in four areas:</p>
+<ol>
+<li>
+<h2 id="submodular-optimization-with-perfect-information">Submodular Optimization with Perfect Information.</h2>
+</li>
+</ol>
+<p>State-of-the-art submodular optimization techniques have mostly assumed perfect knowledge about the optimization problem
+and the environment. More precisely, the existing techniques have been designed based on
+the availability of an oracle with full information about the objective function at any queried
+point. In this context, recent work in submodular optimization has widely focused on developing fast, efficient, and provable methodologies in the presence of massive, high-dimensional
+data:</p>
+<ul>
+<li>
+<p>Fast Greedy Methods. The first class of methods consider cases where the size and
+dimension of the data is large, but data can be fully accessible and stored in memory.
+Accordingly, fast greedy algorithms have been proposed recently with almost optimal
+run-time efficiency in terms of the query complexity and dimension of data while maintaining optimal quality guarantees in terms of objective value <a href="/icml/icml-20.md/#1">1, 2, 3, 4,49, 50-61</a>.</p>
+</li>
+<li>
+<p>Streaming Algorithms: In cases where the data sets are too large to be stored in
+memory, we consider streaming techniques, where computation is performed on the
+y.
+A recent line of work has been focused on developing algorithms that obtain desirable
+guarantees for important tasks in machine learning while using modest memory resources
+<a href="/icml/icml-20.md/#5">5, 6, 7, 8, 9,62-68</a>.</p>
+</li>
+<li>
+<p>Distributed Optimization: The rise of distributed computation frameworks such
+as MapReduce, Hadoop, and Spark, enabled unprecedented advancement in machine
+1
+learning. Although submodular optimization is a canonical example of computation that
+cannot be parallelized, there is a great deal of work on new algorithm design approaches
+that can utilize distributed computational resources <a href="/icml/icml-20.md/#10">10, 11, 12, 13, 14, 15, 16,</a><a href="/icml/icml-20.md/#69">69-77</a>.</p>
+</li>
+</ul>
+<ol start="2">
+<li>
+<h2 id="submodular-optimization-with-imperfect-information">Submodular Optimization with Imperfect Information</h2>
+</li>
+</ol>
+<p>In many modern applications, perfect-information oracles can not assumed, and instead, we resort to approximate or
+imperfect ones in order to address challenges such as scalability, uncertainty in data and models, as well as dynamic and adversarial environments. We will formalize oracles with imperfect
+information through three main classes{Stochastic, Online, and Bandit} each of which opens
+a new avenue in the field of discrete (submodular) optimization and requires fundamentally
+novel techniques:</p>
+<ul>
+<li>
+<p>The Stochastic Oracle. The stochastic oracle returns a stochastic, but unbiased estimate of the function value at any query point. Given this type of oracle access to the
+function values, the primary question is to develop stochastic submodular optimization
+techniques with minimal sample complexity (i.e. the total number of queries from the
+stochastic oracle) and computation complexity <a href="/icml/icml-20.md/#17">17, 18</a>. The stochastic oracle is motivated form practical and large-scale applications and covers popular instances of discrete
+optimization: (i) Oftentimes in practice the objective is defined in terms of an empirical
+risk, i.e., through a finite sum of loss functions associated to the data points. This formulation appears in submodular applications such as data summarization <a href="/icml/icml-20.md/#19">19, 20, 21</a>,
+recommender systems <a href="/icml/icml-20.md/#22">22, 18</a>, and sparse regression <a href="/icml/icml-20.md/#23">23, 24, 25</a> etc. (ii) In some other
+cases, the objective is given as an expectation over an explicit stochastic model which is
+hard/intractable to compute. For example, in influence maximization in social networks
+<a href="/icml/icml-20.md/#26">26</a>,the objective value is defned as the expectation of a stochastic difiusion process,
+quantifying the expected fraction of the network influenced from a selected seed set.</p>
+</li>
+<li>
+<p>Online/Bandit Oracle. This type of oracle is the model of choice when the optimizer/learner has to interact with an unknown, evolving, or even adversarially changing
+environment. The oracle&rsquo;s outcome in this setting varies with time, and depending on
+how limited the oracle&rsquo;s outcome is, we can define two different scenarios: online, and
+bandit settings. The primary optimization goal in this setting is to provide no-regret
+mechanisms to maximize the cumulative objective over time. Online and Bandit submodular optimization, introduced in <a href="/icml/icml-20.md/#27">27, 28, 29</a>, arises naturally in discrete applications
+involving dynamic environments, e.g. online/dynamic resource allocation <a href="/icml/icml-20.md/#23">30, 27</a>, online
+ranking <a href="/icml/icml-20.md/#31">31, 32</a>, sensor placement in unknown or adversarial environments <a href="/icml/icml-20.md/#33">33</a>, in
+uencing dynamic social networks <a href="/icml/icml-20.md/#34">34</a>, online recommender systems <a href="/icml/icml-20.md/#35">35, 36</a>, and dynamic
+multi-robot coverage problems <a href="/icml/icml-20.md/#37">37</a>.</p>
+</li>
+</ul>
+<!-- raw HTML omitted -->
+<ol start="3">
+<li>
+<h2 id="a-non-convex-bridge-between-discrete-and-continuous-optimization">A Non-Convex Bridge Between Discrete and Continuous Optimization</h2>
+</li>
+</ol>
+<p>To address
+discrete otimization with imperfect oracles, we will describe a recently developed framework
+which bridges discrete and continuous optimization. Through appropriate continuous extensions, this framework devises algorithms that succeed in finding good solutions by making
+a large number of small, exploratory steps using noisy estimates of the objective value, and
+moving toward the optimal solution. As we will discuss, solving the resulting continuous problems requires novel methods beyond the state-of-the-art, because they are highly non-convex
+and possess undesirable stationary points. We show how tools from discrete and continuous
+optimization as well as techniques that exploit the special structure (submodularity) admitted
+by these problems and avoid those bad stationary points <a href="/icml/icml-20.md/#18">18</a> <a href="/icml/icml-20.md/#38">38, 39, 40, 41, 42, 43</a>.
+Indeed, submodular optimization is inherently related to continuous optimization as many
+submodular optimization methods rely on continuous relaxations. This connection has recently been strengthen by introducing continuous submodular functions <a href="/icml/icml-20.md/#44">44, 45, 78</a>, <a href="/icml/icml-20.md/#18">18</a>. Such
+functions are not convex (nor concave) but still allow finding near-optimal solutions, thus
+providing a rich framework for studying non-convex optimization problems.</p>
+<ol start="4">
+<li>
+<h2 id="beyond-submodularity">Beyond Submodularity</h2>
+</li>
+</ol>
+<p>Finally, one can generalize the notion of submodularity and still
+provide approximation guarantees. Several of such generalizations, e.g., adaptive submodularity <a href="/icml/icml-20.md/#46">46, 47</a>, weak submodularity <a href="/icml/icml-20.md/#25">25</a>, <a href="/icml/icml-20.md/#9">9</a>, two-stage submodularity <a href="/icml/icml-20.md/#48">48</a>, etc, have been
+recently proposed. These generalizations extend the applications of submodularity to interactive settings, dictionary learning, and sparse recovery.</p>
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+
+			
+
+			<div></div>
+			</ul>
+			</div>
+
+	</article>
+</section>
+
+
+
+
+
+<section class="container list">
+	<ul>
+		
+		
+
+		
+		<h1>References</h1>
+		<table>
+			
+			<div>
+				
+				
+			</div>
+			<li>
+				<tr id="1">
+					<td style="border:0px">
+							<div  style="font-size:1.4rem;inline-block;left: 5px;top: 0px; width: 10px;">1.</div>
+					</td>
+										<td style="border:0px">AAAI</td>
+					<td style="border:0px" >2015 </td>
+				
+					<td style="border:0px"> <a href="/icml/publications/baharan-15a/">Lazier Than Lazy Greedy</a></td>
+					
+					<td style="border:0px"><span style="font-size:1.4rem"> Baharan Mirzasoleiman, Ashwinkumar Badanidiyuru, Amin Karbasi, Jan Vondrák, Andreas Krause </span>
+
+					
+
+					</td >
+				</tr>
+
+			</li>
+			
+			
+			<div>
+				
+				
+			</div>
+			<li>
+				<tr id="2">
+					<td style="border:0px">
+							<div  style="font-size:1.4rem;inline-block;left: 5px;top: 0px; width: 10px;">2.</div>
+					</td>
+										<td style="border:0px">ICML</td>
+					<td style="border:0px" >2016 </td>
+				
+					<td style="border:0px"> <a href="/icml/publications/baharan-16b/">Fast Constrained Submodular Maximization: Personalized Data Summarization</a></td>
+					
+					<td style="border:0px"><span style="font-size:1.4rem"> Baharan Mirzasoleiman, Ashwinkumar Badanidiyuru, Amin Karbasi </span>
+
+					
+
+					</td >
+				</tr>
+
+			</li>
+			
+			
+			<div>
+				
+				
+			</div>
+			<li>
+				<tr id="3">
+					<td style="border:0px">
+							<div  style="font-size:1.4rem;inline-block;left: 5px;top: 0px; width: 10px;">3.</div>
+					</td>
+										<td style="border:0px">SODA</td>
+					<td style="border:0px" >2014 </td>
+				
+					<td style="border:0px"> <a href="/icml/publications/3/">Submodular maximization with cardinality constraints</a></td>
+					
+					<td style="border:0px"><span style="font-size:1.4rem"> N. Buchbinder, M. Feldman, J. Naor, and R. Schwartz </span>
+
+					
+
+					</td >
+				</tr>
+
+			</li>
+			
+			
+			<div>
+				
+				
+			</div>
+			<li>
+				<tr id="4">
+					<td style="border:0px">
+							<div  style="font-size:1.4rem;inline-block;left: 5px;top: 0px; width: 10px;">4.</div>
+					</td>
+										<td style="border:0px">ICML</td>
+					<td style="border:0px" >2014 </td>
+				
+					<td style="border:0px"> <a href="/icml/publications/4/">Fast multi-stage submodular maximization: Extended version</a></td>
+					
+					<td style="border:0px"><span style="font-size:1.4rem"> K. Wei, R. Iyer, and J. Bilmes </span>
+
+					
+
+					</td >
+				</tr>
+
+			</li>
+			
+			
+			<div>
+				
+				
+			</div>
+			<li>
+				<tr id="5">
+					<td style="border:0px">
+							<div  style="font-size:1.4rem;inline-block;left: 5px;top: 0px; width: 10px;">5.</div>
+					</td>
+										<td style="border:0px">KDD</td>
+					<td style="border:0px" >2014 </td>
+				
+					<td style="border:0px"> <a href="/icml/publications/5/">Streaming submodular maximization: massive data summarization on the fly</a></td>
+					
+					<td style="border:0px"><span style="font-size:1.4rem"> A. Badanidiyuru, B. Mirzasoleiman, A. Karbasi, and A. Krause </span>
+
+					
+
+					</td >
+				</tr>
+
+			</li>
+			
+			
+			<div>
+				
+				
+			</div>
+			<li>
+				<tr id="6">
+					<td style="border:0px">
+							<div  style="font-size:1.4rem;inline-block;left: 5px;top: 0px; width: 10px;">6.</div>
+					</td>
+										<td style="border:0px">DISC</td>
+					<td style="border:0px" >2014 </td>
+				
+					<td style="border:0px"> <a href="/icml/publications/6/">On Streaming and Communication Complexity of the Set Cover Problem</a></td>
+					
+					<td style="border:0px"><span style="font-size:1.4rem"> Erik D. Demaine, Piotr Indyk, Sepideh Mahabadi, and Ali Vakilian </span>
+
+					
+
+					</td >
+				</tr>
+
+			</li>
+			
+			
+			<div>
+				
+				
+			</div>
+			<li>
+				<tr id="7">
+					<td style="border:0px">
+							<div  style="font-size:1.4rem;inline-block;left: 5px;top: 0px; width: 10px;">7.</div>
+					</td>
+										<td style="border:0px">ICALP</td>
+					<td style="border:0px" >2015 </td>
+				
+					<td style="border:0px"> <a href="/icml/publications/7/">Streaming algorithms for submodular function maximization</a></td>
+					
+					<td style="border:0px"><span style="font-size:1.4rem"> C. Chekuri, S. Gupta, and K. Quanrud </span>
+
+					
+
+					</td >
+				</tr>
+
+			</li>
+			
+			
+			<div>
+				
+				
+			</div>
+			<li>
+				<tr id="8">
+					<td style="border:0px">
+							<div  style="font-size:1.4rem;inline-block;left: 5px;top: 0px; width: 10px;">8.</div>
+					</td>
+										<td style="border:0px">SODA</td>
+					<td style="border:0px" >2015 </td>
+				
+					<td style="border:0px"> <a href="/icml/publications/8/">Online Submodular Maximization with Preemption</a></td>
+					
+					<td style="border:0px"><span style="font-size:1.4rem"> N. Buchbinder, M. Feldman, and R. Schwartz </span>
+
+					
+
+					</td >
+				</tr>
+
+			</li>
+			
+			
+			<div>
+				
+				
+			</div>
+			<li>
+				<tr id="9">
+					<td style="border:0px">
+							<div  style="font-size:1.4rem;inline-block;left: 5px;top: 0px; width: 10px;">9.</div>
+					</td>
+										<td style="border:0px">NIPS</td>
+					<td style="border:0px" >2017 </td>
+				
+					<td style="border:0px"> <a href="/icml/publications/9/">Streaming Weak Submodularity: Interpreting Neural Networks on the Fly</a></td>
+					
+					<td style="border:0px"><span style="font-size:1.4rem"> E. R. Elenberg, A. G. Dimakis, M. Feldman, and A. Karbasi </span>
+
+					
+
+					</td >
+				</tr>
+
+			</li>
+			
+			
+			<div>
+				
+				
+			</div>
+			<li>
+				<tr id="10">
+					<td style="border:0px">
+							<div  style="font-size:1.4rem;inline-block;left: 5px;top: 0px; width: 10px;">10.</div>
+					</td>
+										<td style="border:0px">JMLR</td>
+					<td style="border:0px" >2016 </td>
+				
+					<td style="border:0px"> <a href="/icml/publications/10/">Distributed Submodular Maximization</a></td>
+					
+					<td style="border:0px"><span style="font-size:1.4rem"> Baharan Mirzasoleiman, Amin Karbasi, Rik Sarkar, Andreas Krause; </span>
+
+					
+
+					</td >
+				</tr>
+
+			</li>
+			
+			
+			<div>
+				
+				
+			</div>
+			<li>
+				<tr id="11">
+					<td style="border:0px">
+							<div  style="font-size:1.4rem;inline-block;left: 5px;top: 0px; width: 10px;">11.</div>
+					</td>
+										<td style="border:0px">NIPS</td>
+					<td style="border:0px" >2015 </td>
+				
+					<td style="border:0px"> <a href="/icml/publications/11/">Distributed Submodular Cover: Succinctly Summarizing Massive Data</a></td>
+					
+					<td style="border:0px"><span style="font-size:1.4rem"> . Mirzasoleiman, A. Karbasi, A. Badanidiyuru, and A. Krause </span>
+
+					
+
+					</td >
+				</tr>
+
+			</li>
+			
+			
+			<div>
+				
+				
+			</div>
+			<li>
+				<tr id="12">
+					<td style="border:0px">
+							<div  style="font-size:1.4rem;inline-block;left: 5px;top: 0px; width: 10px;">12.</div>
+					</td>
+										<td style="border:0px">NIPS</td>
+					<td style="border:0px" >2016 </td>
+				
+					<td style="border:0px"> <a href="/icml/publications/12/">Fast Distributed Submodular Cover: Public-Private Data Summarization</a></td>
+					
+					<td style="border:0px"><span style="font-size:1.4rem"> B. Mirzasoleiman, M. Zadimoghaddam, and A. Karbasi </span>
+
+					
+
+					</td >
+				</tr>
+
+			</li>
+			
+			
+			<div>
+				
+				
+			</div>
+			<li>
+				<tr id="13">
+					<td style="border:0px">
+							<div  style="font-size:1.4rem;inline-block;left: 5px;top: 0px; width: 10px;">13.</div>
+					</td>
+										<td style="border:0px">NIPS</td>
+					<td style="border:0px" >2013 </td>
+				
+					<td style="border:0px"> <a href="/icml/publications/13/">Distributed Submodular Maximization: Identifying Representative Elements in Massive Data</a></td>
+					
+					<td style="border:0px"><span style="font-size:1.4rem"> B. Mirzasoleiman, A. Karbasi, R. Sarkar, and A. Krause </span>
+
+					
+
+					</td >
+				</tr>
+
+			</li>
+			
+			
+			<div>
+				
+				
+			</div>
+			<li>
+				<tr id="14">
+					<td style="border:0px">
+							<div  style="font-size:1.4rem;inline-block;left: 5px;top: 0px; width: 10px;">14.</div>
+					</td>
+										<td style="border:0px">STOC</td>
+					<td style="border:0px" >2015 </td>
+				
+					<td style="border:0px"> <a href="/icml/publications/14/">Randomized Composable Core-sets for Distributed Submodular Maximization</a></td>
+					
+					<td style="border:0px"><span style="font-size:1.4rem"> V. Mirrokni and M. Zadimoghaddam </span>
+
+					
+
+					</td >
+				</tr>
+
+			</li>
+			
+			
+			<div>
+				
+				
+			</div>
+			<li>
+				<tr id="15">
+					<td style="border:0px">
+							<div  style="font-size:1.4rem;inline-block;left: 5px;top: 0px; width: 10px;">15.</div>
+					</td>
+										<td style="border:0px">SPAA</td>
+					<td style="border:0px" >2013 </td>
+				
+					<td style="border:0px"> <a href="/icml/publications/15/">Fast greedy algorithms in mapreduce and streaming</a></td>
+					
+					<td style="border:0px"><span style="font-size:1.4rem"> R. Kumar, B. Moseley, S. Vassilvitskii, and A. Vattani </span>
+
+					
+
+					</td >
+				</tr>
+
+			</li>
+			
+			
+			<div>
+				
+				
+			</div>
+			<li>
+				<tr id="16">
+					<td style="border:0px">
+							<div  style="font-size:1.4rem;inline-block;left: 5px;top: 0px; width: 10px;">16.</div>
+					</td>
+										<td style="border:0px">FOCS</td>
+					<td style="border:0px" >2016 </td>
+				
+					<td style="border:0px"> <a href="/icml/publications/16/">A new framework for distributed submodular maximization </a></td>
+					
+					<td style="border:0px"><span style="font-size:1.4rem"> R. Barbosa, A. Ene, H. L. Nguyen, and J. Ward </span>
+
+					
+
+					</td >
+				</tr>
+
+			</li>
+			
+			
+			<div>
+				
+				
+			</div>
+			<li>
+				<tr id="17">
+					<td style="border:0px">
+							<div  style="font-size:1.4rem;inline-block;left: 5px;top: 0px; width: 10px;">17.</div>
+					</td>
+										<td style="border:0px">NIPS</td>
+					<td style="border:0px" >2017 </td>
+				
+					<td style="border:0px"> <a href="/icml/publications/17/">Stochastic Submodular Maximization: The Case of Coverage Functions</a></td>
+					
+					<td style="border:0px"><span style="font-size:1.4rem"> M. Karimi, M. Lucic, H. Hassani, and A. Krasue </span>
+
+					
+
+					</td >
+				</tr>
+
+			</li>
+			
+			
+			<div>
+				
+				
+			</div>
+			<li>
+				<tr id="18">
+					<td style="border:0px">
+							<div  style="font-size:1.4rem;inline-block;left: 5px;top: 0px; width: 10px;">18.</div>
+					</td>
+										<td style="border:0px">NIPS</td>
+					<td style="border:0px" >2017 </td>
+				
+					<td style="border:0px"> <a href="/icml/publications/18/">Gradient Methods for Submodular Maximization</a></td>
+					
+					<td style="border:0px"><span style="font-size:1.4rem"> H. Hassani, M. Soltanolkotabi, and A. Karbasi </span>
+
+					
+
+					</td >
+				</tr>
+
+			</li>
+			
+			
+			<div>
+				
+				
+			</div>
+			<li>
+				<tr id="19">
+					<td style="border:0px">
+							<div  style="font-size:1.4rem;inline-block;left: 5px;top: 0px; width: 10px;">19.</div>
+					</td>
+										<td style="border:0px">ACL</td>
+					<td style="border:0px" >2011 </td>
+				
+					<td style="border:0px"> <a href="/icml/publications/19/">A class of submodular functions for document summarization,</a></td>
+					
+					<td style="border:0px"><span style="font-size:1.4rem"> H. Lin and J. Bilmes </span>
+
+					
+
+					</td >
+				</tr>
+
+			</li>
+			
+			
+			<div>
+				
+				
+			</div>
+			<li>
+				<tr id="20">
+					<td style="border:0px">
+							<div  style="font-size:1.4rem;inline-block;left: 5px;top: 0px; width: 10px;">20.</div>
+					</td>
+										<td style="border:0px">EMNLP</td>
+					<td style="border:0px" >2014 </td>
+				
+					<td style="border:0px"> <a href="/icml/publications/20/">Submodularity for data selection in statistical machine translation</a></td>
+					
+					<td style="border:0px"><span style="font-size:1.4rem"> K. Kirchhofi and J. Bilmes </span>
+
+					
+
+					</td >
+				</tr>
+
+			</li>
+			
+			
+			<div>
+				
+				
+			</div>
+			<li>
+				<tr id="21">
+					<td style="border:0px">
+							<div  style="font-size:1.4rem;inline-block;left: 5px;top: 0px; width: 10px;">21.</div>
+					</td>
+										<td style="border:0px">CIKM</td>
+					<td style="border:0px" >2012 </td>
+				
+					<td style="border:0px"> <a href="/icml/publications/21/">Temporal corpus summarization using submodular word coverage</a></td>
+					
+					<td style="border:0px"><span style="font-size:1.4rem"> R. Sipos, A. Swaminathan, P. Shivaswamy, and T. Joachims </span>
+
+					
+
+					</td >
+				</tr>
+
+			</li>
+			
+			
+			<div>
+				
+				
+			</div>
+			<li>
+				<tr id="22">
+					<td style="border:0px">
+							<div  style="font-size:1.4rem;inline-block;left: 5px;top: 0px; width: 10px;">22.</div>
+					</td>
+										<td style="border:0px">COLT</td>
+					<td style="border:0px" >2017 </td>
+				
+					<td style="border:0px"> <a href="/icml/publications/22/">Greed is good: Near-optimal submodular maximization via greedy optimization</a></td>
+					
+					<td style="border:0px"><span style="font-size:1.4rem"> M. Feldman, C. Harshaw, and A. Karbasi </span>
+
+					
+
+					</td >
+				</tr>
+
+			</li>
+			
+			
+			<div>
+				
+				
+			</div>
+			<li>
+				<tr id="23">
+					<td style="border:0px">
+							<div  style="font-size:1.4rem;inline-block;left: 5px;top: 0px; width: 10px;">23.</div>
+					</td>
+										<td style="border:0px">ICML</td>
+					<td style="border:0px" >2010 </td>
+				
+					<td style="border:0px"> <a href="/icml/publications/23/">Submodular dictionary selection for sparse representation</a></td>
+					
+					<td style="border:0px"><span style="font-size:1.4rem"> A. Krause and V. Cevher, </span>
+
+					
+
+					</td >
+				</tr>
+
+			</li>
+			
+			
+			<div>
+				
+				
+			</div>
+			<li>
+				<tr id="24">
+					<td style="border:0px">
+							<div  style="font-size:1.4rem;inline-block;left: 5px;top: 0px; width: 10px;">24.</div>
+					</td>
+										<td style="border:0px">ICML</td>
+					<td style="border:0px" >2016 </td>
+				
+					<td style="border:0px"> <a href="/icml/publications/24/">Submodular meets spectral: Greedy algorithms for subset selection, sparse approximation and dictionary selection</a></td>
+					
+					<td style="border:0px"><span style="font-size:1.4rem"> A. Das and D. Kempe </span>
+
+					
+
+					</td >
+				</tr>
+
+			</li>
+			
+			
+			<div>
+				
+				
+			</div>
+			<li>
+				<tr id="25">
+					<td style="border:0px">
+							<div  style="font-size:1.4rem;inline-block;left: 5px;top: 0px; width: 10px;">25.</div>
+					</td>
+										<td style="border:0px">The Annals of Statistics</td>
+					<td style="border:0px" >2018 </td>
+				
+					<td style="border:0px"> <a href="/icml/publications/25/">RESTRICTED STRONG CONVEXITY IMPLIES WEAK SUBMODULARITY</a></td>
+					
+					<td style="border:0px"><span style="font-size:1.4rem"> E. R. Elenberg, R. Khanna, A. G. Dimakis, and S. Negahban </span>
+
+					
+
+					</td >
+				</tr>
+
+			</li>
+			
+			
+			<div>
+				
+				
+			</div>
+			<li>
+				<tr id="26">
+					<td style="border:0px">
+							<div  style="font-size:1.4rem;inline-block;left: 5px;top: 0px; width: 10px;">26.</div>
+					</td>
+										<td style="border:0px">SIGKDD</td>
+					<td style="border:0px" >2003 </td>
+				
+					<td style="border:0px"> <a href="/icml/publications/26/">Maximizing the spread of in uence through a social network</a></td>
+					
+					<td style="border:0px"><span style="font-size:1.4rem"> D. Kempe, J. Kleinberg, and E. Tardos </span>
+
+					
+
+					</td >
+				</tr>
+
+			</li>
+			
+			
+			<div>
+				
+				
+			</div>
+			<li>
+				<tr id="27">
+					<td style="border:0px">
+							<div  style="font-size:1.4rem;inline-block;left: 5px;top: 0px; width: 10px;">27.</div>
+					</td>
+										<td style="border:0px">NIPS</td>
+					<td style="border:0px" >2009 </td>
+				
+					<td style="border:0px"> <a href="/icml/publications/27/">An online algorithm for maximizing submodular functions,</a></td>
+					
+					<td style="border:0px"><span style="font-size:1.4rem"> M. Streeter and D. Golovin </span>
+
+					
+
+					</td >
+				</tr>
+
+			</li>
+			
+			
+			<div>
+				
+				
+			</div>
+			<li>
+				<tr id="28">
+					<td style="border:0px">
+							<div  style="font-size:1.4rem;inline-block;left: 5px;top: 0px; width: 10px;">28.</div>
+					</td>
+										<td style="border:0px">NIPS</td>
+					<td style="border:0px" >2011 </td>
+				
+					<td style="border:0px"> <a href="/icml/publications/28/">Linear submodular bandits and their application to diversified retrieva</a></td>
+					
+					<td style="border:0px"><span style="font-size:1.4rem"> Y. Yue and C. Guestrin </span>
+
+					
+
+					</td >
+				</tr>
+
+			</li>
+			
+			
+			<div>
+				
+				
+			</div>
+			<li>
+				<tr id="29">
+					<td style="border:0px">
+							<div  style="font-size:1.4rem;inline-block;left: 5px;top: 0px; width: 10px;">29.</div>
+					</td>
+										<td style="border:0px">ICML</td>
+					<td style="border:0px" >2011 </td>
+				
+					<td style="border:0px"> <a href="/icml/publications/29/">Online submodular minimization for combinatorial structures</a></td>
+					
+					<td style="border:0px"><span style="font-size:1.4rem"> S. Jegelka and J. A. Bilmes </span>
+
+					
+
+					</td >
+				</tr>
+
+			</li>
+			
+			
+			<div>
+				
+				
+			</div>
+			<li>
+				<tr id="30">
+					<td style="border:0px">
+							<div  style="font-size:1.4rem;inline-block;left: 5px;top: 0px; width: 10px;">30.</div>
+					</td>
+										<td style="border:0px">AAAI</td>
+					<td style="border:0px" >2011 </td>
+				
+					<td style="border:0px"> <a href="/icml/publications/30/">Dynamic resource allocation in conservation planning</a></td>
+					
+					<td style="border:0px"><span style="font-size:1.4rem"> D. Golovin, A. Krause, B. Gardner, S. J. Converse, and S. Morey </span>
+
+					
+
+					</td >
+				</tr>
+
+			</li>
+			
+			
+			<div>
+				
+				
+			</div>
+			<li>
+				<tr id="31">
+					<td style="border:0px">
+							<div  style="font-size:1.4rem;inline-block;left: 5px;top: 0px; width: 10px;">31.</div>
+					</td>
+										<td style="border:0px">NIPS</td>
+					<td style="border:0px" >2011 </td>
+				
+					<td style="border:0px"> <a href="/icml/publications/31/">Online submodular set cover, ranking, and repeated active learning</a></td>
+					
+					<td style="border:0px"><span style="font-size:1.4rem"> A. Guillory and J. A. Bilmes </span>
+
+					
+
+					</td >
+				</tr>
+
+			</li>
+			
+			
+			<div>
+				
+				
+			</div>
+			<li>
+				<tr id="32">
+					<td style="border:0px">
+							<div  style="font-size:1.4rem;inline-block;left: 5px;top: 0px; width: 10px;">32.</div>
+					</td>
+										<td style="border:0px">ICML</td>
+					<td style="border:0px" >2010 </td>
+				
+					<td style="border:0px"> <a href="/icml/publications/32/">Learning optimally diverse rankings over large document collections</a></td>
+					
+					<td style="border:0px"><span style="font-size:1.4rem"> A. Slivkins, F. Radlinski, and S. Gollapudi </span>
+
+					
+
+					</td >
+				</tr>
+
+			</li>
+			
+			
+			<div>
+				
+				
+			</div>
+			<li>
+				<tr id="33">
+					<td style="border:0px">
+							<div  style="font-size:1.4rem;inline-block;left: 5px;top: 0px; width: 10px;">33.</div>
+					</td>
+										<td style="border:0px">AAAI</td>
+					<td style="border:0px" >2011 </td>
+				
+					<td style="border:0px"> <a href="/icml/publications/33/">Randomized sensing in adversarial environment</a></td>
+					
+					<td style="border:0px"><span style="font-size:1.4rem"> A. Krause, A. Roper, and D. Golovin </span>
+
+					
+
+					</td >
+				</tr>
+
+			</li>
+			
+			
+			<div>
+				
+				
+			</div>
+			<li>
+				<tr id="34">
+					<td style="border:0px">
+							<div  style="font-size:1.4rem;inline-block;left: 5px;top: 0px; width: 10px;">34.</div>
+					</td>
+										<td style="border:0px">ICDM</td>
+					<td style="border:0px" >2013 </td>
+				
+					<td style="border:0px"> <a href="/icml/publications/34/">Influence maximization in dynamic social networks</a></td>
+					
+					<td style="border:0px"><span style="font-size:1.4rem"> H. Zhuang, Y. Sun, J. Tang, J. Zhang, and X. Sun </span>
+
+					
+
+					</td >
+				</tr>
+
+			</li>
+			
+			
+			<div>
+				
+				
+			</div>
+			<li>
+				<tr id="35">
+					<td style="border:0px">
+							<div  style="font-size:1.4rem;inline-block;left: 5px;top: 0px; width: 10px;">35.</div>
+					</td>
+										<td style="border:0px">arXiv</td>
+					<td style="border:0px" >2014 </td>
+				
+					<td style="border:0px"> <a href="/icml/publications/35/">Online submodular maximization under a matroid constraint with application to learning assignments</a></td>
+					
+					<td style="border:0px"><span style="font-size:1.4rem"> D. Golovin, A. Krause, and M. Streeter </span>
+
+					
+
+					</td >
+				</tr>
+
+			</li>
+			
+			
+			<div>
+				
+				
+			</div>
+			<li>
+				<tr id="36">
+					<td style="border:0px">
+							<div  style="font-size:1.4rem;inline-block;left: 5px;top: 0px; width: 10px;">36.</div>
+					</td>
+										<td style="border:0px">IJCAI</td>
+					<td style="border:0px" >2015 </td>
+				
+					<td style="border:0px"> <a href="/icml/publications/36/">Optimal greedy diversity for recommendation</a></td>
+					
+					<td style="border:0px"><span style="font-size:1.4rem"> A. Ashkan, B. Kveton, S. Berkovsky, and Z. Wen </span>
+
+					
+
+					</td >
+				</tr>
+
+			</li>
+			
+			
+			<div>
+				
+				
+			</div>
+			<li>
+				<tr id="37">
+					<td style="border:0px">
+							<div  style="font-size:1.4rem;inline-block;left: 5px;top: 0px; width: 10px;">37.</div>
+					</td>
+										<td style="border:0px">RSS</td>
+					<td style="border:0px" >2016 </td>
+				
+					<td style="border:0px"> <a href="/icml/publications/37/">Eficient online multi-robot exploration via distributed sequential greedy assignment</a></td>
+					
+					<td style="border:0px"><span style="font-size:1.4rem"> M. Corah and N. Michael </span>
+
+					
+
+					</td >
+				</tr>
+
+			</li>
+			
+			
+			<div>
+				
+				
+			</div>
+			<li>
+				<tr id="38">
+					<td style="border:0px">
+							<div  style="font-size:1.4rem;inline-block;left: 5px;top: 0px; width: 10px;">38.</div>
+					</td>
+										<td style="border:0px">JMLR</td>
+					<td style="border:0px" >2018 </td>
+				
+					<td style="border:0px"> <a href="/icml/publications/38/">Stochastic conditional gradient methods: From convex minimization to submodular maximization</a></td>
+					
+					<td style="border:0px"><span style="font-size:1.4rem"> A. Mokhtari, H. Hassani, and A. Karbasi </span>
+
+					
+
+					</td >
+				</tr>
+
+			</li>
+			
+			
+			<div>
+				
+				
+			</div>
+			<li>
+				<tr id="39">
+					<td style="border:0px">
+							<div  style="font-size:1.4rem;inline-block;left: 5px;top: 0px; width: 10px;">39.</div>
+					</td>
+										<td style="border:0px">ICML</td>
+					<td style="border:0px" >2018 </td>
+				
+					<td style="border:0px"> <a href="/icml/publications/39/">Projection-free online optimization with stochastic gradient: From convexity to submodularity,</a></td>
+					
+					<td style="border:0px"><span style="font-size:1.4rem"> L. Chen, C. Harshaw, H. Hassani, and A. Karbasi </span>
+
+					
+
+					</td >
+				</tr>
+
+			</li>
+			
+			
+			<div>
+				
+				
+			</div>
+			<li>
+				<tr id="40">
+					<td style="border:0px">
+							<div  style="font-size:1.4rem;inline-block;left: 5px;top: 0px; width: 10px;">40.</div>
+					</td>
+										<td style="border:0px">AISTATS</td>
+					<td style="border:0px" >2018 </td>
+				
+					<td style="border:0px"> <a href="/icml/publications/40/">Online continuous submodular maximization</a></td>
+					
+					<td style="border:0px"><span style="font-size:1.4rem"> L. Chen, H. Hassani, and A. Karbasi </span>
+
+					
+
+					</td >
+				</tr>
+
+			</li>
+			
+			
+			<div>
+				
+				
+			</div>
+			<li>
+				<tr id="41">
+					<td style="border:0px">
+							<div  style="font-size:1.4rem;inline-block;left: 5px;top: 0px; width: 10px;">41.</div>
+					</td>
+										<td style="border:0px">arXiv</td>
+					<td style="border:0px" >2019 </td>
+				
+					<td style="border:0px"> <a href="/icml/publications/41/">Stochastic conditional gradient&#43;&#43;</a></td>
+					
+					<td style="border:0px"><span style="font-size:1.4rem"> H. Hassani, A. Karbasi, A. Mokhtari, and Z. Shen </span>
+
+					
+
+					</td >
+				</tr>
+
+			</li>
+			
+			
+			<div>
+				
+				
+			</div>
+			<li>
+				<tr id="42">
+					<td style="border:0px">
+							<div  style="font-size:1.4rem;inline-block;left: 5px;top: 0px; width: 10px;">42.</div>
+					</td>
+										<td style="border:0px">NIPS</td>
+					<td style="border:0px" >2018 </td>
+				
+					<td style="border:0px"> <a href="/icml/publications/42/">Optimal algorithms for continuous non-monotone submodular and dr-submodular maximization</a></td>
+					
+					<td style="border:0px"><span style="font-size:1.4rem"> R. Niazadeh, T. Roughgarden, and J. Wang </span>
+
+					
+
+					</td >
+				</tr>
+
+			</li>
+			
+			
+			<div>
+				
+				
+			</div>
+			<li>
+				<tr id="43">
+					<td style="border:0px">
+							<div  style="font-size:1.4rem;inline-block;left: 5px;top: 0px; width: 10px;">43.</div>
+					</td>
+										<td style="border:0px">NIPS</td>
+					<td style="border:0px" >2017 </td>
+				
+					<td style="border:0px"> <a href="/icml/publications/43/">Continuous dr-submodular maximization: Structure and algorithms</a></td>
+					
+					<td style="border:0px"><span style="font-size:1.4rem"> A. Bian, K. Levy, A. Krause, and J. M. Buhmann </span>
+
+					
+
+					</td >
+				</tr>
+
+			</li>
+			
+			
+			<div>
+				
+				
+			</div>
+			<li>
+				<tr id="44">
+					<td style="border:0px">
+							<div  style="font-size:1.4rem;inline-block;left: 5px;top: 0px; width: 10px;">44.</div>
+					</td>
+										<td style="border:0px">Springer</td>
+					<td style="border:0px" >2017 </td>
+				
+					<td style="border:0px"> <a href="/icml/publications/44/">Submodular functions: from discrete to continuous domains</a></td>
+					
+					<td style="border:0px"><span style="font-size:1.4rem"> F. Bach </span>
+
+					
+
+					</td >
+				</tr>
+
+			</li>
+			
+			
+			<div>
+				
+				
+			</div>
+			<li>
+				<tr id="45">
+					<td style="border:0px">
+							<div  style="font-size:1.4rem;inline-block;left: 5px;top: 0px; width: 10px;">45.</div>
+					</td>
+										<td style="border:0px">AISTATS</td>
+					<td style="border:0px" >2017 </td>
+				
+					<td style="border:0px"> <a href="/icml/publications/45/">Guaranteed non-convex optimization: Submodular maximization over continuous domains</a></td>
+					
+					<td style="border:0px"><span style="font-size:1.4rem"> A. Bian, B. Mirzasoleiman, J. M. Buhmann, and A. Krause </span>
+
+					
+
+					</td >
+				</tr>
+
+			</li>
+			
+			
+			<div>
+				
+				
+			</div>
+			<li>
+				<tr id="46">
+					<td style="border:0px">
+							<div  style="font-size:1.4rem;inline-block;left: 5px;top: 0px; width: 10px;">46.</div>
+					</td>
+										<td style="border:0px">JAIR</td>
+					<td style="border:0px" >2016 </td>
+				
+					<td style="border:0px"> <a href="/icml/publications/46/">Adaptive Submodularity: Theory and Applications in Active Learning and Stochastic Optimization</a></td>
+					
+					<td style="border:0px"><span style="font-size:1.4rem"> D. Golovin and A. Krause </span>
+
+					
+
+					</td >
+				</tr>
+
+			</li>
+			
+			
+			<div>
+				
+				
+			</div>
+			<li>
+				<tr id="47">
+					<td style="border:0px">
+							<div  style="font-size:1.4rem;inline-block;left: 5px;top: 0px; width: 10px;">47.</div>
+					</td>
+										<td style="border:0px">AAAI</td>
+					<td style="border:0px" >2015 </td>
+				
+					<td style="border:0px"> <a href="/icml/publications/47/">Submodular surrogates for value of information</a></td>
+					
+					<td style="border:0px"><span style="font-size:1.4rem"> Y. Chen, S. Javdani, A. Karbasi, J. A. Bagnell, S. S. Srinivasa, and A. Krause </span>
+
+					
+
+					</td >
+				</tr>
+
+			</li>
+			
+			
+			<div>
+				
+				
+			</div>
+			<li>
+				<tr id="48">
+					<td style="border:0px">
+							<div  style="font-size:1.4rem;inline-block;left: 5px;top: 0px; width: 10px;">48.</div>
+					</td>
+										<td style="border:0px">ICML</td>
+					<td style="border:0px" >2016 </td>
+				
+					<td style="border:0px"> <a href="/icml/publications/48/">Learning sparse combinatorial representations via two-stage submodular maximization</a></td>
+					
+					<td style="border:0px"><span style="font-size:1.4rem"> E. Balkanski, A. Krause, B. Mirzasoleiman, and Y. Singer </span>
+
+					
+
+					</td >
+				</tr>
+
+			</li>
+			
+			
+			<div>
+				
+				
+			</div>
+			<li>
+				<tr id="49">
+					<td style="border:0px">
+							<div  style="font-size:1.4rem;inline-block;left: 5px;top: 0px; width: 10px;">49.</div>
+					</td>
+										<td style="border:0px">Mathematical Programming</td>
+					<td style="border:0px" >1987 </td>
+				
+					<td style="border:0px"> <a href="/icml/publications/49/">An Analysis of Approximations for Maximizing Submodular Set Functions—I</a></td>
+					
+					<td style="border:0px"><span style="font-size:1.4rem"> G. L. Nemhauser, L. A. Wolsey &amp; M. L. Fisher </span>
+
+					
+
+					</td >
+				</tr>
+
+			</li>
+			
+			
+			<div>
+				
+				
+			</div>
+			<li>
+				<tr id="50">
+					<td style="border:0px">
+							<div  style="font-size:1.4rem;inline-block;left: 5px;top: 0px; width: 10px;">50.</div>
+					</td>
+										<td style="border:0px">Optimization Techniques</td>
+					<td style="border:0px" >1978 </td>
+				
+					<td style="border:0px"> <a href="/icml/publications/50/">Accelerated greedy algorithms for maximizing submodular set functions</a></td>
+					
+					<td style="border:0px"><span style="font-size:1.4rem"> Michel Minoux </span>
+
+					
+
+					</td >
+				</tr>
+
+			</li>
+			
+			
+			<div>
+				
+				
+			</div>
+			<li>
+				<tr id="51">
+					<td style="border:0px">
+							<div  style="font-size:1.4rem;inline-block;left: 5px;top: 0px; width: 10px;">51.</div>
+					</td>
+										<td style="border:0px">SODA</td>
+					<td style="border:0px" >2014 </td>
+				
+					<td style="border:0px"> <a href="/icml/publications/51/">Submodular Maximization With Cardinality Constraints</a></td>
+					
+					<td style="border:0px"><span style="font-size:1.4rem"> Niv Buchbinder, Moran Feldman, Joseph (Seffi) Naor, Roy Schwartz </span>
+
+					
+
+					</td >
+				</tr>
+
+			</li>
+			
+			
+			<div>
+				
+				
+			</div>
+			<li>
+				<tr id="52">
+					<td style="border:0px">
+							<div  style="font-size:1.4rem;inline-block;left: 5px;top: 0px; width: 10px;">52.</div>
+					</td>
+										<td style="border:0px">ICML</td>
+					<td style="border:0px" >2017 </td>
+				
+					<td style="border:0px"> <a href="/icml/publications/52/">Differentially Private Submodular Maximization: Data Summarization in Disguise</a></td>
+					
+					<td style="border:0px"><span style="font-size:1.4rem"> Marko Mitrovic, Mark Bun, Andreas Krause, Amin Karbasi  </span>
+
+					
+
+					</td >
+				</tr>
+
+			</li>
+			
+			
+			<div>
+				
+				
+			</div>
+			<li>
+				<tr id="53">
+					<td style="border:0px">
+							<div  style="font-size:1.4rem;inline-block;left: 5px;top: 0px; width: 10px;">53.</div>
+					</td>
+										<td style="border:0px">arXiv</td>
+					<td style="border:0px" >2020 </td>
+				
+					<td style="border:0px"> <a href="/icml/publications/70/">Regularized Submodular Maximization at Scale</a></td>
+					
+					<td style="border:0px"><span style="font-size:1.4rem"> Ehsan Kazemi, Shervin Minaee, Moran Feldman, Amin Karbasi </span>
+
+					
+
+					</td >
+				</tr>
+
+			</li>
+			
+			
+			<div>
+				
+				
+			</div>
+			<li>
+				<tr id="53">
+					<td style="border:0px">
+							<div  style="font-size:1.4rem;inline-block;left: 5px;top: 0px; width: 10px;">53.</div>
+					</td>
+										<td style="border:0px">SODA</td>
+					<td style="border:0px" >2013 </td>
+				
+					<td style="border:0px"> <a href="/icml/publications/53/">fast algorithms for maximizing submodular functions</a></td>
+					
+					<td style="border:0px"><span style="font-size:1.4rem"> Ashwinkumar Badanidiyuru  Jan Vondrak </span>
+
+					
+
+					</td >
+				</tr>
+
+			</li>
+			
+			
+			<div>
+				
+				
+			</div>
+			<li>
+				<tr id="54">
+					<td style="border:0px">
+							<div  style="font-size:1.4rem;inline-block;left: 5px;top: 0px; width: 10px;">54.</div>
+					</td>
+										<td style="border:0px">ICML</td>
+					<td style="border:0px" >2020 </td>
+				
+					<td style="border:0px"> <a href="/icml/publications/54/">Efficient Algorithms and Lower Bound for Submodular Maximization</a></td>
+					
+					<td style="border:0px"><span style="font-size:1.4rem"> Wenxin Li, Ness Shroff </span>
+
+					
+
+					</td >
+				</tr>
+
+			</li>
+			
+			
+			<div>
+				
+				
+			</div>
+			<li>
+				<tr id="55">
+					<td style="border:0px">
+							<div  style="font-size:1.4rem;inline-block;left: 5px;top: 0px; width: 10px;">55.</div>
+					</td>
+										<td style="border:0px">ICML</td>
+					<td style="border:0px" >2017 </td>
+				
+					<td style="border:0px"> <a href="/icml/publications/55/">Robust Guarantees of Stochastic Greedy Algorithms</a></td>
+					
+					<td style="border:0px"><span style="font-size:1.4rem"> Avinatan Hassidim, Yaron Singer </span>
+
+					
+
+					</td >
+				</tr>
+
+			</li>
+			
+			
+			<div>
+				
+				
+			</div>
+			<li>
+				<tr id="56">
+					<td style="border:0px">
+							<div  style="font-size:1.4rem;inline-block;left: 5px;top: 0px; width: 10px;">56.</div>
+					</td>
+										<td style="border:0px">WINE</td>
+					<td style="border:0px" >2010 </td>
+				
+					<td style="border:0px"> <a href="/icml/publications/56/">Constrained Non-Monotone Submodular Maximization: Offline and Secretary Algorithms</a></td>
+					
+					<td style="border:0px"><span style="font-size:1.4rem"> Anupam Gupta, Aaron Roth, Grant Schoenebeck, Kunal Talwar </span>
+
+					
+
+					</td >
+				</tr>
+
+			</li>
+			
+			
+			<div>
+				
+				
+			</div>
+			<li>
+				<tr id="57">
+					<td style="border:0px">
+							<div  style="font-size:1.4rem;inline-block;left: 5px;top: 0px; width: 10px;">57.</div>
+					</td>
+										<td style="border:0px">PMLR</td>
+					<td style="border:0px" >2017 </td>
+				
+					<td style="border:0px"> <a href="/icml/publications/57/">Greed Is Good: Near-Optimal Submodular Maximization via Greedy Optimization</a></td>
+					
+					<td style="border:0px"><span style="font-size:1.4rem"> Moran Feldman, Christopher Harshaw, Amin Karbasi  </span>
+
+					
+
+					</td >
+				</tr>
+
+			</li>
+			
+			
+			<div>
+				
+				
+			</div>
+			<li>
+				<tr id="58">
+					<td style="border:0px">
+							<div  style="font-size:1.4rem;inline-block;left: 5px;top: 0px; width: 10px;">58.</div>
+					</td>
+										<td style="border:0px">PMLR</td>
+					<td style="border:0px" >2016 </td>
+				
+					<td style="border:0px"> <a href="/icml/publications/58/">Learning Sparse Combinatorial Representations via Two-stage Submodular Maximization</a></td>
+					
+					<td style="border:0px"><span style="font-size:1.4rem"> Eric Balkanski, Baharan Mirzasoleiman, Andreas Krause, Yaron Singer </span>
+
+					
+
+					</td >
+				</tr>
+
+			</li>
+			
+			
+			<div>
+				
+				
+			</div>
+			<li>
+				<tr id="59">
+					<td style="border:0px">
+							<div  style="font-size:1.4rem;inline-block;left: 5px;top: 0px; width: 10px;">59.</div>
+					</td>
+										<td style="border:0px">ICML</td>
+					<td style="border:0px" >2017 </td>
+				
+					<td style="border:0px"> <a href="/icml/publications/59/">Probabilistic Submodular Maximization in Sub-Linear Time</a></td>
+					
+					<td style="border:0px"><span style="font-size:1.4rem"> Serban Stan, Morteza Zadimoghaddam, Andreas Krause, Amin Karbasi  </span>
+
+					
+
+					</td >
+				</tr>
+
+			</li>
+			
+			
+			<div>
+				
+				
+			</div>
+			<li>
+				<tr id="60">
+					<td style="border:0px">
+							<div  style="font-size:1.4rem;inline-block;left: 5px;top: 0px; width: 10px;">60.</div>
+					</td>
+										<td style="border:0px">ICALP</td>
+					<td style="border:0px" >2018 </td>
+				
+					<td style="border:0px"> <a href="/icml/publications/60/">A Nearly-linear Time Algorithm for Submodular Maximization with a Knapsack Constraint</a></td>
+					
+					<td style="border:0px"><span style="font-size:1.4rem"> Alina Ene∗ Huy L. Nguyên† </span>
+
+					
+
+					</td >
+				</tr>
+
+			</li>
+			
+			
+			<div>
+				
+				
+			</div>
+			<li>
+				<tr id="61">
+					<td style="border:0px">
+							<div  style="font-size:1.4rem;inline-block;left: 5px;top: 0px; width: 10px;">61.</div>
+					</td>
+										<td style="border:0px">arXiv</td>
+					<td style="border:0px" >2020 </td>
+				
+					<td style="border:0px"> <a href="/icml/publications/61/">Submodular Maximization Through Barrier Functions</a></td>
+					
+					<td style="border:0px"><span style="font-size:1.4rem"> Ashwinkumar Badanidiyuru, Amin Karbasi, Ehsan Kazemi, Jan Vondrák </span>
+
+					
+
+					</td >
+				</tr>
+
+			</li>
+			
+			
+			<div>
+				
+				
+			</div>
+			<li>
+				<tr id="62">
+					<td style="border:0px">
+							<div  style="font-size:1.4rem;inline-block;left: 5px;top: 0px; width: 10px;">62.</div>
+					</td>
+										<td style="border:0px">ICML</td>
+					<td style="border:0px" >2019 </td>
+				
+					<td style="border:0px"> <a href="/icml/publications/62/">Submodular Streaming in All Its Glory: Tight Approximation, Minimum Memory and Low Adaptive Complexity</a></td>
+					
+					<td style="border:0px"><span style="font-size:1.4rem"> Ehsan Kazemi, Marko Mitrovic, Morteza Zadimoghaddam, Silvio Lattanzi , Amin Karbasi  </span>
+
+					
+
+					</td >
+				</tr>
+
+			</li>
+			
+			
+			<div>
+				
+				
+			</div>
+			<li>
+				<tr id="63">
+					<td style="border:0px">
+							<div  style="font-size:1.4rem;inline-block;left: 5px;top: 0px; width: 10px;">63.</div>
+					</td>
+										<td style="border:0px">Mathematical Programming</td>
+					<td style="border:0px" >2015 </td>
+				
+					<td style="border:0px"> <a href="/icml/publications/63/">submodular maximization meets streaming: matching, magroids and more</a></td>
+					
+					<td style="border:0px"><span style="font-size:1.4rem"> Amit Chakrabarti, Sagar Kale </span>
+
+					
+
+					</td >
+				</tr>
+
+			</li>
+			
+			
+			<div>
+				
+				
+			</div>
+			<li>
+				<tr id="64">
+					<td style="border:0px">
+							<div  style="font-size:1.4rem;inline-block;left: 5px;top: 0px; width: 10px;">64.</div>
+					</td>
+										<td style="border:0px">STOC</td>
+					<td style="border:0px" >2020 </td>
+				
+					<td style="border:0px"> <a href="/icml/publications/64/">The one-way communication complexity of submodular maximization with applications to streaming and robustness</a></td>
+					
+					<td style="border:0px"><span style="font-size:1.4rem"> Feldman, Moran and Norouzi-Fard, Ashkan and Svensson, Ola and Zenklusen, Rico </span>
+
+					
+
+					</td >
+				</tr>
+
+			</li>
+			
+			
+			<div>
+				
+				
+			</div>
+			<li>
+				<tr id="65">
+					<td style="border:0px">
+							<div  style="font-size:1.4rem;inline-block;left: 5px;top: 0px; width: 10px;">65.</div>
+					</td>
+										<td style="border:0px">arXiv</td>
+					<td style="border:0px" >2020 </td>
+				
+					<td style="border:0px"> <a href="/icml/publications/65/">Approximability of monotone submodular function maximization under cardinality and matroid constraints in the streaming model</a></td>
+					
+					<td style="border:0px"><span style="font-size:1.4rem"> Chien-Chung Huang, Naonori Kakimura, Simon Mauras, Yuichi Yoshida </span>
+
+					
+
+					</td >
+				</tr>
+
+			</li>
+			
+			
+			<div>
+				
+				
+			</div>
+			<li>
+				<tr id="66">
+					<td style="border:0px">
+							<div  style="font-size:1.4rem;inline-block;left: 5px;top: 0px; width: 10px;">66.</div>
+					</td>
+										<td style="border:0px">arXiv</td>
+					<td style="border:0px" >2020 </td>
+				
+					<td style="border:0px"> <a href="/icml/publications/66/">Optimal Streaming Algorithms for Submodular Maximization with Cardinality Constraints</a></td>
+					
+					<td style="border:0px"><span style="font-size:1.4rem"> Naor Alaluf, Alina Ene, Moran Feldman, Huy L. Nguyen, Andrew Suh </span>
+
+					
+
+					</td >
+				</tr>
+
+			</li>
+			
+			
+			<div>
+				
+				
+			</div>
+			<li>
+				<tr id="67">
+					<td style="border:0px">
+							<div  style="font-size:1.4rem;inline-block;left: 5px;top: 0px; width: 10px;">67.</div>
+					</td>
+										<td style="border:0px">NIPS</td>
+					<td style="border:0px" >2018 </td>
+				
+					<td style="border:0px"> <a href="/icml/publications/67/">Do Less, Get More: Streaming Submodular Maximization with Subsampling</a></td>
+					
+					<td style="border:0px"><span style="font-size:1.4rem"> Moran Feldman, Amin Karbasi, Ehsan Kazemi </span>
+
+					
+
+					</td >
+				</tr>
+
+			</li>
+			
+			
+			<div>
+				
+				
+			</div>
+			<li>
+				<tr id="68">
+					<td style="border:0px">
+							<div  style="font-size:1.4rem;inline-block;left: 5px;top: 0px; width: 10px;">68.</div>
+					</td>
+										<td style="border:0px">ICML</td>
+					<td style="border:0px" >2020 </td>
+				
+					<td style="border:0px"> <a href="/icml/publications/68/">streaming submodular maximization under a k-system constraint</a></td>
+					
+					<td style="border:0px"><span style="font-size:1.4rem"> Haba, Ran and Kazemi, Ehsan and Feldman, Moran and Karbasi, Amin </span>
+
+					
+
+					</td >
+				</tr>
+
+			</li>
+			
+			
+			<div>
+				
+				
+			</div>
+			<li>
+				<tr id="69">
+					<td style="border:0px">
+							<div  style="font-size:1.4rem;inline-block;left: 5px;top: 0px; width: 10px;">69.</div>
+					</td>
+										<td style="border:0px">ICML</td>
+					<td style="border:0px" >2015 </td>
+				
+					<td style="border:0px"> <a href="/icml/publications/69/">The Power of Randomization: Distributed Submodular Maximization on Massive Datasets</a></td>
+					
+					<td style="border:0px"><span style="font-size:1.4rem"> Rafael Barbosa, Alina Ene, Huy Nguyen, Justin Ward </span>
+
+					
+
+					</td >
+				</tr>
+
+			</li>
+			
+			
+			<div>
+				
+				
+			</div>
+			<li>
+				<tr id="71">
+					<td style="border:0px">
+							<div  style="font-size:1.4rem;inline-block;left: 5px;top: 0px; width: 10px;">71.</div>
+					</td>
+										<td style="border:0px">NIPS</td>
+					<td style="border:0px" >2014 </td>
+				
+					<td style="border:0px"> <a href="/icml/publications/71/">Parallel Double Greedy Submodular Maximization”, Pan, Jegelka, Gonzalez, Bradley, Jordan</a></td>
+					
+					<td style="border:0px"><span style="font-size:1.4rem"> Xinghao Pan, Stefanie Jegelka, Joseph Gonzalez, Joseph Bradley, Michael I. Jordan </span>
+
+					
+
+					</td >
+				</tr>
+
+			</li>
+			
+			
+			<div>
+				
+				
+			</div>
+			<li>
+				<tr id="72">
+					<td style="border:0px">
+							<div  style="font-size:1.4rem;inline-block;left: 5px;top: 0px; width: 10px;">72.</div>
+					</td>
+										<td style="border:0px">KDD</td>
+					<td style="border:0px" >2018 </td>
+				
+					<td style="border:0px"> <a href="/icml/publications/72/">Optimal Distributed Submodular Optimization via Sketching</a></td>
+					
+					<td style="border:0px"><span style="font-size:1.4rem"> Bateni, MohammadHossein, Hossein Esfandiari, and Vahab Mirrokni </span>
+
+					
+
+					</td >
+				</tr>
+
+			</li>
+			
+			
+			<div>
+				
+				
+			</div>
+			<li>
+				<tr id="73">
+					<td style="border:0px">
+							<div  style="font-size:1.4rem;inline-block;left: 5px;top: 0px; width: 10px;">73.</div>
+					</td>
+										<td style="border:0px">STOC</td>
+					<td style="border:0px" >2018 </td>
+				
+					<td style="border:0px"> <a href="/icml/publications/73/">The adaptive complexity of maximizing a submodular function</a></td>
+					
+					<td style="border:0px"><span style="font-size:1.4rem"> Eric Balkanskim Yaron Singer </span>
+
+					
+
+					</td >
+				</tr>
+
+			</li>
+			
+			
+			<div>
+				
+				
+			</div>
+			<li>
+				<tr id="74">
+					<td style="border:0px">
+							<div  style="font-size:1.4rem;inline-block;left: 5px;top: 0px; width: 10px;">74.</div>
+					</td>
+										<td style="border:0px">SODA</td>
+					<td style="border:0px" >2019 </td>
+				
+					<td style="border:0px"> <a href="/icml/publications/74/">An Exponential Speedup in Parallel Running Time for Submodular Maximization without Loss in Approximation</a></td>
+					
+					<td style="border:0px"><span style="font-size:1.4rem"> Eric Balkanski, Aviad Rubinstein, Yaron Singer </span>
+
+					
+
+					</td >
+				</tr>
+
+			</li>
+			
+			
+			<div>
+				
+				
+			</div>
+			<li>
+				<tr id="75">
+					<td style="border:0px">
+							<div  style="font-size:1.4rem;inline-block;left: 5px;top: 0px; width: 10px;">75.</div>
+					</td>
+										<td style="border:0px">SODA</td>
+					<td style="border:0px" >2018 </td>
+				
+					<td style="border:0px"> <a href="/icml/publications/75/">Submodular Maximization with Nearly-optimal Approximation and Adaptivity in Nearly-linear Time</a></td>
+					
+					<td style="border:0px"><span style="font-size:1.4rem"> Alina Ene, Huy L. Nguyen </span>
+
+					
+
+					</td >
+				</tr>
+
+			</li>
+			
+			
+			<div>
+				
+				
+			</div>
+			<li>
+				<tr id="76">
+					<td style="border:0px">
+							<div  style="font-size:1.4rem;inline-block;left: 5px;top: 0px; width: 10px;">76.</div>
+					</td>
+										<td style="border:0px">SODA</td>
+					<td style="border:0px" >2019 </td>
+				
+					<td style="border:0px"> <a href="/icml/publications/76/">Submodular Maximization with Nearly Optimal Approximation, Adaptivity and Query Complexity</a></td>
+					
+					<td style="border:0px"><span style="font-size:1.4rem"> Matthew Fahrbach, Vahab Mirrokni and Morteza Zadimoghaddam </span>
+
+					
+
+					</td >
+				</tr>
+
+			</li>
+			
+			
+			<div>
+				
+				
+			</div>
+			<li>
+				<tr id="77">
+					<td style="border:0px">
+							<div  style="font-size:1.4rem;inline-block;left: 5px;top: 0px; width: 10px;">77.</div>
+					</td>
+										<td style="border:0px">STOC</td>
+					<td style="border:0px" >2019 </td>
+				
+					<td style="border:0px"> <a href="/icml/publications/77/">Unconstrained submodular maximization with constant adaptive complexity</a></td>
+					
+					<td style="border:0px"><span style="font-size:1.4rem"> Lin Chen, Moran Feldman, Amin Karbasi </span>
+
+					
+
+					</td >
+				</tr>
+
+			</li>
+			
+			
+			<div>
+				
+				
+			</div>
+			<li>
+				<tr id="78">
+					<td style="border:0px">
+							<div  style="font-size:1.4rem;inline-block;left: 5px;top: 0px; width: 10px;">78.</div>
+					</td>
+										<td style="border:0px">arXiv</td>
+					<td style="border:0px" >2020 </td>
+				
+					<td style="border:0px"> <a href="/icml/publications/78/">Continuous Submodular Maximization: Beyond DR-Submodularity</a></td>
+					
+					<td style="border:0px"><span style="font-size:1.4rem"> Moran Feldman, Amin Karbasi </span>
+
+					
+
+					</td >
+				</tr>
+
+			</li>
+			
+			
+		</table>
+	</ul>
+</section>
+
+
+
+
+      </div>
+      
+        <footer class="footer">
+  <section class="container">
+   <div></div>
+    
+      <div class="sns-shares sp-sns-shares">
+        
+          <a class="sns-share twitter-share" href="https://twitter.com/intent/tweet?original_referer=%2ficml%2ficml-20.md%2f&ref_src=twsrc%5Etfw&text=ICML%202020%20Tutorial%20on%20Submodular%20Optimization%3a%20From%20Discrete%20to%20Continuous%20and%20Back IID%20Group&tw_p=tweetbutton&url=%2ficml%2ficml-20.md%2f"><i class="fab fa-twitter"></i></a>
+        
+        
+          <a class="fb btn sns-share fb-share" href="http://www.facebook.com/share.php?u=%2ficml%2ficml-20.md%2f" onclick="window.open(this.href, 'FBwindow', 'width=650, height=450, menubar=no, toolbar=no, scrollbars=yes'); return false;"><i class="fab fa-facebook-f"></i></a>
+        
+        
+          <a class="sns-share line-share" href="https://social-plugins.line.me/lineit/share?url=%2ficml%2ficml-20.md%2f"><i class="fab fa-line"></i></a>
+        
+        
+          <a class="sns-share linkedIn-share" href="https://www.linkedin.com/sharing/share-offsite/?url=%2ficml%2ficml-20.md%2f"><i class="fab fa-linkedin"></i></a>
+        
+      </div>
+    
+    
+    
+      <p>Yale University</p>
+    
+
+  </section>
+</footer>
+<style>
+#extreme
+{
+z-index: 1;
+visibility: hidden;
+position: absolute;
+z-index: 10000;
+}
+</style>
+<div id=”extreme”>
+    <script style="width:28px;height:28px" src="//t1.extreme-dm.com/f.js" id="eXF-karbasi-0" async defer></script>
+</div>
+<div class="fixed-bar">
+  <section class="container">
+    
+    <p id="privateTriggerText" style="color:white"><a style="color:white" href="https://usability.yale.edu/web-accessibility/accessibility-yale">Accessibility at Yale</a> &nbsp; Inference, Information, and Decision Group at Yale </p>
+    
+  </section>
+</div>
+
+      
+    </main>
+
+    
+
+  <script src="js/app.js"></script>
+  
+  <script>
+  (function($) {
+    $(function() {
+      $('#privateTrigger').on('click', function() {
+        $('.private').slideToggle();
+        $('#privateTriggerText').text("Thank You! Please share it if you like it→");
+      });
+    });
+   })(jQuery);
+  </script>
+  
+  </body>
+</html>

@@ -1,0 +1,287 @@
+{{if eq .Type "outreach"}}
+<section class="container page">
+	<article>
+		<header>
+			<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+			<h1 >&nbsp;</h1>
+
+<img src="/images/outreach/background.svg"  style="margin-top:-2rem;"alt="Planets" usemap="#planetmap">
+			<map name="planetmap">
+  <area shape="rect" coords="100,100,300,150" alt="Sun" href="#tutorials">
+  <area shape="rect" coords="50,200,150,250" alt="Mercury" href="#service">
+  <area shape="rect" coords="250,200,450,250" alt="Venus" href="#workshops">
+</map>
+		</header>
+
+	<div  class="x-column x-sm x-1-6" style="margin-top:5%">
+			{{ .Content }}
+		</div>
+	</article>
+</section>
+{{else if eq .Type "software"}}
+<section class="container page">
+	<article>
+		<header>
+			<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+			<h1 >&nbsp;{{.Title}}</h1>
+		</header>
+
+			{{ .Content }}
+	</article>
+</section>
+
+
+{{else}}
+<section class="container page">
+	<article>
+		<header>
+			<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+			
+			<div>{{if and (eq .Type "icml") (ne .Params.Description "workshop")}}</div>
+			<h1 >Title:&nbsp;{{ .Title }}</h1>
+			<h1 >Speakers:&nbsp;{{ .Params.author }}</h1>
+			<div>{{else if or (eq .Type "publications") (eq .Params.Description "workshop")}}</div>
+			<h1 >Title:&nbsp;{{ .Title }}</h1>
+			<h1 >Authors:&nbsp;{{ .Params.author }}</h1>
+			{{else if eq .Type "contact"}}
+			{{else if eq .Type "people"}}
+			{{else if and (eq .Type "news") (eq .Params.Category "thesis")}}
+			<h1 >&nbsp;{{ .Title }} <i class="far fa-award"></i></h1>
+			{{else}}
+			<h1 >&nbsp;{{ .Title }}</h1>
+			{{end}}
+			{{ if eq .Params.math "true" }}
+			<script type="text/javascript" async
+	   src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=TeX-AMS-MML_HTMLorMML-full">
+MathJax.Hub.Config({
+	tex2jax: {
+		inlineMath: [['$','$']],
+		displayMath: [['$$','$$']],
+		processEscapes: true,
+		processEnvironments: true,
+		skipTags: ['script', 'noscript', 'style', 'textarea', 'pre'],
+		TeX: { extensions: ["AMSmath.js", "AMSsymbols.js"] }
+	}
+});
+MathJax.Hub.Queue(function() {
+	var all = MathJax.Hub.getAllJax(), i;
+	for(i = 0; i < all.length; i += 1) {
+		all[i].SourceElement().parentNode.className += ' has-jax';
+	}
+});
+			</script>
+			{{ end }}
+
+		</header>
+
+		<div  class="x-column x-sm x-1-6" style=""  >
+		</div>
+
+			<script type="text/javascript" src="//platform.twitter.com/widgets.js"></script>
+			<div>{{if eq .Type "people"}}</div>
+			<a href="{{ .Permalink }}"><img class="x-img x-img-thumbnail none" src="../../{{.Params.thumbnail}}"  style="margin-right:2%;width:15rem;margin-top:1%" align="left"></a>
+			<div class="x-column x-sm x-5-6 last" style="">
+				<ul class="x-ul-icons">
+					<a href="{{ .Permalink }}">{{ .Title }}</a>
+					<div>
+						<i class="far fa-user-graduate"></i> {{.Description}}
+					</div>
+					<div>
+						<i class="fas fa-envelope"></i>
+						{{.Params.email}}
+					</div>
+					<div>
+						<i class="fas fa-map-marker"></i>
+						{{.Params.address}}
+					</div>
+					{{if .Params.website}}
+					<div>
+						<i class="fas fa-home"></i>  <a href="http://{{.Params.website}}" style="color:blue">{{.Params.website}}</a>
+					</div>
+					{{end}}
+					{{if .Params.cv}}
+					<div>
+					<i class="fas fa-file"></i>	<a href="{{.Params.cv}}" style="font-weight:normal;color:#323232">Resume</a>
+					</div>
+					{{end}}
+
+
+					{{if .Params.twitter}}
+					<div>
+						<a href="https://twitter.com/{{.Params.twitter}}" class="twitter-button" data-show-count="false">
+						<i class="fab fa-twitter fa-1x"></i>
+						</a>
+
+					{{if .Params.instagram}}
+						<a href="https://instagram.com/{{.Params.instagram}}" class="instagram-button" data-show-count="false">
+						<i class="fab fa-instagram fa-1x"></i>
+						</a>
+					{{end}}
+					</div>
+					{{end}}
+
+				</ul>
+			</div>
+			<div>{{else if eq .Type "contact"}}</div>
+			<a href="{{ .Permalink }}"><img class="x-img x-img-thumbnail none" src="../../{{.Params.thumbnail}}"  style="margin-right:2%;width:15rem;margin-top:1%" align="left"></a>
+			<div class="x-column x-sm x-5-6 last" style="">
+				<ul class="x-ul-icons">
+					<a href="{{ .Permalink }}">{{ .Title }}</a>
+					<div>
+						<i class="fas fa-envelope"></i>
+						{{.Params.email}}
+					</div>
+					<div>
+						<i class="fas fa-map-marker"></i>
+						{{.Params.address}}
+					</div>
+					{{if .Params.twitter}}
+					<div>
+						<a href="https://twitter.com/{{.Params.twitter}}" class="twitter-follow-button" data-show-count="false">Follow @{{.Params.twitter}}</a>
+					</div>
+					{{end}}
+
+				</ul>
+			</div>
+			{{end}}
+			{{if eq .Type "news"}}
+			{{if .Params.thumbnail}}
+			<div>
+				<center>
+					<img class="x-img x-img-thumbnail none" src="../../{{.Params.thumbnail}}"  style="max-width:15%;margin-right:5%;margin-top:2%" align="left">
+				</center>
+				<br/>
+			</div>
+			{{end}}
+			{{end}}
+			{{ .Content }}
+			{{if eq .Type "openings"}}
+				<center>
+				<img src="/images/postdoc.svg"  style="width:60%;margin-top:-2rem;"alt="Planets" usemap="#planetmap">
+				</center>
+			{{end}}
+
+			<div>{{if or ( or (eq .Type "publications") (eq .Params.description "workshop") (eq .Params.Category "thesis"))}}</div>
+
+			<script>
+				function resizeIframe(obj) {
+					obj.style.height = obj.contentWindow.document.documentElement.scrollHeight + 'px';
+				}
+			</script>
+			<h2 style="font-size:2rem">Full Text: <a style="color:blue" href="{{.Params.link}}">[PDF]</a></h2>
+			<iframe style = "width:100%;height:100rem;scrolling:no;border:0" src="{{.Params.link}}"></iframe>
+			<div>{{end}}</div>
+			</ul>
+			</div>
+
+	</article>
+</section>
+{{end}}
+
+{{if eq .Type "research"}}
+<section class="container list">
+	<ul>
+		{{ $v0 := where .Site.Pages "Params.description" "publication" }}
+		{{ $v1 := lower .Params.Keyword1 }}
+
+		{{ $filtered := $v0}}
+		<div>
+			<center>
+				<img class="x-img x-img-thumbnail none" src="../../{{.Params.thumbnail}}"  style="max-width:50%;margin-right:1%;margin-top:1%" align="center">
+			</center>
+			<br/>
+		</div>
+		<h1>Relevant Papers</h1>
+		<table>
+			{{range $filtered.GroupByDate "2006"}}
+			{{range .Pages.ByParam "publish"}}
+			<div>
+				<!-- if ((in (lower .Title) $v1)  | and (in (lower .Title) $v2)) -->
+				{{if ((eq (lower .Params.keyword1) $v1) | or (eq (lower .Params.keyword2) $v1) | or (eq (lower .Params.keyword3) $v1))}}
+			</div>
+			<li>
+				<tr>
+					<td style="border:0px">
+						<div class="input-color">
+ {{ if eq .Params.Category "journal" }}
+							    <div  style="font-size:1rem;background-color: #c32b72;display: inline-block;left: 5px;top: 5px; width: 10px;height: 10px;;background-color: #c32b72;"></div>
+							    {{ else if eq .Params.Category "thesis"}}
+							    <div  style="background-color: #c32b72;;display: inline-block;left: 5px;top: 5px; width: 10px;height: 10px;;background-color: #33c3ba;"></div>
+							    {{ else if eq .Params.Category "patent"}}
+							    <div  style="background-color: #c32b72;;display: inline-block;left: 5px;top: 5px; width: 10px;height: 10px;;background-color: #FFA500;"></div>
+							    {{ else if eq .Params.Category "conference"}}
+							    <div  style="background-color: #c32b72;display: inline-block;left: 5px;top: 5px; width: 10px;height: 10px;;background-color: #196ca3;"></div>
+							    {{ else }}
+							    <div  style="background-color: #c32b72;display: inline-block;left: 5px;top: 5px; width: 10px;height: 10px;;background-color: #606b70;"></div>
+							    {{end}}
+
+						</div>
+					</td>
+					<td style="border:0px">{{.Params.Publish}}</td>
+					<td style="border:0px" >{{.Date.Format "2006"}} </td>
+				{{if .Params.Award}}
+					<td style="border:0px"> <a href="{{ .Permalink }}">{{.Title}}</a> &nbsp;<span style="color:red;text-decoration:none">|&nbsp;{{ .Params.Award }}</i></span><span>&nbsp;</span></td>
+					{{else}}
+					<td style="border:0px"> <a href="{{ .Permalink }}">{{ .Title }}</a></td>
+					{{end}}
+					<td style="border:0px"><span style="font-size:1.4rem"> {{.Params.Author}} </span>
+
+					{{ if in .Params.Award "Award"}}
+					<td style="border:0px">  <i class="fas fa-award"></i></td>
+					{{end}}
+
+					</td >
+				</tr>
+
+			</li>
+			{{ end }}
+			{{ end }}
+			{{ end }}
+		</table>
+	</ul>
+</section>
+{{end}}
+
+{{if and ( or (eq .Type "icml") (eq .Params.Category "icml") ) ( or (eq .Params.description "about") (eq .Params.description "news") )}}
+<section class="container list">
+	<ul>
+		{{ $v0 := where .Site.Pages "Params.description" "workshop" }}
+		{{ $v1 := lower .Params.Keyword1 }}
+
+		{{ $filtered := $v0}}
+		<h1>References</h1>
+		<table>
+			{{ range ($filtered.ByWeight) }}
+			<div>
+				<!-- if ((in (lower .Title) $v1)  | and (in (lower .Title) $v2)) -->
+				{{if ((eq (lower .Params.keyword1) $v1) | or (eq (lower .Params.keyword2) $v1) | or (eq (lower .Params.keyword3) $v1))}}
+			</div>
+			<li>
+				<tr id="{{.Params.Weight}}">
+					<td style="border:0px">
+							<div  style="font-size:1.4rem;inline-block;left: 5px;top: 0px; width: 10px;">{{.Params.Weight}}.</div>
+					</td>
+										<td style="border:0px">{{.Params.Publish}}</td>
+					<td style="border:0px" >{{.Date.Format "2006"}} </td>
+				{{if .Params.Award}}
+					<td style="border:0px"> <a href="{{ .Permalink }}">{{.Title}}</a> &nbsp;<span style="color:red;text-decoration:none">|&nbsp;{{ .Params.Award }}</i></span><span>&nbsp;</span></td>
+					{{else}}
+					<td style="border:0px"> <a href="{{ .Permalink }}">{{ .Title }}</a></td>
+					{{end}}
+					<td style="border:0px"><span style="font-size:1.4rem"> {{.Params.Author}} </span>
+
+					{{ if in .Params.Award "Award"}}
+					<td style="border:0px">  <i class="fas fa-award"></i></td>
+					{{end}}
+
+					</td >
+				</tr>
+
+			</li>
+			{{ end }}
+			{{ end }}
+		</table>
+	</ul>
+</section>
+{{end}}
+

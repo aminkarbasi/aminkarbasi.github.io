@@ -1,0 +1,132 @@
+{{ $v0 := .Paginate ( where .Site.Pages "Params.description" "news") }}
+{{ $paginator := .Paginate (where .Pages "Params.description" "news") 5 }}
+
+</style>
+
+<section class="container centered">
+  <div class="about">
+<table style="border: 0px solid white;line-height:1.2rem">
+  <col width="75%">
+  <col width="22%">
+  <tr>
+
+    <th style="border-top:0;border-bottom:0">
+    {{ with .Site.Params.avatarurl }}
+    <div class="avatar"><img src="{{ . | absURL }}" alt="avatar"></div>
+    {{ end }}
+    <h2>
+    <section class="container list first-page">
+	    <ul>
+		    {{ $v1 := where .Site.Pages "Params.description" "info" }}
+		    {{ $filtered := $v1 }}
+		    <table style="margin-left:5rem;margin-right:5rem;">
+			    <tr>
+			    {{ range ($filtered.ByDate.Reverse) }}
+			    <td><li style="margin-top:-4rem;">
+					    <h1 style="margin-bottom:-1.4rem;">{{.Site.Params.author}}</h1>
+				    {{.Content}}
+				    </li></td>
+			    <td class="news-first-row" >
+				    <center ><img src="/images/logos/yale_old.png" style="max-width:8.8rem;margin-top:-1rem;margin-right:-7rem;"/>
+					    <img src="/images/logos/yale.jpg" style="max-width:7.5rem;margin-bottom:-3%;margin-right:-7rem;"/></center>
+			    </td>
+			    </tr>
+			    {{ end }}
+		    </table>
+	    </ul>
+    </section>
+    </h2>
+    {{ $v3 := where .Pages "Type" "==" "publications" }}
+    <section class="container list news-first-row">
+	    <ul>
+		    {{ $v1 := where .Site.Pages "Params.description" "publication" }}
+		    {{ $filtered := $v1 }}
+		    <table style="margin-left:11rem;;margin-right:-6%">
+			  <col width="1%">
+			  <col width="1%">
+			  <col width="1%">
+			  <col width="70%">
+			  <col width="40%">
+    <h3 style="margin-top:-2rem;margin-bottom:0rem;margin-left:11rem;;"><span>
+    <img style="max-width:1.8rem;;margin-bottom:-.2rem;margin-left:0rem;" src="/images/logos/paper.svg"/>
+    Recent Publications</span></h3>
+			    {{ range first 8 ($filtered.ByDate.Reverse) }}
+			    <li>
+				    <tr>
+					    <td style="border:0px">
+						    <div class="input-color">
+							    {{ if eq .Params.Category "journal" }}
+							    <div  style="font-size:1rem;background-color: #c32b72;display: inline-block;left: 5px;top: 5px; width: 10px;height: 10px;;background-color: #c32b72;"></div>
+							    {{ else if eq .Params.Category "thesis"}}
+							    <div  style="background-color: #c32b72;;display: inline-block;left: 5px;top: 5px; width: 10px;height: 10px;;background-color: #33c3ba;"></div>
+							    {{ else if eq .Params.Category "patent"}}
+							    <div  style="background-color: #c32b72;;display: inline-block;left: 5px;top: 5px; width: 10px;height: 10px;;background-color: #FFA500;"></div>
+							    {{ else if eq .Params.Category "conference"}}
+							    <div  style="background-color: #c32b72;display: inline-block;left: 5px;top: 5px; width: 10px;height: 10px;;background-color: #196ca3;"></div>
+							    {{ else }}
+							    <div  style="background-color: #c32b72;display: inline-block;left: 5px;top: 5px; width: 10px;height: 10px;;background-color: #606b70;"></div>
+							    {{end}}
+						    </div>
+					    </td>
+					    <td style="border:0px;font-size:1.5rem;color:#848484">{{.Params.Publish}}</td>
+					    <td style="border:0px;font-size:1.5rem;color:#848484" >{{.Date.Format "2006"}} </td>
+					    <td style="border:0px"> <a style="line-height:2rem;font-size:1.5rem;color:#00356B" href="{{ .Permalink }}">{{ .Title | safeHTML | truncate 80}}</a></td>
+					    <td style="border:0px"><span style="line-height:2rem;font-size:1.5rem;color:#848484"> {{.Params.Author | safeHTML | truncate 40}} </span>
+					    </td >
+					{{ if in .Params.Award "Award"}}
+					<td style="border:0px">  <i class="fas fa-award"></i></td>
+					{{end}}
+				    </tr>
+
+			    </li>
+			    {{ end }}
+		    </table>
+	    </ul>
+    </section>
+
+    {{ with .Site.Params.social }}
+    <ul class="social-list" style="text-align:center">
+	    {{ range sort . "weight"}}
+	    <li class="social-item">
+		    <a href="{{ .url }}" aria-label="{{ .name }}" {{ if .rel }}rel="{{ .rel }}"{{ end }}>
+			    {{ if eq .icon "yale"}}
+			    <img src="/images/yale-logo.jpg" style="max-width:2.8rem;margin-bottom:-3%"/>
+			    {{ else if .icon}}
+			    <i class="{{ .icon }}" aria-hidden="true"></i>
+			    {{ else }}
+			    {{ .name }}
+			    {{ end }}
+		    </a>
+	    </li>
+	    {{ end }}
+    </ul>
+    {{ end }}
+
+
+    </th>
+    <th class = "news-first-row">
+	    <section class="container listm news-col">
+	    <img style="width:35%;margin-bottom:0rem" src="/images/logos/live_news.svg"/>
+		    {{ $filtered := $v0}}
+
+		    <ul>
+			    {{ range $paginator.Pages }}
+			    <div align="left">
+					{{if and (eq .Type "news") (in .Params.Award "Award")}}
+				    	<a href="{{ .Permalink }}" style="font-size:1.0rem">{{ .Title | truncate 50}}  <i class="fas fa-award"></i></a>
+					{{else}}
+				    <a href="{{ .Permalink }}" style="font-size:1.0rem">{{ .Title | truncate 50}}</a>
+					{{end}}
+				    <hr>
+			    </div>
+			    {{end}}
+		    </ul>
+		    {{ partial "pagination.html" . }}
+	    </section>
+
+	    </th>
+  </tr>
+</table>
+
+  </div>
+</section>

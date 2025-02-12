@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Infoes on IID Group</title>
+    <link>/info/</link>
+    <description>Recent content in Infoes on IID Group</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Fri, 03 Jan 2020 00:00:00 +0000</lastBuildDate><atom:link href="/info/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Streaming Submodular Maximization under a k-Set System Constraint. </title>
+      <link>/info/info/</link>
+      <pubDate>Fri, 03 Jan 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/info/info/</guid>
+      <description>Welcome to the I.I.D. group, led by Amin Karbasi. The research in our group is at the intersection of learning theory[1,2], optimization[3,4], and information processing[5,6]. We develop data-driven algorithms, with strong theoretical guarantees, that can automatically acquire and reason about highly uncertain information. For more information, please visit our research directions.</description>
+    </item>
+    
+  </channel>
+</rss>

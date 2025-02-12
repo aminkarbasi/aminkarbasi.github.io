@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en-us">
+<head>
+<meta charset="utf-8">
+<title>
+    Work &ndash; Javid Dadashkarimi
+  </title>
+<meta name="author" content="Javid Dadashkarimi" />
+<meta name="description" content="Javid Dadashkarimi's blog" />
+<meta name="viewport" content="width=device-width, minimum-scale=1, initial-scale=1, user-scalable=yes">
+<link rel="alternate" type="application/rss+xml" href="atom.xml" />
+<link rel="stylesheet" href="css/base.css" type="text/css" media="screen, projection" />
+<link rel="shortcut icon" type="image/x-icon" href="images/favicon.png" />
+<link rel="icon" type="image/png" href="images/favicon.png">
+<link rel="manifest" href="manifest.json">
+
+<link rel="manifest" href="https://meowni.ca/works/manifest.json">
+
+<meta name="theme-color" content="#7BE4D5">
+
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="application-name" content="Javid's blog">
+
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="Javid's blog">
+
+<link rel="apple-touch-icon" sizes="192x192" href="https://meowni.ca/works/icons/icon-192x192.png">
+
+<meta name="msapplication-TileImage" content="images/manifest/icon-192x192.png">
+<meta name="msapplication-TileColor" content="#7BE4D5">
+<meta name="msapplication-tap-highlight" content="no">
+
+<meta name="twitter:card" content="Javid Dadashkarimi's blog">
+<meta name="twitter:site" content="@notwaldorf">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="my-app">
+<meta property="og:image" content="icons/icon-192x192.png" />
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;700&display=swap" rel="stylesheet">
+<script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-47334320-2']);
+    _gaq.push(['_setDomainName', 'meowni.ca']);
+    _gaq.push(['_trackPageview']);
+    (function () {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+  </script>
+</head>
+
+<body>
+
+<style>
+table {
+  display: grid;
+  border-collapse: collapse;
+  gap: 4px;
+  max-width: 100%;
+  overflow: scroll;
+}
+table.small {
+  grid-template-columns: 1fr 8fr;
+}
+table.all {
+  grid-template-columns: 1fr 1fr 2fr;
+}
+
+thead,
+tbody,
+tr {
+  display: contents;
+}
+
+th,
+td {
+  font-size: 14px;
+}
+td.small {
+  font-size: 14px;
+}
+td.center {
+  text-align: center;
+}
+th {
+  border-bottom: 3px solid black;
+  text-align: left;
+  font-size: 16px;
+}
+table.all td {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+td a:link, td a:visited {
+  color: black;
+  text-decoration-color: var(--red);
+  text-decoration-thickness: .125em;
+}
+tr.full {
+  display: none;
+}
+tr.full.show {
+  display: contents;
+}
+tr.full td {
+  grid-column: 1 / -1;
+  padding: 20px 40px;
+  border-left: 3px solid #ddd;
+  font-size: 16px;
+  line-height: 1.5;
+}
+button {
+  background: transparent;
+  font-family: inherit;
+  font-size: 14px;
+  margin: 0;
+  padding: 0;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+  border-bottom: 2px solid var(--red);
+  color: black;
+}
+tr.full td button {
+  margin-right: 24px;
+}
+@media screen and (max-width:600px) {
+  table.all {
+    grid-template-columns: 1fr 1fr 0.5fr 0.7fr 0.7fr;
+  }
+  tr.full td {
+    max-width: 80%;
+    padding: 16px;
+  }
+}
+
+</style>
+<nav>
+<ul>
+<li id="home_link" class="og"><a href="index.html">🏠</a></li>
+<li><a href="people.html">People</a></li>
+  <li><a href="pubs.html">Publications</a></li>
+<li><a href="talks.html">Talks</a></li>
+</ul>
+</nav>
+<div class="splash">
+<div class="splash-wrapper">
+<div class="splash-copy">
+<h1>Members</h1>
+<p></p>
+</div>
+<div id="birbs">
+<canvas></canvas>
+<div class="birbs-legend">
+<b>click this art</b> to regenerate it
+<button>[<b>?</b>]</button>
+<div class="birbs-note">I whipped up this little piece of art that changes every time you click on it.
+</div>
+</div>
+</div>
+</div>
+<div class="dots"></div>
+</div>
+<section class="content">
+  <table class="all">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Title</th>
+        <th>Current Position</th>
+      </tr>
+    </thead>
+    <tbody>
+      <!-- Current Members -->
+      <tr>
+        <td>Amin Karbasi</td>
+        <td>Faculty</td>
+        <td>Associate Professor of Electrical & Computer Engineering & Computer Science</td>
+      </tr>
+      <tr>
+        <td>Insu Han</td>
+        <td>Former Postdoc</td>
+        <td>Assistant Professor in the School of Electrical Engineering at Korea Advanced Institute of Science and Technology</td>
+      </tr>
+      <tr>
+        <td>Felix Zhou</td>
+        <td>Graduate</td>
+        <td>PhD Student</td>
+      </tr>
+      <tr>
+        <td>Grigoris Velegkas</td>
+        <td>Former PhD Student</td>
+        <td>Postdoc at Stanford</td>
+      </tr>
+      <tr>
+        <td>Jane Lee</td>
+        <td>PhD student</td>
+        <td>--</td>
+      </tr>
+      <tr>
+        <td>Javid Dadashkarimi</td>
+        <td>Former PhD Student</td>
+        <td>Postdoc at MGH/Harvard</td>
+      </tr>
+      <tr>
+        <td>Peiyuan Zhang</td>
+        <td>PhD Student</td>
+        <td>Graduate School</td>
+      </tr>
+
+      <!-- Former Members -->
+      <tr>
+        <td>Chris Harshaw</td>
+        <td>Former PhD</td>
+        <td>17 Hillhouse</td>
+      </tr>
+      <tr>
+        <td>Chris Xu</td>
+        <td>Former PhD</td>
+        <td>17 Hillhouse</td>
+      </tr>
+      <tr>
+        <td>Ehsan Kazemi</td>
+        <td>Former Postdoc</td>
+        <td>Zürich, Switzerland</td>
+      </tr>
+      <tr>
+        <td>Farzin Haddadpour</td>
+        <td>Former Postdoc</td>
+        <td>17 Hillhouse, New Haven</td>
+      </tr>
+      <tr>
+        <td>Lin Chen</td>
+        <td>Former PhD</td>
+        <td>17 Hillhouse</td>
+      </tr>
+      <tr>
+        <td>Marko Mitrovic</td>
+        <td>Former PhD</td>
+        <td>Mountain View, CA</td>
+      </tr>
+      <tr>
+        <td>Mehraveh Salehi</td>
+        <td>Former PhD</td>
+        <td>Seattle, WA</td>
+      </tr>
+      <tr>
+        <td>Mingrui Zhang</td>
+        <td>Former PhD</td>
+        <td>17 Hillhouse</td>
+      </tr>
+      <tr>
+        <td>Mohammad Shadravan</td>
+        <td>Former Postdoc</td>
+        <td>17 Hillhouse, New Haven</td>
+      </tr>
+      <tr>
+        <td>Siddharth Mitra</td>
+        <td>Former PhD</td>
+        <td>17 Hillhouse</td>
+      </tr>
+      <tr>
+        <td>Yifei Min</td>
+        <td>Former PhD</td>
+        <td>17 Hillhouse</td>
+      </tr>
+    </tbody>
+  </table>
+</section>
+
+
+<script data-cfasync="false" src="cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="js/birds.js"></script>
+</body>
+<script>
+  'use strict';
+
+  // Load the pygments stylesheet so that it's not render blocking.
+  var head = document.head;
+  var link = document.createElement('link');
+  link.type = 'text/css';
+  link.rel = 'stylesheet';
+  link.href = '/css/pygments.css'
+  head.appendChild(link);
+</script>
+</html>

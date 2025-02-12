@@ -1,0 +1,17 @@
++++
+date = "2019-11-03"
+title = "Adaptive Sequence Submodularity"
+math = "true"
+description = "publication"
+publish = "NeurIPS"
+category = "conference"
+weight=2
+author = "Marko Mitrovic, Ehsan Kazemi, Moran Feldman, Andreas Krause, Amin Karbasi"
+link = "http://papers.nips.cc/paper/8776-adaptive-sequence-submodularity.pdf"
+keyword1="submodular optimization"
+keyword2="interactive decision making"
++++
+
+# Abstract
+
+In many machine learning applications, one needs to interactively select a sequence of items (e.g., recommending movies based on a user's feedback) or make sequential decisions in a certain order (e.g., guiding an agent through a series of states). Not only do sequences already pose a dauntingly large search space, but we must also take into account past observations, as well as the uncertainty of future outcomes. Without further structure, finding an optimal sequence is notoriously challenging, if not completely intractable. In this paper, we view the problem of adaptive and sequential decision making through the lens of submodularity and propose an adaptive greedy policy with strong theoretical guarantees. Additionally, to demonstrate the practical utility of our results, we run experiments on Amazon product recommendation and Wikipedia link prediction tasks

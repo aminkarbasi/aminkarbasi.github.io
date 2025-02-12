@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Researches on IID Group</title>
+    <link>/research/</link>
+    <description>Recent content in Researches on IID Group</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Fri, 03 Jan 2020 00:00:00 +0000</lastBuildDate><atom:link href="/research/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Trustworthy ML &amp; Robust Statistics</title>
+      <link>/research/trust.md/</link>
+      <pubDate>Fri, 03 Jan 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/research/trust.md/</guid>
+      <description>As machine learning systems are pervasively deployed in many scientific fields with increasingly sensitive tasks, it has become paramount to develop algorithms that are robust against the numerous sources of uncertainty inherent in those applications including noise in the data, malicious exploitation of vulnerabilities, outliers, variability of the true objective, privacy, and fairness. While current research in machine learning has led to fundamental breakthroughs, there is still a large gap between the theory and the limitations of the existing algorithms used by practitioners in the real world.</description>
+    </item>
+    
+    <item>
+      <title>Computational Neuroscience</title>
+      <link>/research/computational_neuroscience_neurimaging.md/</link>
+      <pubDate>Fri, 03 Jan 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/research/computational_neuroscience_neurimaging.md/</guid>
+      <description>The human brain is a complex network, consisting of functionally interconnected regions whose coordinated effort gives rise to different functions. Understanding what these regions are, how they interact, and how this interaction forms a wide range of behavior has long been an essential question for human neuroscience. Neuroimaging techniques have provided a unique opportunity to tackle this question in a data-driven way. Advances in neuroimaging techniques such as functional Magnetic Resonance Imaging (fMRI), have allowed us to approximately measure the neural activity in the brain.</description>
+    </item>
+    
+    <item>
+      <title>Non-convex Optimization</title>
+      <link>/research/non_convex.md/</link>
+      <pubDate>Fri, 03 Jan 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/research/non_convex.md/</guid>
+      <description>Until recently, convex programs were seen as the defining boundary for tractability in continuous optimization. However, many problems of interest arising from machine learning and statistical modeling, such as training deep neural networks and learning latent variable models, are glaringly non-convex. While efficient algorithms are known for a few instances of non-convex problems, it remains a central challenge to discover general conditions under which a non-convex problem admits an efficient solution.</description>
+    </item>
+    
+    <item>
+      <title>Online Learning</title>
+      <link>/research/online_learning.md/</link>
+      <pubDate>Fri, 03 Jan 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/research/online_learning.md/</guid>
+      <description>In many practical applications, the environment is so complex that it may be infeasible to lay out a precise model and use the classical mathematical optimization methods. It is then necessary, and very often beneficial, to consider a robust approach, by considering optimization as a process that learns from experience as more aspects of the problem are being observed. This view of optimization as a process has become prominent in various fields and led to many successes in modeling and systems.</description>
+    </item>
+    
+    <item>
+      <title>Submodular Optimization</title>
+      <link>/research/submodular_optimization.md/</link>
+      <pubDate>Fri, 03 Jan 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/research/submodular_optimization.md/</guid>
+      <description>The difficulty of searching through a massive amount of data in order to quickly make an informed decision is one of today’s most ubiquitous challenges. Many scientific and engineering models feature inherently discrete decision variables—from phrases in a corpus to objects in an image. Similarly, nearly all aspects of the machine learning pipeline involve discrete tasks, from data summarization and sketching to feature selection and model explanation. The study of how to make near-optimal decisions from a massive pool of possibilities is at the heart of combinatorial optimization.</description>
+    </item>
+    
+    <item>
+      <title>Interactive Decision Making</title>
+      <link>/research/interactive_decision_making.md/</link>
+      <pubDate>Fri, 03 Jan 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/research/interactive_decision_making.md/</guid>
+      <description>In computer science, and machine learning in particular, the primary purpose of many systems is to help humans make decisions. Simultaneously, many of these systems also stand to benefit from having a human in the loop, whether it is to reinforce good decisions, warn against bad decisions, or simply to provide expert advice in areas of uncertainty.
+A simple, concrete example can be seen in recommender systems. Whether it is through explicit feedback (such as rating a movie on Netflix) or implicit feedback (such as clicking/not clicking on an advertisement), the vast majority of successful, real-world recommender systems are constantly interacting with and adapting to each user.</description>
+    </item>
+    
+  </channel>
+</rss>

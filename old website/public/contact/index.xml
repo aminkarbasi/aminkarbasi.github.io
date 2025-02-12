@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Contacts on IID Group</title>
+    <link>/contact/</link>
+    <description>Recent content in Contacts on IID Group</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language><atom:link href="/contact/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Mandy Singer</title>
+      <link>/contact/contact.md/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/contact/contact.md/</guid>
+      <description>Mandy Singer is the administrative assistant for the Yale Institute for Network Science. Mandy has phenomenally varied experience, with talents as a repo-woman, cherry-picker operator, and is all-around competent. She has yet to be unable to do anything we have asked her to do.
+Directions from Union Station to YINS building All you need is to drive the State St all the way up to Grove St and then turn left and follow up until Hillhouse Ave.</description>
+    </item>
+    
+  </channel>
+</rss>
