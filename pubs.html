@@ -58,21 +58,19 @@
 <li><a href="people.html">People</a></li>
   <li><a href="pubs.html">Publications</a></li>
 <li><a href="talks.html">Talks</a></li>
+<li class="news"><a href="news.html">News</a></li>
 </nav>
 <div class="splash">
 <div class="splash-wrapper">
 <div class="splash-copy">
 <h1>Publications</h1>
-<p></p>
+<p> For an up-to-date listing, see the following <a href="https://scholar.google.com/citations?user=VusVB38AAAAJ&hl=en">Google Scholar page</a>.</p>
 </div>
 <div id="birbs">
-<canvas></canvas>
-<div class="birbs-legend">
-<b>click this art</b> to regenerate it
-<button>[<b>?</b>]</button>
-<div class="birbs-note">I whipped up this little piece of art that changes every time you click on it.
-</div>
-</div>
+  <img src="figs/bookstore.png" alt="Church Doors" class="left-image" id="text-image">
+
+
+  </div>
 </div>
 </div>
 <div class="dots"></div>
@@ -125,7 +123,7 @@ table.small {
   grid-template-columns: 1fr 8fr;
 }
 table.all {
-  grid-template-columns: 2.5fr 2fr 1fr 0.7fr 0.7fr;
+  grid-template-columns: 2.5fr 2fr 1.6fr .5fr;
 }
 
 thead,
@@ -188,7 +186,7 @@ tr.full td button {
 }
 @media screen and (max-width:600px) {
   table.all {
-    grid-template-columns: 1fr 1fr 0.5fr 0.7fr 0.7fr;
+    grid-template-columns: 1fr 1fr 1.5fr 0.7fr;
   }
   tr.full td {
     max-width: 80%;
@@ -220,3984 +218,922 @@ tr.full td button {
 
 
 
-
-<p>Acronyms Explained</p>
-
-<table class="small">
-<tbody>
-<tr>
-<td>MICCAI</td>
-<td>International Conference on Medical Image Computing and Computer-Assisted Intervention
-</td>
-</tr>
-<tr>
-<td>ISBI</td>
-<td>IEEE International Symposium on Biomedical Imaging
-</td>
-</tr>
-<tr>
-<td>GRAIL</td>
-<td>Workshop on GRaphs in biomedicAl Image anaLysis</td>
-</tr>
-<tr>
-<td>NPP</td>
-<td>Nature Neuropsychopharmacology
-</td>
-</tr>
-</tbody>
-</table>
-
-
 <br/>
 <br/>
+
 <table class="all">
 <thead>
 <tr>
 <th>Title</th>
 <th>Author</th>
-<th>Year</th>
 <th>Journal</th>
-<th>Abstract</th>
+<th>Year</th>
 </tr>
 </thead>
 <tbody>
-  <tr>
-    <td>A Flow-based Truncated Denoising Diffusion Model for super-resolution Magnetic Resonance Spectroscopic Imaging</td>
-    <td>Authors not available</td>
-    <td class="small">2025</td>
-    <td>Medical Image Analysis 99</td>
-    <td class="center read">
-        <button onclick="toggleReview(this)">read ▿</button>
-    </td>
-  </tr>
 
-  <tr class="full">
-    <td colspan="5">
-        <div>
-          Citation: Medical Image Analysis 99, 103358, 2025.
-          <!-- Add links or additional information here -->
-        </div>
-        <br/>
-        <button onclick="hideReview(this)">close ⌃</button>
-        <button onclick="copyReview(this)">copy to clipboard</button>
-    </td>
+  <tr>
+    <td><a href="https://www.sciencedirect.com/science/article/abs/pii/S1361841524002834"> A Flow-based Truncated Denoising Diffusion Model for super-resolution Magnetic Resonance Spectroscopic Imaging</a></td>
+    <td>Dong, Siyuan and Cai, Zhuotong and Hangel, Gilbert and Bogner, Wolfgang and Widhalm, Georg and Huang, Yaqing and Liang, Qinghao and You, Chenyu and Kumaragamage, Chathura and Fulbright, Robert K and others</td>
+    <td>Medical Image Analysis</td>
+    <td>2025</td>
+  </tr>
+  <tr>
+    <td><a href="https://arxiv.org/pdf/2406.05660">Injecting Undetectable Backdoors in Obfuscated Neural Networks and Language Models</a></td>
+    <td>Alkis Kalavasis, Amin Karbasi, Argyris Oikonomou, Katerina Sotiraki, Grigoris Velegkas, Manolis Zampetakis</td>
+    <td>Neural Information Processing Systems</td>
+    <td>2024</td>
   </tr>
 
   <tr>
-    <td>Batched neural bandits</td>
-    <td>Authors not available</td>
-    <td class="small">2024</td>
-    <td>ACM/JMS Journal of Data Science 1 (1)</td>
-    <td class="center read">
-        <button onclick="toggleReview(this)">read ▿</button>
-    </td>
-  </tr>
-
-  <tr class="full">
-    <td colspan="5">
-        <div>
-          Citation: ACM/JMS Journal of Data Science 1 (1), 1-18, 2024.
-          <!-- Add links or additional information here -->
-        </div>
-        <br/>
-        <button onclick="hideReview(this)">close ⌃</button>
-        <button onclick="copyReview(this)">copy to clipboard</button>
-    </td>
-  </tr>
-
-  <tr>
-    <td>Replicable clustering</td>
-    <td>Authors not available</td>
-    <td class="small">2024</td>
-    <td>Advances in Neural Information Processing Systems 36</td>
-    <td class="center read">
-        <button onclick="toggleReview(this)">read ▿</button>
-    </td>
-  </tr>
-
-  <tr class="full">
-    <td colspan="5">
-        <div>
-          Citation: Advances in Neural Information Processing Systems 36, 2024.
-          <!-- Add links or additional information here -->
-        </div>
-        <br/>
-        <button onclick="hideReview(this)">close ⌃</button>
-        <button onclick="copyReview(this)">copy to clipboard</button>
-    </td>
-  </tr>
-
-  <tr>
-    <td>SubGen: Token Generation in Sublinear Time and Memory</td>
-    <td>Authors not available</td>
-    <td class="small">2024</td>
+    <td><a href="https://arxiv.org/pdf/2102.13028">Batched neural bandits</a></td>
+    <td>Quanquan Gu, Amin Karbasi, Khashayar Khosravi, Vahab Mirrokni, and Dongruo Zhou</td>
+    <td>ACM/JMS Journal of Data Science</td>
+    <td>2024</td>
+</tr>
+<tr>
+    <td><a href="https://arxiv.org/pdf/2302.10359">Replicable clustering</a></td>
+    <td>Hossein Esfandiari, Amin Karbasi, Vahab Mirrokni, Grigoris Velegkas, Felix Zhou</td>
+    <td>Advances in Neural Information Processing Systems</td>
+    <td>2024</td>
+</tr>
+<tr>
+    <td><a href="https://arxiv.org/pdf/2402.06082">SubGen: Token Generation in Sublinear Time and Memory</a></td>
+    <td>Amir Zandieh, Insu Han, Vahab Mirrokni, Amin Karbasi</td>
     <td>arXiv preprint arXiv:2402.06082</td>
-    <td class="center read">
-        <button onclick="toggleReview(this)">read ▿</button>
-    </td>
-  </tr>
-
-  <tr class="full">
-    <td colspan="5">
-        <div>
-          Citation: arXiv preprint arXiv:2402.06082, 2024.
-          <!-- Add links or additional information here -->
-        </div>
-        <br/>
-        <button onclick="hideReview(this)">close ⌃</button>
-        <button onclick="copyReview(this)">copy to clipboard</button>
-    </td>
-  </tr>
-
-  <tr>
-    <td>Replicable learning of large-margin halfspaces</td>
-    <td>Authors not available</td>
-    <td class="small">2024</td>
+    <td>2024</td>
+</tr>
+<tr>
+    <td><a href="https://arxiv.org/pdf/2402.13857">Replicable learning of large-margin halfspaces</a></td>
+    <td>Alkis Kalavasis, Amin Karbasi, Kasper Green Larsen, Grigoris Velegkas, Felix Zhou</td>
     <td>arXiv preprint arXiv:2402.13857</td>
-    <td class="center read">
-        <button onclick="toggleReview(this)">read ▿</button>
-    </td>
-  </tr>
-
-  <tr class="full">
-    <td colspan="5">
-        <div>
-          Citation: arXiv preprint arXiv:2402.13857, 2024.
-          <!-- Add links or additional information here -->
-        </div>
-        <br/>
-        <button onclick="hideReview(this)">close ⌃</button>
-        <button onclick="copyReview(this)">copy to clipboard</button>
-    </td>
-  </tr>
-
-  <tr>
-    <td>Submodular minimax optimization: Finding effective sets</td>
-    <td>Authors not available</td>
-    <td class="small">2024</td>
+    <td>2024</td>
+</tr>
+<tr>
+    <td><a href="https://arxiv.org/pdf/2305.16903">Submodular minimax optimization: Finding effective sets</a></td>
+    <td>Loay Mualem, Ethan R. Elenberg, Moran Feldman, Amin Karbasi</td>
     <td>International Conference on Artificial Intelligence and Statistics</td>
-    <td class="center read">
-        <button onclick="toggleReview(this)">read ▿</button>
-    </td>
-  </tr>
-
-  <tr class="full">
-    <td colspan="5">
-        <div>
-          Citation: International Conference on Artificial Intelligence and Statistics, 1081-1089, 2024.
-          <!-- Add links or additional information here -->
-        </div>
-        <br/>
-        <button onclick="hideReview(this)">close ⌃</button>
-        <button onclick="copyReview(this)">copy to clipboard</button>
-    </td>
-  </tr>
-
-  <tr>
-    <td>The impossibility of parallelizing boosting</td>
-    <td>Authors not available</td>
-    <td class="small">2024</td>
+    <td>2024</td>
+</tr>
+<tr>
+    <td><a href="https://arxiv.org/pdf/2301.09627">The impossibility of parallelizing boosting</a></td>
+    <td>Amin Karbasi, Kasper Green Larsen</td>
     <td>International Conference on Algorithmic Learning Theory</td>
-    <td class="center read">
-        <button onclick="toggleReview(this)">read ▿</button>
-    </td>
-  </tr>
-
-  <tr class="full">
-    <td colspan="5">
-        <div>
-          Citation: International Conference on Algorithmic Learning Theory, 635-653, 2024.
-          <!-- Add links or additional information here -->
-        </div>
-        <br/>
-        <button onclick="hideReview(this)">close ⌃</button>
-        <button onclick="copyReview(this)">copy to clipboard</button>
-    </td>
-  </tr>
-
-  <tr>
-    <td>Universal Rates for Regression: Separations between Cut-Off and Absolute Loss</td>
-    <td>Authors not available</td>
-    <td class="small">2024</td>
+    <td>2024</td>
+</tr>
+<tr>
+    <td><a href="https://proceedings.mlr.press/v247/attias24a/attias24a.pdf">Universal Rates for Regression: Separations between Cut-Off and Absolute Loss</a></td>
+    <td>Attias, Idan; Hanneke, Steve; Kalavasis, Alkis; Karbasi, Amin; Velegkas, Grigoris</td>
     <td>The Thirty Seventh Annual Conference on Learning Theory</td>
-    <td class="center read">
-        <button onclick="toggleReview(this)">read ▿</button>
-    </td>
-  </tr>
-
-  <tr class="full">
-    <td colspan="5">
-        <div>
-          Citation: The Thirty Seventh Annual Conference on Learning Theory, 359-405, 2024.
-          <!-- Add links or additional information here -->
-        </div>
-        <br/>
-        <button onclick="hideReview(this)">close ⌃</button>
-        <button onclick="copyReview(this)">copy to clipboard</button>
-    </td>
-  </tr>
-
-  <tr>
-    <td>Optimal guarantees for algorithmic reproducibility and gradient complexity in convex optimization</td>
-    <td>Authors not available</td>
-    <td class="small">2024</td>
+    <td>2024</td>
+</tr>
+<tr>
+    <td><a href="https://arxiv.org/pdf/2310.17759">Optimal guarantees for algorithmic reproducibility and gradient complexity in convex optimization</a></td>
+    <td>Liang Zhang, Junchi Yang, Amin Karbasi, Niao He</td>
     <td>Advances in Neural Information Processing Systems 36</td>
-    <td class="center read">
-        <button onclick="toggleReview(this)">read ▿</button>
-    </td>
-  </tr>
-
-  <tr class="full">
-    <td colspan="5">
-        <div>
-          Citation: Advances in Neural Information Processing Systems 36, 2024.
-          <!-- Add links or additional information here -->
-        </div>
-        <br/>
-        <button onclick="hideReview(this)">close ⌃</button>
-        <button onclick="copyReview(this)">copy to clipboard</button>
-    </td>
-  </tr>
-
-  <tr>
-    <td>Injecting Undetectable Backdoors in Deep Learning and Language Models</td>
-    <td>Authors not available</td>
-    <td class="small">2024</td>
+    <td>2024</td>
+</tr>
+<tr>
+    <td><a href="https://arxiv.org/pdf/2406.05660">Injecting Undetectable Backdoors in Deep Learning and Language Models</a></td>
+    <td>Alkis Kalavasis, Amin Karbasi, Argyris Oikonomou, Katerina Sotiraki, Grigoris Velegkas, Manolis Zampetakis</td>
     <td>arXiv preprint arXiv:2406.05660</td>
-    <td class="center read">
-        <button onclick="toggleReview(this)">read ▿</button>
-    </td>
-  </tr>
-
-  <tr class="full">
-    <td colspan="5">
-        <div>
-          Citation: arXiv preprint arXiv:2406.05660, 2024.
-          <!-- Add links or additional information here -->
-        </div>
-        <br/>
-        <button onclick="hideReview(this)">close ⌃</button>
-        <button onclick="copyReview(this)">copy to clipboard</button>
-    </td>
-  </tr>
-
-  <tr>
-    <td>On the Computational Landscape of Replicable Learning</td>
-    <td>Authors not available</td>
-    <td class="small">2024</td>
+    <td>2024</td>
+</tr>
+<tr>
+    <td><a href="https://arxiv.org/pdf/2405.15599">On the Computational Landscape of Replicable Learning</a></td>
+    <td>Alkis Kalavasis, Amin Karbasi, Grigoris Velegkas, Felix Zhou</td>
     <td>arXiv preprint arXiv:2405.15599</td>
-    <td class="center read">
-        <button onclick="toggleReview(this)">read ▿</button>
-    </td>
-  </tr>
-
-  <tr class="full">
-    <td colspan="5">
-        <div>
-          Citation: arXiv preprint arXiv:2405.15599, 2024.
-          <!-- Add links or additional information here -->
-        </div>
-        <br/>
-        <button onclick="hideReview(this)">close ⌃</button>
-        <button onclick="copyReview(this)">copy to clipboard</button>
-    </td>
-  </tr>
-
-  <tr>
-    <td>Procurement Auctions via Approximately Optimal Submodular Optimization</td>
-    <td>Authors not available</td>
-    <td class="small">2024</td>
+    <td>2024</td>
+</tr>
+<tr>
+    <td><a href="https://arxiv.org/pdf/2411.13513">Procurement Auctions via Approximately Optimal Submodular Optimization</a></td>
+    <td>Yuan Deng, Amin Karbasi, Vahab Mirrokni, Renato Paes Leme, Grigoris Velegkas, Song Zuo</td>
     <td>arXiv preprint arXiv:2411.13513</td>
-    <td class="center read">
-        <button onclick="toggleReview(this)">read ▿</button>
-    </td>
-  </tr>
-
-  <tr class="full">
-    <td colspan="5">
-        <div>
-          Citation: arXiv preprint arXiv:2411.13513, 2024.
-          <!-- Add links or additional information here -->
-        </div>
-        <br/>
-        <button onclick="hideReview(this)">close ⌃</button>
-        <button onclick="copyReview(this)">copy to clipboard</button>
-    </td>
-  </tr>
-
-  <tr>
-    <td>TSDS: Data Selection for Task-Specific Model Finetuning</td>
-    <td>Authors not available</td>
-    <td class="small">2024</td>
+    <td>2024</td>
+</tr>
+<tr>
+    <td><a href="https://arxiv.org/pdf/2410.11303">TSDS: Data Selection for Task-Specific Model Finetuning</a></td>
+    <td>Zifan Liu, Amin Karbasi, Theodoros Rekatsinas</td>
     <td>arXiv preprint arXiv:2410.11303</td>
-    <td class="center read">
-        <button onclick="toggleReview(this)">read ▿</button>
-    </td>
-  </tr>
-
-  <tr class="full">
-    <td colspan="5">
-        <div>
-          Citation: arXiv preprint arXiv:2410.11303, 2024.
-          <!-- Add links or additional information here -->
-        </div>
-        <br/>
-        <button onclick="hideReview(this)">close ⌃</button>
-        <button onclick="copyReview(this)">copy to clipboard</button>
-    </td>
-  </tr>
-
-  <tr>
-    <td>Cognitive Overload Attack: Prompt Injection for Long Context</td>
-    <td>Authors not available</td>
-    <td class="small">2024</td>
-    <td>arXiv preprint arXiv:2410.11272</td>
-    <td class="center read">
-        <button onclick="toggleReview(this)">read ▿</button>
-    </td>
-  </tr>
-
-  <tr class="full">
-    <td colspan="5">
-        <div>
-          Citation: arXiv preprint arXiv:2410.11272, 2024.
-          <!-- Add links or additional information here -->
-        </div>
-        <br/>
-        <button onclick="hideReview(this)">close ⌃</button>
-        <button onclick="copyReview(this)">copy to clipboard</button>
-    </td>
-  </tr>
-
-  <tr>
-    <td>Intelligence at the Edge of Chaos</td>
-    <td>Authors not available</td>
-    <td class="small">2024</td>
-    <td>arXiv preprint arXiv:2410.02536</td>
-    <td class="center read">
-        <button onclick="toggleReview(this)">read ▿</button>
-    </td>
-  </tr>
-
-  <tr class="full">
-    <td colspan="5">
-        <div>
-          Citation: arXiv preprint arXiv:2410.02536, 2024.
-          <!-- Add links or additional information here -->
-        </div>
-        <br/>
-        <button onclick="hideReview(this)">close ⌃</button>
-        <button onclick="copyReview(this)">copy to clipboard</button>
-    </td>
-  </tr>
-
-  <tr>
-    <td>Data Selection for Task-Specific Model Finetuning</td>
-    <td>Authors not available</td>
-    <td class="small">2024</td>
-    <td>arXiv e-prints</td>
-    <td class="center read">
-        <button onclick="toggleReview(this)">read ▿</button>
-    </td>
-  </tr>
-
-  <tr class="full">
-    <td colspan="5">
-        <div>
-          Citation: arXiv e-prints, arXiv: 2410.11303, 2024.
-          <!-- Add links or additional information here -->
-        </div>
-        <br/>
-        <button onclick="hideReview(this)">close ⌃</button>
-        <button onclick="copyReview(this)">copy to clipboard</button>
-    </td>
-  </tr>
-
-  <tr>
-    <td>Extracting Memorized Training Data via Decomposition</td>
-    <td>Authors not available</td>
-    <td class="small">2024</td>
-    <td>arXiv preprint arXiv:2409.12367</td>
-    <td class="center read">
-        <button onclick="toggleReview(this)">read ▿</button>
-    </td>
-  </tr>
-
-  <tr class="full">
-    <td colspan="5">
-        <div>
-          Citation: arXiv preprint arXiv:2409.12367, 2024.
-          <!-- Add links or additional information here -->
-        </div>
-        <br/>
-        <button onclick="hideReview(this)">close ⌃</button>
-        <button onclick="copyReview(this)">copy to clipboard</button>
-    </td>
-  </tr>
-
-  <tr>
-    <td>Tree of attacks: Jailbreaking black-box llms automatically</td>
-    <td>Authors not available</td>
-    <td class="small">2023</td>
-    <td>arXiv preprint arXiv:2312.02119</td>
-    <td class="center read">
-        <button onclick="toggleReview(this)">read ▿</button>
-    </td>
-  </tr>
-
-  <tr class="full">
-    <td colspan="5">
-        <div>
-          Citation: arXiv preprint arXiv:2312.02119, 2023.
-          <!-- Add links or additional information here -->
-        </div>
-        <br/>
-        <button onclick="hideReview(this)">close ⌃</button>
-        <button onclick="copyReview(this)">copy to clipboard</button>
-    </td>
-  </tr>
-
-  <tr>
-    <td>Kdeformer: Accelerating transformers via kernel density estimation</td>
-    <td>Authors not available</td>
-    <td class="small">2023</td>
-    <td>International Conference on Machine Learning</td>
-    <td class="center read">
-        <button onclick="toggleReview(this)">read ▿</button>
-    </td>
-  </tr>
-
-  <tr class="full">
-    <td colspan="5">
-        <div>
-          Citation: International Conference on Machine Learning, 40605-40623, 2023.
-          <!-- Add links or additional information here -->
-        </div>
-        <br/>
-        <button onclick="hideReview(this)">close ⌃</button>
-        <button onclick="copyReview(this)">copy to clipboard</button>
-    </td>
-  </tr>
-
-  <tr>
-    <td>Hyperattention: Long-context attention in near-linear time</td>
-    <td>Authors not available</td>
-    <td class="small">2023</td>
-    <td>arXiv preprint arXiv:2310.05869</td>
-    <td class="center read">
-        <button onclick="toggleReview(this)">read ▿</button>
-    </td>
-  </tr>
-
-  <tr class="full">
-    <td colspan="5">
-        <div>
-          Citation: arXiv preprint arXiv:2310.05869, 2023.
-          <!-- Add links or additional information here -->
-        </div>
-        <br/>
-        <button onclick="hideReview(this)">close ⌃</button>
-        <button onclick="copyReview(this)">copy to clipboard</button>
-    </td>
-  </tr>
-
-  <tr>
-    <td>Statistical indistinguishability of learning algorithms</td>
-    <td>Authors not available</td>
-    <td class="small">2023</td>
-    <td>International Conference on Machine Learning</td>
-    <td class="center read">
-        <button onclick="toggleReview(this)">read ▿</button>
-    </td>
-  </tr>
-
-  <tr class="full">
-    <td colspan="5">
-        <div>
-          Citation: International Conference on Machine Learning, 15586-15622, 2023.
-          <!-- Add links or additional information here -->
-        </div>
-        <br/>
-        <button onclick="hideReview(this)">close ⌃</button>
-        <button onclick="copyReview(this)">copy to clipboard</button>
-    </td>
-  </tr>
-
-  <tr>
-    <td>BrainLM: A foundation model for brain activity recordings</td>
-    <td>Authors not available</td>
-    <td class="small">2023</td>
-    <td>bioRxiv</td>
-    <td class="center read">
-        <button onclick="toggleReview(this)">read ▿</button>
-    </td>
-  </tr>
-
-  <tr class="full">
-    <td colspan="5">
-        <div>
-          Citation: bioRxiv, 2023.09. 12.557460, 2023.
-          <!-- Add links or additional information here -->
-        </div>
-        <br/>
-        <button onclick="hideReview(this)">close ⌃</button>
-        <button onclick="copyReview(this)">copy to clipboard</button>
-    </td>
-  </tr>
-
-  <tr>
-    <td>Optimal learners for realizable regression: Pac learning and online learning</td>
-    <td>Authors not available</td>
-    <td class="small">2023</td>
-    <td>Advances in Neural Information Processing Systems 36</td>
-    <td class="center read">
-        <button onclick="toggleReview(this)">read ▿</button>
-    </td>
-  </tr>
-
-  <tr class="full">
-    <td colspan="5">
-        <div>
-          Citation: Advances in Neural Information Processing Systems 36, 2023.
-          <!-- Add links or additional information here -->
-        </div>
-        <br/>
-        <button onclick="hideReview(this)">close ⌃</button>
-        <button onclick="copyReview(this)">copy to clipboard</button>
-    </td>
-  </tr>
-
-  <tr>
-    <td>How do you want your greedy: Simultaneous or repeated?</td>
-    <td>Authors not available</td>
-    <td class="small">2023</td>
-    <td>Journal of Machine Learning Research 24 (72)</td>
-    <td class="center read">
-        <button onclick="toggleReview(this)">read ▿</button>
-    </td>
-  </tr>
-
-  <tr class="full">
-    <td colspan="5">
-        <div>
-          Citation: Journal of Machine Learning Research 24 (72), 1-87, 2023.
-          <!-- Add links or additional information here -->
-        </div>
-        <br/>
-        <button onclick="hideReview(this)">close ⌃</button>
-        <button onclick="copyReview(this)">copy to clipboard</button>
-    </td>
-  </tr>
-
-  <tr>
-    <td>Replicability in reinforcement learning</td>
-    <td>Authors not available</td>
-    <td class="small">2023</td>
-    <td>Advances in Neural Information Processing Systems 36</td>
-    <td class="center read">
-        <button onclick="toggleReview(this)">read ▿</button>
-    </td>
-  </tr>
-
-  <tr class="full">
-    <td colspan="5">
-        <div>
-          Citation: Advances in Neural Information Processing Systems 36, 74702-74735, 2023.
-          <!-- Add links or additional information here -->
-        </div>
-        <br/>
-        <button onclick="hideReview(this)">close ⌃</button>
-        <button onclick="copyReview(this)">copy to clipboard</button>
-    </td>
-  </tr>
-
-  <tr>
-    <td>Exact gradient computation for spiking neural networks via forward propagation</td>
-    <td>Authors not available</td>
-    <td class="small">2023</td>
-    <td>International Conference on Artificial Intelligence and Statistics</td>
-    <td class="center read">
-        <button onclick="toggleReview(this)">read ▿</button>
-    </td>
-  </tr>
-
-  <tr class="full">
-    <td colspan="5">
-        <div>
-          Citation: International Conference on Artificial Intelligence and Statistics, 1812-1831, 2023.
-          <!-- Add links or additional information here -->
-        </div>
-        <br/>
-        <button onclick="hideReview(this)">close ⌃</button>
-        <button onclick="copyReview(this)">copy to clipboard</button>
-    </td>
-  </tr>
-
-  <tr>
-    <td>Cell2sentence: Teaching large language models the language of biology</td>
-    <td>Authors not available</td>
-    <td class="small">2023</td>
-    <td>bioRxiv</td>
-    <td class="center read">
-        <button onclick="toggleReview(this)">read ▿</button>
-    </td>
-  </tr>
-
-  <tr class="full">
-    <td colspan="5">
-        <div>
-          Citation: bioRxiv, 2023.09. 11.557287, 2023.
-          <!-- Add links or additional information here -->
-        </div>
-        <br/>
-        <button onclick="hideReview(this)">close ⌃</button>
-        <button onclick="copyReview(this)">copy to clipboard</button>
-    </td>
-  </tr>
-
-  <tr>
-    <td>Langevin thompson sampling with logarithmic communication: bandits and reinforcement learning</td>
-    <td>Authors not available</td>
-    <td class="small">2023</td>
-    <td>International Conference on Machine Learning</td>
-    <td class="center read">
-        <button onclick="toggleReview(this)">read ▿</button>
-    </td>
-  </tr>
-
-  <tr class="full">
-    <td colspan="5">
-        <div>
-          Citation: International Conference on Machine Learning, 15828-15860, 2023.
-          <!-- Add links or additional information here -->
-        </div>
-        <br/>
-        <button onclick="hideReview(this)">close ⌃</button>
-        <button onclick="copyReview(this)">copy to clipboard</button>
-    </td>
-  </tr>
-
-  <tr>
-    <td>Repeated random sampling for minimizing the time-to-accuracy of learning</td>
-    <td>Authors not available</td>
-    <td class="small">2023</td>
-    <td>arXiv preprint arXiv:2305.18424</td>
-    <td class="center read">
-        <button onclick="toggleReview(this)">read ▿</button>
-    </td>
-  </tr>
-
-  <tr class="full">
-    <td colspan="5">
-        <div>
-          Citation: arXiv preprint arXiv:2305.18424, 2023.
-          <!-- Add links or additional information here -->
-        </div>
-        <br/>
-        <button onclick="hideReview(this)">close ⌃</button>
-        <button onclick="copyReview(this)">copy to clipboard</button>
-    </td>
-  </tr>
-
-  <tr>
-    <td>Learning from aggregated data: Curated bags versus random bags</td>
-    <td>Authors not available</td>
-    <td class="small">2023</td>
-    <td>arXiv preprint arXiv:2305.09557</td>
-    <td class="center read">
-        <button onclick="toggleReview(this)">read ▿</button>
-    </td>
-  </tr>
-
-  <tr class="full">
-    <td colspan="5">
-        <div>
-          Citation: arXiv preprint arXiv:2305.09557, 2023.
-          <!-- Add links or additional information here -->
-        </div>
-        <br/>
-        <button onclick="hideReview(this)">close ⌃</button>
-        <button onclick="copyReview(this)">copy to clipboard</button>
-    </td>
-  </tr>
-
-  <tr>
-    <td>Cross Atlas Remapping via Optimal Transport (CAROT): Creating connectomes for different atlases when raw data is not available</td>
-    <td>Authors not available</td>
-    <td class="small">2023</td>
-    <td>Medical image analysis 88</td>
-    <td class="center read">
-        <button onclick="toggleReview(this)">read ▿</button>
-    </td>
-  </tr>
-
-  <tr class="full">
-    <td colspan="5">
-        <div>
-          Citation: Medical image analysis 88, 102864, 2023.
-          <!-- Add links or additional information here -->
-        </div>
-        <br/>
-        <button onclick="hideReview(this)">close ⌃</button>
-        <button onclick="copyReview(this)">copy to clipboard</button>
-    </td>
-  </tr>
-
-  <tr>
-    <td>Select without fear: Almost all mini-batch schedules generalize optimally</td>
-    <td>Authors not available</td>
-    <td class="small">2023</td>
-    <td>arXiv preprint arXiv:2305.02247</td>
-    <td class="center read">
-        <button onclick="toggleReview(this)">read ▿</button>
-    </td>
-  </tr>
-
-  <tr class="full">
-    <td colspan="5">
-        <div>
-          Citation: arXiv preprint arXiv:2305.02247, 2023.
-          <!-- Add links or additional information here -->
-        </div>
-        <br/>
-        <button onclick="hideReview(this)">close ⌃</button>
-        <button onclick="copyReview(this)">copy to clipboard</button>
-    </td>
-  </tr>
-
-  <tr>
-    <td>Stacking multiple optimal transport policies to map functional connectomes</td>
-    <td>Authors not available</td>
-    <td class="small">2023</td>
-    <td>2023 57th Annual Conference on Information Sciences and Systems (CISS)</td>
-    <td class="center read">
-        <button onclick="toggleReview(this)">read ▿</button>
-    </td>
-  </tr>
-
-  <tr class="full">
-    <td colspan="5">
-        <div>
-          Citation: 2023 57th Annual Conference on Information Sciences and Systems (CISS), 1-6, 2023.
-          <!-- Add links or additional information here -->
-        </div>
-        <br/>
-        <button onclick="hideReview(this)">close ⌃</button>
-        <button onclick="copyReview(this)">copy to clipboard</button>
-    </td>
-  </tr>
-
-  <tr>
-    <td>Conditional gradient methods</td>
-    <td>Authors not available</td>
-    <td class="small">2022</td>
-    <td>arXiv preprint arXiv:2211.14103</td>
-    <td class="center read">
-        <button onclick="toggleReview(this)">read ▿</button>
-    </td>
-  </tr>
-
-  <tr class="full">
-    <td colspan="5">
-        <div>
-          Citation: arXiv preprint arXiv:2211.14103, 2022.
-          <!-- Add links or additional information here -->
-        </div>
-        <br/>
-        <button onclick="hideReview(this)">close ⌃</button>
-        <button onclick="copyReview(this)">copy to clipboard</button>
-    </td>
-  </tr>
-
-  <tr>
-    <td>Beyond lipschitz: Sharp generalization and excess risk bounds for full-batch gd</td>
-    <td>Authors not available</td>
-    <td class="small">2022</td>
-    <td>arXiv preprint arXiv:2204.12446</td>
-    <td class="center read">
-        <button onclick="toggleReview(this)">read ▿</button>
-    </td>
-  </tr>
-
-  <tr class="full">
-    <td colspan="5">
-        <div>
-          Citation: arXiv preprint arXiv:2204.12446, 2022.
-          <!-- Add links or additional information here -->
-        </div>
-        <br/>
-        <button onclick="hideReview(this)">close ⌃</button>
-        <button onclick="copyReview(this)">copy to clipboard</button>
-    </td>
-  </tr>
-
-  <tr>
-    <td>Replicable bandits</td>
-    <td>Authors not available</td>
-    <td class="small">2022</td>
-    <td>arXiv preprint arXiv:2210.01898</td>
-    <td class="center read">
-        <button onclick="toggleReview(this)">read ▿</button>
-    </td>
-  </tr>
-
-  <tr class="full">
-    <td colspan="5">
-        <div>
-          Citation: arXiv preprint arXiv:2210.01898, 2022.
-          <!-- Add links or additional information here -->
-        </div>
-        <br/>
-        <button onclick="hideReview(this)">close ⌃</button>
-        <button onclick="copyReview(this)">copy to clipboard</button>
-    </td>
-  </tr>
-
-  <tr>
-    <td>Submodular maximization in clean linear time</td>
-    <td>Authors not available</td>
-    <td class="small">2022</td>
-    <td>Advances in Neural Information Processing Systems 35</td>
-    <td class="center read">
-        <button onclick="toggleReview(this)">read ▿</button>
-    </td>
-  </tr>
-
-  <tr class="full">
-    <td colspan="5">
-        <div>
-          Citation: Advances in Neural Information Processing Systems 35, 17473-17487, 2022.
-          <!-- Add links or additional information here -->
-        </div>
-        <br/>
-        <button onclick="hideReview(this)">close ⌃</button>
-        <button onclick="copyReview(this)">copy to clipboard</button>
-    </td>
-  </tr>
-
-  <tr>
-    <td>Fast neural kernel embeddings for general activations</td>
-    <td>Authors not available</td>
-    <td class="small">2022</td>
-    <td>Advances in neural information processing systems 35</td>
-    <td class="center read">
-        <button onclick="toggleReview(this)">read ▿</button>
-    </td>
-  </tr>
-
-  <tr class="full">
-    <td colspan="5">
-        <div>
-          Citation: Advances in neural information processing systems 35, 35657-35671, 2022.
-          <!-- Add links or additional information here -->
-        </div>
-        <br/>
-        <button onclick="hideReview(this)">close ⌃</button>
-        <button onclick="copyReview(this)">copy to clipboard</button>
-    </td>
-  </tr>
-
-  <tr>
-    <td>Multiclass learnability beyond the pac framework: Universal rates and partial concept classes</td>
-    <td>Authors not available</td>
-    <td class="small">2022</td>
-    <td>Advances in Neural Information Processing Systems 35</td>
-    <td class="center read">
-        <button onclick="toggleReview(this)">read ▿</button>
-    </td>
-  </tr>
-
-  <tr class="full">
-    <td colspan="5">
-        <div>
-          Citation: Advances in Neural Information Processing Systems 35, 20809-20822, 2022.
-          <!-- Add links or additional information here -->
-        </div>
-        <br/>
-        <button onclick="hideReview(this)">close ⌃</button>
-        <button onclick="copyReview(this)">copy to clipboard</button>
-    </td>
-  </tr>
-
-  <tr>
-    <td>Self-consistency of the fokker planck equation</td>
-    <td>Authors not available</td>
-    <td class="small">2022</td>
-    <td>Conference on Learning Theory</td>
-    <td class="center read">
-        <button onclick="toggleReview(this)">read ▿</button>
-    </td>
-  </tr>
-
-  <tr class="full">
-    <td colspan="5">
-        <div>
-          Citation: Conference on Learning Theory, 817-841, 2022.
-          <!-- Add links or additional information here -->
-        </div>
-        <br/>
-        <button onclick="hideReview(this)">close ⌃</button>
-        <button onclick="copyReview(this)">copy to clipboard</button>
-    </td>
-  </tr>
-
-  <tr>
-    <td>What Functions Can Graph Neural Networks Generate?</td>
-    <td>Authors not available</td>
-    <td class="small">2022</td>
-    <td>arXiv preprint arXiv:2202.08833</td>
-    <td class="center read">
-        <button onclick="toggleReview(this)">read ▿</button>
-    </td>
-  </tr>
-
-  <tr class="full">
-    <td colspan="5">
-        <div>
-          Citation: arXiv preprint arXiv:2202.08833, 2022.
-          <!-- Add links or additional information here -->
-        </div>
-        <br/>
-        <button onclick="hideReview(this)">close ⌃</button>
-        <button onclick="copyReview(this)">copy to clipboard</button>
-    </td>
-  </tr>
-
-  <tr>
-    <td>Federated functional gradient boosting</td>
-    <td>Authors not available</td>
-    <td class="small">2022</td>
-    <td>International Conference on Artificial Intelligence and Statistics</td>
-    <td class="center read">
-        <button onclick="toggleReview(this)">read ▿</button>
-    </td>
-  </tr>
-
-  <tr class="full">
-    <td colspan="5">
-        <div>
-          Citation: International Conference on Artificial Intelligence and Statistics, 7814-7840, 2022.
-          <!-- Add links or additional information here -->
-        </div>
-        <br/>
-        <button onclick="hideReview(this)">close ⌃</button>
-        <button onclick="copyReview(this)">copy to clipboard</button>
-    </td>
-  </tr>
-
-  <tr>
-    <td>Universal rates for interactive learning</td>
-    <td>Authors not available</td>
-    <td class="small">2022</td>
-    <td>Advances in Neural Information Processing Systems 35</td>
-    <td class="center read">
-        <button onclick="toggleReview(this)">read ▿</button>
-    </td>
-  </tr>
-
-  <tr class="full">
-    <td colspan="5">
-        <div>
-          Citation: Advances in Neural Information Processing Systems 35, 28657-28669, 2022.
-          <!-- Add links or additional information here -->
-        </div>
-        <br/>
-        <button onclick="hideReview(this)">close ⌃</button>
-        <button onclick="copyReview(this)">copy to clipboard</button>
-    </td>
-  </tr>
-
-  <tr>
-    <td>On optimal learning under targeted data poisoning</td>
-    <td>Authors not available</td>
-    <td class="small">2022</td>
-    <td>Advances in Neural Information Processing Systems 35</td>
-    <td class="center read">
-        <button onclick="toggleReview(this)">read ▿</button>
-    </td>
-  </tr>
-
-  <tr class="full">
-    <td colspan="5">
-        <div>
-          Citation: Advances in Neural Information Processing Systems 35, 30770-30782, 2022.
-          <!-- Add links or additional information here -->
-        </div>
-        <br/>
-        <button onclick="hideReview(this)">close ⌃</button>
-        <button onclick="copyReview(this)">copy to clipboard</button>
-    </td>
-  </tr>
-
-  <tr>
-    <td>The power of subsampling in submodular maximization</td>
-    <td>Authors not available</td>
-    <td class="small">2022</td>
-    <td>Mathematics of Operations Research 47 (2)</td>
-    <td class="center read">
-        <button onclick="toggleReview(this)">read ▿</button>
-    </td>
-  </tr>
-
-  <tr class="full">
-    <td colspan="5">
-        <div>
-          Citation: Mathematics of Operations Research 47 (2), 1365-1393, 2022.
-          <!-- Add links or additional information here -->
-        </div>
-        <br/>
-        <button onclick="hideReview(this)">close ⌃</button>
-        <button onclick="copyReview(this)">copy to clipboard</button>
-    </td>
-  </tr>
-
-  <tr>
-    <td>Learning distributionally robust models at scale via composite optimization</td>
-    <td>Authors not available</td>
-    <td class="small">2022</td>
-    <td>arXiv preprint arXiv:2203.09607</td>
-    <td class="center read">
-        <button onclick="toggleReview(this)">read ▿</button>
-    </td>
-  </tr>
-
-  <tr class="full">
-    <td colspan="5">
-        <div>
-          Citation: arXiv preprint arXiv:2203.09607, 2022.
-          <!-- Add links or additional information here -->
-        </div>
-        <br/>
-        <button onclick="hideReview(this)">close ⌃</button>
-        <button onclick="copyReview(this)">copy to clipboard</button>
-    </td>
-  </tr>
-
-  <tr>
-    <td>Reinforcement learning with logarithmic regret and policy switches</td>
-    <td>Authors not available</td>
-    <td class="small">2022</td>
-    <td>Advances in Neural Information Processing Systems 35</td>
-    <td class="center read">
-        <button onclick="toggleReview(this)">read ▿</button>
-    </td>
-  </tr>
-
-  <tr class="full">
-    <td colspan="5">
-        <div>
-          Citation: Advances in Neural Information Processing Systems 35, 36040-36053, 2022.
-          <!-- Add links or additional information here -->
-        </div>
-        <br/>
-        <button onclick="hideReview(this)">close ⌃</button>
-        <button onclick="copyReview(this)">copy to clipboard</button>
-    </td>
-  </tr>
-
-  <tr>
-    <td>Scalable mcmc sampling for nonsymmetric determinantal point processes</td>
-    <td>Authors not available</td>
-    <td class="small">2022</td>
-    <td>International Conference on Machine Learning</td>
-    <td class="center read">
-        <button onclick="toggleReview(this)">read ▿</button>
-    </td>
-  </tr>
-
-  <tr class="full">
-    <td colspan="5">
-        <div>
-          Citation: International Conference on Machine Learning, 8213-8229, 2022.
-          <!-- Add links or additional information here -->
-        </div>
-        <br/>
-        <button onclick="hideReview(this)">close ⌃</button>
-        <button onclick="copyReview(this)">copy to clipboard</button>
-    </td>
-  </tr>
-
-  <tr>
-    <td>Scalable sampling for nonsymmetric determinantal point processes</td>
-    <td>Authors not available</td>
-    <td class="small">2022</td>
-    <td>arXiv preprint arXiv:2201.08417</td>
-    <td class="center read">
-        <button onclick="toggleReview(this)">read ▿</button>
-    </td>
-  </tr>
-
-  <tr class="full">
-    <td colspan="5">
-        <div>
-          Citation: arXiv preprint arXiv:2201.08417, 2022.
-          <!-- Add links or additional information here -->
-        </div>
-        <br/>
-        <button onclick="hideReview(this)">close ⌃</button>
-        <button onclick="copyReview(this)">copy to clipboard</button>
-    </td>
-  </tr>
-
-  <tr>
-    <td>Combining multiple atlases to estimate data-driven mappings between functional connectomes using optimal transport</td>
-    <td>Authors not available</td>
-    <td class="small">2022</td>
-    <td>International Conference on Medical Image Computing and Computer-Assisted …</td>
-    <td class="center read">
-        <button onclick="toggleReview(this)">read ▿</button>
-    </td>
-  </tr>
-
-  <tr class="full">
-    <td colspan="5">
-        <div>
-          Citation: International Conference on Medical Image Computing and Computer-Assisted …, 2022.
-          <!-- Add links or additional information here -->
-        </div>
-        <br/>
-        <button onclick="hideReview(this)">close ⌃</button>
-        <button onclick="copyReview(this)">copy to clipboard</button>
-    </td>
-  </tr>
-
-  <tr>
-    <td>Exact Gradient Computation for Spiking Neural Networks Through Forward Propagation</td>
-    <td>Authors not available</td>
-    <td class="small">2022</td>
-    <td>arXiv preprint arXiv:2210.15415</td>
-    <td class="center read">
-        <button onclick="toggleReview(this)">read ▿</button>
-    </td>
-  </tr>
-
-  <tr class="full">
-    <td colspan="5">
-        <div>
-          Citation: arXiv preprint arXiv:2210.15415, 2022.
-          <!-- Add links or additional information here -->
-        </div>
-        <br/>
-        <button onclick="hideReview(this)">close ⌃</button>
-        <button onclick="copyReview(this)">copy to clipboard</button>
-    </td>
-  </tr>
-
-  <tr>
-    <td>Transforming Connectomes to “Any” Parcellation via Graph Matching</td>
-    <td>Authors not available</td>
-    <td class="small">2022</td>
-    <td>MICCAI Workshop on Imaging Systems for GI Endoscopy</td>
-    <td class="center read">
-        <button onclick="toggleReview(this)">read ▿</button>
-    </td>
-  </tr>
-
-  <tr class="full">
-    <td colspan="5">
-        <div>
-          Citation: MICCAI Workshop on Imaging Systems for GI Endoscopy, 118-127, 2022.
-          <!-- Add links or additional information here -->
-        </div>
-        <br/>
-        <button onclick="hideReview(this)">close ⌃</button>
-        <button onclick="copyReview(this)">copy to clipboard</button>
-    </td>
-  </tr>
-
-  <tr>
-    <td>The curious case of adversarially robust models: More data can help, double descend, or hurt generalization</td>
-    <td>Authors not available</td>
-    <td class="small">2021</td>
-    <td>Uncertainty in Artificial Intelligence</td>
-    <td class="center read">
-        <button onclick="toggleReview(this)">read ▿</button>
-    </td>
-  </tr>
-
-  <tr class="full">
-    <td colspan="5">
-        <div>
-          Citation: Uncertainty in Artificial Intelligence, 129-139, 2021.
-          <!-- Add links or additional information here -->
-        </div>
-        <br/>
-        <button onclick="hideReview(this)">close ⌃</button>
-        <button onclick="copyReview(this)">copy to clipboard</button>
-    </td>
-  </tr>
-
-  <tr>
-    <td>Regret bounds for batched bandits</td>
-    <td>Authors not available</td>
-    <td class="small">2021</td>
-    <td>Proceedings of the AAAI Conference on Artificial Intelligence 35 (8)</td>
-    <td class="center read">
-        <button onclick="toggleReview(this)">read ▿</button>
-    </td>
-  </tr>
-
-  <tr class="full">
-    <td colspan="5">
-        <div>
-          Citation: Proceedings of the AAAI Conference on Artificial Intelligence 35 (8), 7340-7348, 2021.
-          <!-- Add links or additional information here -->
-        </div>
-        <br/>
-        <button onclick="hideReview(this)">close ⌃</button>
-        <button onclick="copyReview(this)">copy to clipboard</button>
-    </td>
-  </tr>
-
-  <tr>
-    <td>Multiple descent: Design your own generalization curve</td>
-    <td>Authors not available</td>
-    <td class="small">2021</td>
-    <td>Advances in Neural Information Processing Systems 34</td>
-    <td class="center read">
-        <button onclick="toggleReview(this)">read ▿</button>
-    </td>
-  </tr>
-
-  <tr class="full">
-    <td colspan="5">
-        <div>
-          Citation: Advances in Neural Information Processing Systems 34, 8898-8912, 2021.
-          <!-- Add links or additional information here -->
-        </div>
-        <br/>
-        <button onclick="hideReview(this)">close ⌃</button>
-        <button onclick="copyReview(this)">copy to clipboard</button>
-    </td>
-  </tr>
-
-  <tr>
-    <td>Regularized submodular maximization at scale</td>
-    <td>Authors not available</td>
-    <td class="small">2021</td>
-    <td>International Conference on Machine Learning</td>
-    <td class="center read">
-        <button onclick="toggleReview(this)">read ▿</button>
-    </td>
-  </tr>
-
-  <tr class="full">
-    <td colspan="5">
-        <div>
-          Citation: International Conference on Machine Learning, 5356-5366, 2021.
-          <!-- Add links or additional information here -->
-        </div>
-        <br/>
-        <button onclick="hideReview(this)">close ⌃</button>
-        <button onclick="copyReview(this)">copy to clipboard</button>
-    </td>
-  </tr>
-
-  <tr>
-    <td>Adaptivity in adaptive submodularity</td>
-    <td>Authors not available</td>
-    <td class="small">2021</td>
-    <td>Conference on Learning Theory</td>
-    <td class="center read">
-        <button onclick="toggleReview(this)">read ▿</button>
-    </td>
-  </tr>
-
-  <tr class="full">
-    <td colspan="5">
-        <div>
-          Citation: Conference on Learning Theory, 1823-1846, 2021.
-          <!-- Add links or additional information here -->
-        </div>
-        <br/>
-        <button onclick="hideReview(this)">close ⌃</button>
-        <button onclick="copyReview(this)">copy to clipboard</button>
-    </td>
-  </tr>
-
-  <tr>
-    <td>Parallelizing thompson sampling</td>
-    <td>Authors not available</td>
-    <td class="small">2021</td>
-    <td>Advances in Neural Information Processing Systems 34</td>
-    <td class="center read">
-        <button onclick="toggleReview(this)">read ▿</button>
-    </td>
-  </tr>
-
-  <tr class="full">
-    <td colspan="5">
-        <div>
-          Citation: Advances in Neural Information Processing Systems 34, 10535-10548, 2021.
-          <!-- Add links or additional information here -->
-        </div>
-        <br/>
-        <button onclick="hideReview(this)">close ⌃</button>
-        <button onclick="copyReview(this)">copy to clipboard</button>
-    </td>
-  </tr>
-
-  <tr>
-    <td>An exponential improvement on the memorization capacity of deep threshold networks</td>
-    <td>Authors not available</td>
-    <td class="small">2021</td>
-    <td>Advances in Neural Information Processing Systems 34</td>
-    <td class="center read">
-        <button onclick="toggleReview(this)">read ▿</button>
-    </td>
-  </tr>
-
-  <tr class="full">
-    <td colspan="5">
-        <div>
-          Citation: Advances in Neural Information Processing Systems 34, 12674-12685, 2021.
-          <!-- Add links or additional information here -->
-        </div>
-        <br/>
-        <button onclick="hideReview(this)">close ⌃</button>
-        <button onclick="copyReview(this)">copy to clipboard</button>
-    </td>
-  </tr>
-
-  <tr>
-    <td>Submodular+ concave</td>
-    <td>Authors not available</td>
-    <td class="small">2021</td>
-    <td>Advances in Neural Information Processing Systems 34</td>
-    <td class="center read">
-        <button onclick="toggleReview(this)">read ▿</button>
-    </td>
-  </tr>
-
-  <tr class="full">
-    <td colspan="5">
-        <div>
-          Citation: Advances in Neural Information Processing Systems 34, 11577-11591, 2021.
-          <!-- Add links or additional information here -->
-        </div>
-        <br/>
-        <button onclick="hideReview(this)">close ⌃</button>
-        <button onclick="copyReview(this)">copy to clipboard</button>
-    </td>
-  </tr>
-
-  <tr>
-    <td>Meta learning in the continuous time limit</td>
-    <td>Authors not available</td>
-    <td class="small">2021</td>
-    <td>International conference on artificial intelligence and statistics</td>
-    <td class="center read">
-        <button onclick="toggleReview(this)">read ▿</button>
-    </td>
-  </tr>
-
-  <tr class="full">
-    <td colspan="5">
-        <div>
-          Citation: International conference on artificial intelligence and statistics, 3052-3060, 2021.
-          <!-- Add links or additional information here -->
-        </div>
-        <br/>
-        <button onclick="hideReview(this)">close ⌃</button>
-        <button onclick="copyReview(this)">copy to clipboard</button>
-    </td>
-  </tr>
-
-  <tr>
-    <td>Learning and certification under instance-targeted poisoning</td>
-    <td>Authors not available</td>
-    <td class="small">2021</td>
-    <td>Uncertainty in Artificial Intelligence</td>
-    <td class="center read">
-        <button onclick="toggleReview(this)">read ▿</button>
-    </td>
-  </tr>
-
-  <tr class="full">
-    <td colspan="5">
-        <div>
-          Citation: Uncertainty in Artificial Intelligence, 2135-2145, 2021.
-          <!-- Add links or additional information here -->
-        </div>
-        <br/>
-        <button onclick="hideReview(this)">close ⌃</button>
-        <button onclick="copyReview(this)">copy to clipboard</button>
-    </td>
-  </tr>
-
-  <tr>
-    <td>Data-driven mapping between functional connectomes using optimal transport</td>
-    <td>Authors not available</td>
-    <td class="small">2021</td>
-    <td>Medical Image Computing and Computer Assisted Intervention–MICCAI 2021: 24th …</td>
-    <td class="center read">
-        <button onclick="toggleReview(this)">read ▿</button>
-    </td>
-  </tr>
-
-  <tr class="full">
-    <td colspan="5">
-        <div>
-          Citation: Medical Image Computing and Computer Assisted Intervention–MICCAI 2021: 24th …, 2021.
-          <!-- Add links or additional information here -->
-        </div>
-        <br/>
-        <button onclick="hideReview(this)">close ⌃</button>
-        <button onclick="copyReview(this)">copy to clipboard</button>
-    </td>
-  </tr>
-
-  <tr>
-    <td>There is no single functional atlas even for a single individual: Functional parcel definitions change with task</td>
-    <td>Authors not available</td>
-    <td class="small">2020</td>
-    <td>NeuroImage 208</td>
-    <td class="center read">
-        <button onclick="toggleReview(this)">read ▿</button>
-    </td>
-  </tr>
-
-  <tr class="full">
-    <td colspan="5">
-        <div>
-          Citation: NeuroImage 208, 116366, 2020.
-          <!-- Add links or additional information here -->
-        </div>
-        <br/>
-        <button onclick="hideReview(this)">close ⌃</button>
-        <button onclick="copyReview(this)">copy to clipboard</button>
-    </td>
-  </tr>
-
-  <tr>
-    <td>Stochastic conditional gradient methods: From convex minimization to submodular maximization</td>
-    <td>Authors not available</td>
-    <td class="small">2020</td>
-    <td>Journal of machine learning research 21 (105)</td>
-    <td class="center read">
-        <button onclick="toggleReview(this)">read ▿</button>
-    </td>
-  </tr>
-
-  <tr class="full">
-    <td colspan="5">
-        <div>
-          Citation: Journal of machine learning research 21 (105), 1-49, 2020.
-          <!-- Add links or additional information here -->
-        </div>
-        <br/>
-        <button onclick="hideReview(this)">close ⌃</button>
-        <button onclick="copyReview(this)">copy to clipboard</button>
-    </td>
-  </tr>
-
-  <tr>
-    <td>One sample stochastic frank-wolfe</td>
-    <td>Authors not available</td>
-    <td class="small">2020</td>
-    <td>International Conference on Artificial Intelligence and Statistics</td>
-    <td class="center read">
-        <button onclick="toggleReview(this)">read ▿</button>
-    </td>
-  </tr>
-
-  <tr class="full">
-    <td colspan="5">
-        <div>
-          Citation: International Conference on Artificial Intelligence and Statistics, 4012-4023, 2020.
-          <!-- Add links or additional information here -->
-        </div>
-        <br/>
-        <button onclick="hideReview(this)">close ⌃</button>
-        <button onclick="copyReview(this)">copy to clipboard</button>
-    </td>
-  </tr>
-
-  <tr>
-    <td>Individualized functional networks reconfigure with cognitive state</td>
-    <td>Authors not available</td>
-    <td class="small">2020</td>
-    <td>NeuroImage 206</td>
-    <td class="center read">
-        <button onclick="toggleReview(this)">read ▿</button>
-    </td>
-  </tr>
-
-  <tr class="full">
-    <td colspan="5">
-        <div>
-          Citation: NeuroImage 206, 116233, 2020.
-          <!-- Add links or additional information here -->
-        </div>
-        <br/>
-        <button onclick="hideReview(this)">close ⌃</button>
-        <button onclick="copyReview(this)">copy to clipboard</button>
-    </td>
-  </tr>
-
-  <tr>
-    <td>More data can expand the generalization gap between adversarially robust and standard models</td>
-    <td>Authors not available</td>
-    <td class="small">2020</td>
-    <td>International Conference on Machine Learning</td>
-    <td class="center read">
-        <button onclick="toggleReview(this)">read ▿</button>
-    </td>
-  </tr>
-
-  <tr class="full">
-    <td colspan="5">
-        <div>
-          Citation: International Conference on Machine Learning, 1670-1680, 2020.
-          <!-- Add links or additional information here -->
-        </div>
-        <br/>
-        <button onclick="hideReview(this)">close ⌃</button>
-        <button onclick="copyReview(this)">copy to clipboard</button>
-    </td>
-  </tr>
-
-  <tr>
-    <td>Stochastic Conditional Gradient++:(Non) Convex Minimization and Continuous Submodular Maximization</td>
-    <td>Authors not available</td>
-    <td class="small">2020</td>
-    <td>SIAM Journal on Optimization 30 (4)</td>
-    <td class="center read">
-        <button onclick="toggleReview(this)">read ▿</button>
-    </td>
-  </tr>
-
-  <tr class="full">
-    <td colspan="5">
-        <div>
-          Citation: SIAM Journal on Optimization 30 (4), 3315-3344, 2020.
-          <!-- Add links or additional information here -->
-        </div>
-        <br/>
-        <button onclick="hideReview(this)">close ⌃</button>
-        <button onclick="copyReview(this)">copy to clipboard</button>
-    </td>
-  </tr>
-
-  <tr>
-    <td>Submodularity in action: From machine learning to signal processing applications</td>
-    <td>Authors not available</td>
-    <td class="small">2020</td>
-    <td>IEEE Signal Processing Magazine 37 (5)</td>
-    <td class="center read">
-        <button onclick="toggleReview(this)">read ▿</button>
-    </td>
-  </tr>
-
-  <tr class="full">
-    <td colspan="5">
-        <div>
-          Citation: IEEE Signal Processing Magazine 37 (5), 120-133, 2020.
-          <!-- Add links or additional information here -->
-        </div>
-        <br/>
-        <button onclick="hideReview(this)">close ⌃</button>
-        <button onclick="copyReview(this)">copy to clipboard</button>
-    </td>
-  </tr>
-
-  <tr>
-    <td>Streaming submodular maximization under a k-set system constraint</td>
-    <td>Authors not available</td>
-    <td class="small">2020</td>
-    <td>International Conference on Machine Learning</td>
-    <td class="center read">
-        <button onclick="toggleReview(this)">read ▿</button>
-    </td>
-  </tr>
-
-  <tr class="full">
-    <td colspan="5">
-        <div>
-          Citation: International Conference on Machine Learning, 3939-3949, 2020.
-          <!-- Add links or additional information here -->
-        </div>
-        <br/>
-        <button onclick="hideReview(this)">close ⌃</button>
-        <button onclick="copyReview(this)">copy to clipboard</button>
-    </td>
-  </tr>
-
-  <tr>
-    <td>Minimax regret of switching-constrained online convex optimization: No phase transition</td>
-    <td>Authors not available</td>
-    <td class="small">2020</td>
-    <td>Advances in Neural Information Processing Systems 33</td>
-    <td class="center read">
-        <button onclick="toggleReview(this)">read ▿</button>
-    </td>
-  </tr>
-
-  <tr class="full">
-    <td colspan="5">
-        <div>
-          Citation: Advances in Neural Information Processing Systems 33, 3477-3486, 2020.
-          <!-- Add links or additional information here -->
-        </div>
-        <br/>
-        <button onclick="hideReview(this)">close ⌃</button>
-        <button onclick="copyReview(this)">copy to clipboard</button>
-    </td>
-  </tr>
-
-  <tr>
-    <td>Quantized frank-wolfe: Faster optimization, lower communication, and projection free</td>
-    <td>Authors not available</td>
-    <td class="small">2020</td>
-    <td>International Conference on Artificial Intelligence and Statistics</td>
-    <td class="center read">
-        <button onclick="toggleReview(this)">read ▿</button>
-    </td>
-  </tr>
-
-  <tr class="full">
-    <td colspan="5">
-        <div>
-          Citation: International Conference on Artificial Intelligence and Statistics, 3696-3706, 2020.
-          <!-- Add links or additional information here -->
-        </div>
-        <br/>
-        <button onclick="hideReview(this)">close ⌃</button>
-        <button onclick="copyReview(this)">copy to clipboard</button>
-    </td>
-  </tr>
-
-  <tr>
-    <td>Black box submodular maximization: Discrete and continuous settings</td>
-    <td>Authors not available</td>
-    <td class="small">2020</td>
-    <td>International Conference on Artificial Intelligence and Statistics</td>
-    <td class="center read">
-        <button onclick="toggleReview(this)">read ▿</button>
-    </td>
-  </tr>
-
-  <tr class="full">
-    <td colspan="5">
-        <div>
-          Citation: International Conference on Artificial Intelligence and Statistics, 1058-1070, 2020.
-          <!-- Add links or additional information here -->
-        </div>
-        <br/>
-        <button onclick="hideReview(this)">close ⌃</button>
-        <button onclick="copyReview(this)">copy to clipboard</button>
-    </td>
-  </tr>
-
-  <tr>
-    <td>Safe learning under uncertain objectives and constraints</td>
-    <td>Authors not available</td>
-    <td class="small">2020</td>
-    <td>arXiv preprint arXiv:2006.13326</td>
-    <td class="center read">
-        <button onclick="toggleReview(this)">read ▿</button>
-    </td>
-  </tr>
-
-  <tr class="full">
-    <td colspan="5">
-        <div>
-          Citation: arXiv preprint arXiv:2006.13326, 2020.
-          <!-- Add links or additional information here -->
-        </div>
-        <br/>
-        <button onclick="hideReview(this)">close ⌃</button>
-        <button onclick="copyReview(this)">copy to clipboard</button>
-    </td>
-  </tr>
-
-  <tr>
-    <td>Online MAP inference of determinantal point processes</td>
-    <td>Authors not available</td>
-    <td class="small">2020</td>
-    <td>Advances in Neural Information Processing Systems 33</td>
-    <td class="center read">
-        <button onclick="toggleReview(this)">read ▿</button>
-    </td>
-  </tr>
-
-  <tr class="full">
-    <td colspan="5">
-        <div>
-          Citation: Advances in Neural Information Processing Systems 33, 3419-3429, 2020.
-          <!-- Add links or additional information here -->
-        </div>
-        <br/>
-        <button onclick="hideReview(this)">close ⌃</button>
-        <button onclick="copyReview(this)">copy to clipboard</button>
-    </td>
-  </tr>
-
-  <tr>
-    <td>Continuous submodular maximization: Beyond dr-submodularity</td>
-    <td>Authors not available</td>
-    <td class="small">2020</td>
-    <td>Advances in Neural Information Processing Systems 33</td>
-    <td class="center read">
-        <button onclick="toggleReview(this)">read ▿</button>
-    </td>
-  </tr>
-
-  <tr class="full">
-    <td colspan="5">
-        <div>
-          Citation: Advances in Neural Information Processing Systems 33, 1404-1416, 2020.
-          <!-- Add links or additional information here -->
-        </div>
-        <br/>
-        <button onclick="hideReview(this)">close ⌃</button>
-        <button onclick="copyReview(this)">copy to clipboard</button>
-    </td>
-  </tr>
-
-  <tr>
-    <td>Three New Imaging Technologies That Are Worth a Look: Aided by Signal Processing, Advanced Imaging Research Projects Are Opening Doors to New Vistas [Special Reports]</td>
-    <td>Authors not available</td>
-    <td class="small">2020</td>
-    <td>IEEE Signal Processing Magazine 37 (5)</td>
-    <td class="center read">
-        <button onclick="toggleReview(this)">read ▿</button>
-    </td>
-  </tr>
-
-  <tr class="full">
-    <td colspan="5">
-        <div>
-          Citation: IEEE Signal Processing Magazine 37 (5), 120-133, 2020.
-          <!-- Add links or additional information here -->
-        </div>
-        <br/>
-        <button onclick="hideReview(this)">close ⌃</button>
-        <button onclick="copyReview(this)">copy to clipboard</button>
-    </td>
-  </tr>
-
-  <tr>
-    <td>Submodular maximization beyond non-negativity: Guarantees, fast algorithms, and applications</td>
-    <td>Authors not available</td>
-    <td class="small">2019</td>
-    <td>International Conference on Machine Learning</td>
-    <td class="center read">
-        <button onclick="toggleReview(this)">read ▿</button>
-    </td>
-  </tr>
-
-  <tr class="full">
-    <td colspan="5">
-        <div>
-          Citation: International Conference on Machine Learning, 2634-2643, 2019.
-          <!-- Add links or additional information here -->
-        </div>
-        <br/>
-        <button onclick="hideReview(this)">close ⌃</button>
-        <button onclick="copyReview(this)">copy to clipboard</button>
-    </td>
-  </tr>
-
-  <tr>
-    <td>Submodular streaming in all its glory: Tight approximation, minimum memory and low adaptive complexity</td>
-    <td>Authors not available</td>
-    <td class="small">2019</td>
-    <td>International Conference on Machine Learning</td>
-    <td class="center read">
-        <button onclick="toggleReview(this)">read ▿</button>
-    </td>
-  </tr>
-
-  <tr class="full">
-    <td colspan="5">
-        <div>
-          Citation: International Conference on Machine Learning, 3311-3320, 2019.
-          <!-- Add links or additional information here -->
-        </div>
-        <br/>
-        <button onclick="hideReview(this)">close ⌃</button>
-        <button onclick="copyReview(this)">copy to clipboard</button>
-    </td>
-  </tr>
-
-  <tr>
-    <td>Online continuous submodular maximization: From full-information to bandit feedback</td>
-    <td>Authors not available</td>
-    <td class="small">2019</td>
-    <td>Advances in Neural Information Processing Systems 32</td>
-    <td class="center read">
-        <button onclick="toggleReview(this)">read ▿</button>
-    </td>
-  </tr>
-
-  <tr class="full">
-    <td colspan="5">
-        <div>
-          Citation: Advances in Neural Information Processing Systems 32, 2019.
-          <!-- Add links or additional information here -->
-        </div>
-        <br/>
-        <button onclick="hideReview(this)">close ⌃</button>
-        <button onclick="copyReview(this)">copy to clipboard</button>
-    </td>
-  </tr>
-
-  <tr>
-    <td>Projection-free bandit convex optimization</td>
-    <td>Authors not available</td>
-    <td class="small">2019</td>
-    <td>The 22nd International Conference on Artificial Intelligence and Statistics …</td>
-    <td class="center read">
-        <button onclick="toggleReview(this)">read ▿</button>
-    </td>
-  </tr>
-
-  <tr class="full">
-    <td colspan="5">
-        <div>
-          Citation: The 22nd International Conference on Artificial Intelligence and Statistics …, 2019.
-          <!-- Add links or additional information here -->
-        </div>
-        <br/>
-        <button onclick="hideReview(this)">close ⌃</button>
-        <button onclick="copyReview(this)">copy to clipboard</button>
-    </td>
-  </tr>
-
-  <tr>
-    <td>Unconstrained submodular maximization with constant adaptive complexity</td>
-    <td>Authors not available</td>
-    <td class="small">2019</td>
-    <td>Proceedings of the 51st Annual ACM SIGACT Symposium on Theory of Computing …</td>
-    <td class="center read">
-        <button onclick="toggleReview(this)">read ▿</button>
-    </td>
-  </tr>
-
-  <tr class="full">
-    <td colspan="5">
-        <div>
-          Citation: Proceedings of the 51st Annual ACM SIGACT Symposium on Theory of Computing …, 2019.
-          <!-- Add links or additional information here -->
-        </div>
-        <br/>
-        <button onclick="hideReview(this)">close ⌃</button>
-        <button onclick="copyReview(this)">copy to clipboard</button>
-    </td>
-  </tr>
-
-  <tr>
-    <td>Adaptive sequence submodularity</td>
-    <td>Authors not available</td>
-    <td class="small">2019</td>
-    <td>Advances in Neural Information Processing Systems 32</td>
-    <td class="center read">
-        <button onclick="toggleReview(this)">read ▿</button>
-    </td>
-  </tr>
-
-  <tr class="full">
-    <td colspan="5">
-        <div>
-          Citation: Advances in Neural Information Processing Systems 32, 2019.
-          <!-- Add links or additional information here -->
-        </div>
-        <br/>
-        <button onclick="hideReview(this)">close ⌃</button>
-        <button onclick="copyReview(this)">copy to clipboard</button>
-    </td>
-  </tr>
-
-  <tr>
-    <td>Stochastic continuous greedy++: When upper and lower bounds match</td>
-    <td>Authors not available</td>
-    <td class="small">2019</td>
-    <td>Advances in Neural Information Processing Systems 32</td>
-    <td class="center read">
-        <button onclick="toggleReview(this)">read ▿</button>
-    </td>
-  </tr>
-
-  <tr class="full">
-    <td colspan="5">
-        <div>
-          Citation: Advances in Neural Information Processing Systems 32, 2019.
-          <!-- Add links or additional information here -->
-        </div>
-        <br/>
-        <button onclick="hideReview(this)">close ⌃</button>
-        <button onclick="copyReview(this)">copy to clipboard</button>
-    </td>
-  </tr>
-
-  <tr>
-    <td>Eliminating latent discrimination: Train then mask</td>
-    <td>Authors not available</td>
-    <td class="small">2019</td>
-    <td>Proceedings of the AAAI Conference on Artificial Intelligence 33 (01)</td>
-    <td class="center read">
-        <button onclick="toggleReview(this)">read ▿</button>
-    </td>
-  </tr>
-
-  <tr class="full">
-    <td colspan="5">
-        <div>
-          Citation: Proceedings of the AAAI Conference on Artificial Intelligence 33 (01), 3672-3680, 2019.
-          <!-- Add links or additional information here -->
-        </div>
-        <br/>
-        <button onclick="hideReview(this)">close ⌃</button>
-        <button onclick="copyReview(this)">copy to clipboard</button>
-    </td>
-  </tr>
-
-  <tr>
-    <td>Online continuous submodular maximization</td>
-    <td>Authors not available</td>
-    <td class="small">2018</td>
-    <td>International Conference on Artificial Intelligence and Statistics</td>
-    <td class="center read">
-        <button onclick="toggleReview(this)">read ▿</button>
-    </td>
-  </tr>
-
-  <tr class="full">
-    <td colspan="5">
-        <div>
-          Citation: International Conference on Artificial Intelligence and Statistics, 1896-1905, 2018.
-          <!-- Add links or additional information here -->
-        </div>
-        <br/>
-        <button onclick="hideReview(this)">close ⌃</button>
-        <button onclick="copyReview(this)">copy to clipboard</button>
-    </td>
-  </tr>
-
-  <tr>
-    <td>Scalable deletion-robust submodular maximization: Data summarization with privacy and fairness constraints</td>
-    <td>Authors not available</td>
-    <td class="small">2018</td>
-    <td>International conference on machine learning</td>
-    <td class="center read">
-        <button onclick="toggleReview(this)">read ▿</button>
-    </td>
-  </tr>
-
-  <tr class="full">
-    <td colspan="5">
-        <div>
-          Citation: International conference on machine learning, 2544-2553, 2018.
-          <!-- Add links or additional information here -->
-        </div>
-        <br/>
-        <button onclick="hideReview(this)">close ⌃</button>
-        <button onclick="copyReview(this)">copy to clipboard</button>
-    </td>
-  </tr>
-
-  <tr>
-    <td>Projection-free online optimization with stochastic gradient: From convexity to submodularity</td>
-    <td>Authors not available</td>
-    <td class="small">2018</td>
-    <td>International Conference on Machine Learning</td>
-    <td class="center read">
-        <button onclick="toggleReview(this)">read ▿</button>
-    </td>
-  </tr>
-
-  <tr class="full">
-    <td colspan="5">
-        <div>
-          Citation: International Conference on Machine Learning, 814-823, 2018.
-          <!-- Add links or additional information here -->
-        </div>
-        <br/>
-        <button onclick="hideReview(this)">close ⌃</button>
-        <button onclick="copyReview(this)">copy to clipboard</button>
-    </td>
-  </tr>
-
-  <tr>
-    <td>Conditional gradient method for stochastic submodular maximization: Closing the gap</td>
-    <td>Authors not available</td>
-    <td class="small">2018</td>
-    <td>International Conference on Artificial Intelligence and Statistics</td>
-    <td class="center read">
-        <button onclick="toggleReview(this)">read ▿</button>
-    </td>
-  </tr>
-
-  <tr class="full">
-    <td colspan="5">
-        <div>
-          Citation: International Conference on Artificial Intelligence and Statistics, 1886-1895, 2018.
-          <!-- Add links or additional information here -->
-        </div>
-        <br/>
-        <button onclick="hideReview(this)">close ⌃</button>
-        <button onclick="copyReview(this)">copy to clipboard</button>
-    </td>
-  </tr>
-
-  <tr>
-    <td>Do less, get more: Streaming submodular maximization with subsampling</td>
-    <td>Authors not available</td>
-    <td class="small">2018</td>
-    <td>Advances in Neural Information Processing Systems 31</td>
-    <td class="center read">
-        <button onclick="toggleReview(this)">read ▿</button>
-    </td>
-  </tr>
-
-  <tr class="full">
-    <td colspan="5">
-        <div>
-          Citation: Advances in Neural Information Processing Systems 31, 2018.
-          <!-- Add links or additional information here -->
-        </div>
-        <br/>
-        <button onclick="hideReview(this)">close ⌃</button>
-        <button onclick="copyReview(this)">copy to clipboard</button>
-    </td>
-  </tr>
-
-  <tr>
-    <td>Data summarization at scale: A two-stage submodular approach</td>
-    <td>Authors not available</td>
-    <td class="small">2018</td>
-    <td>International Conference on Machine Learning</td>
-    <td class="center read">
-        <button onclick="toggleReview(this)">read ▿</button>
-    </td>
-  </tr>
-
-  <tr class="full">
-    <td colspan="5">
-        <div>
-          Citation: International Conference on Machine Learning, 3596-3605, 2018.
-          <!-- Add links or additional information here -->
-        </div>
-        <br/>
-        <button onclick="hideReview(this)">close ⌃</button>
-        <button onclick="copyReview(this)">copy to clipboard</button>
-    </td>
-  </tr>
-
-  <tr>
-    <td>An exemplar-based approach to individualized parcellation reveals the need for sex specific functional networks</td>
-    <td>Authors not available</td>
-    <td class="small">2018</td>
-    <td>Neuroimage 170</td>
-    <td class="center read">
-        <button onclick="toggleReview(this)">read ▿</button>
-    </td>
-  </tr>
-
-  <tr class="full">
-    <td colspan="5">
-        <div>
-          Citation: Neuroimage 170, 54-67, 2018.
-          <!-- Add links or additional information here -->
-        </div>
-        <br/>
-        <button onclick="hideReview(this)">close ⌃</button>
-        <button onclick="copyReview(this)">copy to clipboard</button>
-    </td>
-  </tr>
-
-  <tr>
-    <td>Weakly submodular maximization beyond cardinality constraints: Does randomization help greedy?</td>
-    <td>Authors not available</td>
-    <td class="small">2018</td>
-    <td>International Conference on Machine Learning</td>
-    <td class="center read">
-        <button onclick="toggleReview(this)">read ▿</button>
-    </td>
-  </tr>
-
-  <tr class="full">
-    <td colspan="5">
-        <div>
-          Citation: International Conference on Machine Learning, 804-813, 2018.
-          <!-- Add links or additional information here -->
-        </div>
-        <br/>
-        <button onclick="hideReview(this)">close ⌃</button>
-        <button onclick="copyReview(this)">copy to clipboard</button>
-    </td>
-  </tr>
-
-  <tr>
-    <td>Decentralized submodular maximization: Bridging discrete and continuous settings</td>
-    <td>Authors not available</td>
-    <td class="small">2018</td>
-    <td>International conference on machine learning</td>
-    <td class="center read">
-        <button onclick="toggleReview(this)">read ▿</button>
-    </td>
-  </tr>
-
-  <tr class="full">
-    <td colspan="5">
-        <div>
-          Citation: International conference on machine learning, 3616-3625, 2018.
-          <!-- Add links or additional information here -->
-        </div>
-        <br/>
-        <button onclick="hideReview(this)">close ⌃</button>
-        <button onclick="copyReview(this)">copy to clipboard</button>
-    </td>
-  </tr>
-
-  <tr>
-    <td>There is no single functional atlas even for a single individual: Parcellation of the human brain is state dependent</td>
-    <td>Authors not available</td>
-    <td class="small">2018</td>
-    <td>BioRxiv</td>
-    <td class="center read">
-        <button onclick="toggleReview(this)">read ▿</button>
-    </td>
-  </tr>
-
-  <tr class="full">
-    <td colspan="5">
-        <div>
-          Citation: BioRxiv, 431833, 2018.
-          <!-- Add links or additional information here -->
-        </div>
-        <br/>
-        <button onclick="hideReview(this)">close ⌃</button>
-        <button onclick="copyReview(this)">copy to clipboard</button>
-    </td>
-  </tr>
-
-  <tr>
-    <td>Submodularity on hypergraphs: From sets to sequences</td>
-    <td>Authors not available</td>
-    <td class="small">2018</td>
-    <td>International Conference on Artificial Intelligence and Statistics</td>
-    <td class="center read">
-        <button onclick="toggleReview(this)">read ▿</button>
-    </td>
-  </tr>
-
-  <tr class="full">
-    <td colspan="5">
-        <div>
-          Citation: International Conference on Artificial Intelligence and Statistics, 1177-1184, 2018.
-          <!-- Add links or additional information here -->
-        </div>
-        <br/>
-        <button onclick="hideReview(this)">close ⌃</button>
-        <button onclick="copyReview(this)">copy to clipboard</button>
-    </td>
-  </tr>
-
-  <tr>
-    <td>Comparison based learning from weak oracles</td>
-    <td>Authors not available</td>
-    <td class="small">2018</td>
-    <td>International Conference on Artificial Intelligence and Statistics</td>
-    <td class="center read">
-        <button onclick="toggleReview(this)">read ▿</button>
-    </td>
-  </tr>
-
-  <tr class="full">
-    <td colspan="5">
-        <div>
-          Citation: International Conference on Artificial Intelligence and Statistics, 1849-1858, 2018.
-          <!-- Add links or additional information here -->
-        </div>
-        <br/>
-        <button onclick="hideReview(this)">close ⌃</button>
-        <button onclick="copyReview(this)">copy to clipboard</button>
-    </td>
-  </tr>
-
-  <tr>
-    <td>State-specific individualized functional networks form a predictive signature of brain state</td>
-    <td>Authors not available</td>
-    <td class="small">2018</td>
-    <td>BioRxiv</td>
-    <td class="center read">
-        <button onclick="toggleReview(this)">read ▿</button>
-    </td>
-  </tr>
-
-  <tr class="full">
-    <td colspan="5">
-        <div>
-          Citation: BioRxiv, 372110, 2018.
-          <!-- Add links or additional information here -->
-        </div>
-        <br/>
-        <button onclick="hideReview(this)">close ⌃</button>
-        <button onclick="copyReview(this)">copy to clipboard</button>
-    </td>
-  </tr>
-
-  <tr>
-    <td>Learning neural connectivity from firing activity: efficient algorithms with provable guarantees on topology</td>
-    <td>Authors not available</td>
-    <td class="small">2018</td>
-    <td>Journal of computational neuroscience 44</td>
-    <td class="center read">
-        <button onclick="toggleReview(this)">read ▿</button>
-    </td>
-  </tr>
-
-  <tr class="full">
-    <td colspan="5">
-        <div>
-          Citation: Journal of computational neuroscience 44, 253-272, 2018.
-          <!-- Add links or additional information here -->
-        </div>
-        <br/>
-        <button onclick="hideReview(this)">close ⌃</button>
-        <button onclick="copyReview(this)">copy to clipboard</button>
-    </td>
-  </tr>
-
-  <tr>
-    <td>Gradient methods for submodular maximization</td>
-    <td>Authors not available</td>
-    <td class="small">2017</td>
-    <td>Advances in Neural Information Processing Systems 30</td>
-    <td class="center read">
-        <button onclick="toggleReview(this)">read ▿</button>
-    </td>
-  </tr>
-
-  <tr class="full">
-    <td colspan="5">
-        <div>
-          Citation: Advances in Neural Information Processing Systems 30, 2017.
-          <!-- Add links or additional information here -->
-        </div>
-        <br/>
-        <button onclick="hideReview(this)">close ⌃</button>
-        <button onclick="copyReview(this)">copy to clipboard</button>
-    </td>
-  </tr>
-
-  <tr>
-    <td>Streaming weak submodularity: Interpreting neural networks on the fly</td>
-    <td>Authors not available</td>
-    <td class="small">2017</td>
-    <td>Advances in Neural Information Processing Systems 30</td>
-    <td class="center read">
-        <button onclick="toggleReview(this)">read ▿</button>
-    </td>
-  </tr>
-
-  <tr class="full">
-    <td colspan="5">
-        <div>
-          Citation: Advances in Neural Information Processing Systems 30, 2017.
-          <!-- Add links or additional information here -->
-        </div>
-        <br/>
-        <button onclick="hideReview(this)">close ⌃</button>
-        <button onclick="copyReview(this)">copy to clipboard</button>
-    </td>
-  </tr>
-
-  <tr>
-    <td>Greed is good: Near-optimal submodular maximization via greedy optimization</td>
-    <td>Authors not available</td>
-    <td class="small">2017</td>
-    <td>Conference on Learning Theory</td>
-    <td class="center read">
-        <button onclick="toggleReview(this)">read ▿</button>
-    </td>
-  </tr>
-
-  <tr class="full">
-    <td colspan="5">
-        <div>
-          Citation: Conference on Learning Theory, 758-784, 2017.
-          <!-- Add links or additional information here -->
-        </div>
-        <br/>
-        <button onclick="hideReview(this)">close ⌃</button>
-        <button onclick="copyReview(this)">copy to clipboard</button>
-    </td>
-  </tr>
-
-  <tr>
-    <td>Deletion-robust submodular maximization: Data summarization with “the right to be forgotten”</td>
-    <td>Authors not available</td>
-    <td class="small">2017</td>
-    <td>International Conference on Machine Learning</td>
-    <td class="center read">
-        <button onclick="toggleReview(this)">read ▿</button>
-    </td>
-  </tr>
-
-  <tr class="full">
-    <td colspan="5">
-        <div>
-          Citation: International Conference on Machine Learning, 2449-2458, 2017.
-          <!-- Add links or additional information here -->
-        </div>
-        <br/>
-        <button onclick="hideReview(this)">close ⌃</button>
-        <button onclick="copyReview(this)">copy to clipboard</button>
-    </td>
-  </tr>
-
-  <tr>
-    <td>Differentially private submodular maximization: Data summarization in disguise</td>
-    <td>Authors not available</td>
-    <td class="small">2017</td>
-    <td>International Conference on Machine Learning</td>
-    <td class="center read">
-        <button onclick="toggleReview(this)">read ▿</button>
-    </td>
-  </tr>
-
-  <tr class="full">
-    <td colspan="5">
-        <div>
-          Citation: International Conference on Machine Learning, 2478-2487, 2017.
-          <!-- Add links or additional information here -->
-        </div>
-        <br/>
-        <button onclick="hideReview(this)">close ⌃</button>
-        <button onclick="copyReview(this)">copy to clipboard</button>
-    </td>
-  </tr>
-
-  <tr>
-    <td>Probabilistic submodular maximization in sub-linear time</td>
-    <td>Authors not available</td>
-    <td class="small">2017</td>
-    <td>International Conference on Machine Learning</td>
-    <td class="center read">
-        <button onclick="toggleReview(this)">read ▿</button>
-    </td>
-  </tr>
-
-  <tr class="full">
-    <td colspan="5">
-        <div>
-          Citation: International Conference on Machine Learning, 3241-3250, 2017.
-          <!-- Add links or additional information here -->
-        </div>
-        <br/>
-        <button onclick="hideReview(this)">close ⌃</button>
-        <button onclick="copyReview(this)">copy to clipboard</button>
-    </td>
-  </tr>
-
-  <tr>
-    <td>Interactive submodular bandit</td>
-    <td>Authors not available</td>
-    <td class="small">2017</td>
-    <td>Advances in Neural Information Processing Systems 30</td>
-    <td class="center read">
-        <button onclick="toggleReview(this)">read ▿</button>
-    </td>
-  </tr>
-
-  <tr class="full">
-    <td colspan="5">
-        <div>
-          Citation: Advances in Neural Information Processing Systems 30, 2017.
-          <!-- Add links or additional information here -->
-        </div>
-        <br/>
-        <button onclick="hideReview(this)">close ⌃</button>
-        <button onclick="copyReview(this)">copy to clipboard</button>
-    </td>
-  </tr>
-
-  <tr>
-    <td>Near-optimal active learning of halfspaces via query synthesis in the noisy setting</td>
-    <td>Authors not available</td>
-    <td class="small">2017</td>
-    <td>Proceedings of the AAAI Conference on Artificial Intelligence 31 (1)</td>
-    <td class="center read">
-        <button onclick="toggleReview(this)">read ▿</button>
-    </td>
-  </tr>
-
-  <tr class="full">
-    <td colspan="5">
-        <div>
-          Citation: Proceedings of the AAAI Conference on Artificial Intelligence 31 (1), 2017.
-          <!-- Add links or additional information here -->
-        </div>
-        <br/>
-        <button onclick="hideReview(this)">close ⌃</button>
-        <button onclick="copyReview(this)">copy to clipboard</button>
-    </td>
-  </tr>
-
-  <tr>
-    <td>A submodular approach to create individualized parcellations of the human brain</td>
-    <td>Authors not available</td>
-    <td class="small">2017</td>
-    <td>Medical Image Computing and Computer Assisted Intervention− MICCAI 2017 …</td>
-    <td class="center read">
-        <button onclick="toggleReview(this)">read ▿</button>
-    </td>
-  </tr>
-
-  <tr class="full">
-    <td colspan="5">
-        <div>
-          Citation: Medical Image Computing and Computer Assisted Intervention− MICCAI 2017 …, 2017.
-          <!-- Add links or additional information here -->
-        </div>
-        <br/>
-        <button onclick="hideReview(this)">close ⌃</button>
-        <button onclick="copyReview(this)">copy to clipboard</button>
-    </td>
-  </tr>
-
-  <tr>
-    <td>Differentially Private Submodular Maximization: Data Summarization in Disguise (Full version)</td>
-    <td>Authors not available</td>
-    <td class="small">2017</td>
-    <td>Venue/Journal not available</td>
-    <td class="center read">
-        <button onclick="toggleReview(this)">read ▿</button>
-    </td>
-  </tr>
-
-  <tr class="full">
-    <td colspan="5">
-        <div>
-          Citation: Description not available.
-          <!-- Add links or additional information here -->
-        </div>
-        <br/>
-        <button onclick="hideReview(this)">close ⌃</button>
-        <button onclick="copyReview(this)">copy to clipboard</button>
-    </td>
-  </tr>
-
-  <tr>
-    <td>Fast constrained submodular maximization: Personalized data summarization</td>
-    <td>Authors not available</td>
-    <td class="small">2016</td>
-    <td>International Conference on Machine Learning</td>
-    <td class="center read">
-        <button onclick="toggleReview(this)">read ▿</button>
-    </td>
-  </tr>
-
-  <tr class="full">
-    <td colspan="5">
-        <div>
-          Citation: International Conference on Machine Learning, 1358-1367, 2016.
-          <!-- Add links or additional information here -->
-        </div>
-        <br/>
-        <button onclick="hideReview(this)">close ⌃</button>
-        <button onclick="copyReview(this)">copy to clipboard</button>
-    </td>
-  </tr>
-
-  <tr>
-    <td>Distributed submodular maximization</td>
-    <td>Authors not available</td>
-    <td class="small">2016</td>
-    <td>The Journal of Machine Learning Research 17 (1)</td>
-    <td class="center read">
-        <button onclick="toggleReview(this)">read ▿</button>
-    </td>
-  </tr>
-
-  <tr class="full">
-    <td colspan="5">
-        <div>
-          Citation: The Journal of Machine Learning Research 17 (1), 8330-8373, 2016.
-          <!-- Add links or additional information here -->
-        </div>
-        <br/>
-        <button onclick="hideReview(this)">close ⌃</button>
-        <button onclick="copyReview(this)">copy to clipboard</button>
-    </td>
-  </tr>
-
-  <tr>
-    <td>Fast distributed submodular cover: Public-private data summarization</td>
-    <td>Authors not available</td>
-    <td class="small">2016</td>
-    <td>Advances in Neural Information Processing Systems 29</td>
-    <td class="center read">
-        <button onclick="toggleReview(this)">read ▿</button>
-    </td>
-  </tr>
-
-  <tr class="full">
-    <td colspan="5">
-        <div>
-          Citation: Advances in Neural Information Processing Systems 29, 2016.
-          <!-- Add links or additional information here -->
-        </div>
-        <br/>
-        <button onclick="hideReview(this)">close ⌃</button>
-        <button onclick="copyReview(this)">copy to clipboard</button>
-    </td>
-  </tr>
-
-  <tr>
-    <td>Estimating the size of a large network and its communities from a random sample</td>
-    <td>Authors not available</td>
-    <td class="small">2016</td>
-    <td>Advances in neural information processing systems 29</td>
-    <td class="center read">
-        <button onclick="toggleReview(this)">read ▿</button>
-    </td>
-  </tr>
-
-  <tr class="full">
-    <td colspan="5">
-        <div>
-          Citation: Advances in neural information processing systems 29, 2016.
-          <!-- Add links or additional information here -->
-        </div>
-        <br/>
-        <button onclick="hideReview(this)">close ⌃</button>
-        <button onclick="copyReview(this)">copy to clipboard</button>
-    </td>
-  </tr>
-
-  <tr>
-    <td>Seeing the unseen network: Inferring hidden social ties from respondent-driven sampling</td>
-    <td>Authors not available</td>
-    <td class="small">2016</td>
-    <td>Proceedings of the AAAI Conference on Artificial Intelligence 30 (1)</td>
-    <td class="center read">
-        <button onclick="toggleReview(this)">read ▿</button>
-    </td>
-  </tr>
-
-  <tr class="full">
-    <td colspan="5">
-        <div>
-          Citation: Proceedings of the AAAI Conference on Artificial Intelligence 30 (1), 2016.
-          <!-- Add links or additional information here -->
-        </div>
-        <br/>
-        <button onclick="hideReview(this)">close ⌃</button>
-        <button onclick="copyReview(this)">copy to clipboard</button>
-    </td>
-  </tr>
-
-  <tr>
-    <td>Learning network structures from firing patterns</td>
-    <td>Authors not available</td>
-    <td class="small">2016</td>
-    <td>2016 IEEE International Conference on Acoustics</td>
-    <td class="center read">
-        <button onclick="toggleReview(this)">read ▿</button>
-    </td>
-  </tr>
-
-  <tr class="full">
-    <td colspan="5">
-        <div>
-          Citation: 2016 IEEE International Conference on Acoustics, Speech and Signal …, 2016.
-          <!-- Add links or additional information here -->
-        </div>
-        <br/>
-        <button onclick="hideReview(this)">close ⌃</button>
-        <button onclick="copyReview(this)">copy to clipboard</button>
-    </td>
-  </tr>
-
-  <tr>
-    <td>Submodular variational inference for network reconstruction</td>
-    <td>Authors not available</td>
-    <td class="small">2016</td>
-    <td>arXiv preprint arXiv:1603.08616</td>
-    <td class="center read">
-        <button onclick="toggleReview(this)">read ▿</button>
-    </td>
-  </tr>
-
-  <tr class="full">
-    <td colspan="5">
-        <div>
-          Citation: arXiv preprint arXiv:1603.08616, 2016.
-          <!-- Add links or additional information here -->
-        </div>
-        <br/>
-        <button onclick="hideReview(this)">close ⌃</button>
-        <button onclick="copyReview(this)">copy to clipboard</button>
-    </td>
-  </tr>
-
-  <tr>
-    <td>Dimension coupling: Optimal active learning of halfspaces via query synthesis</td>
-    <td>Authors not available</td>
-    <td class="small">2016</td>
-    <td>arXiv preprint arXiv 1603</td>
-    <td class="center read">
-        <button onclick="toggleReview(this)">read ▿</button>
-    </td>
-  </tr>
-
-  <tr class="full">
-    <td colspan="5">
-        <div>
-          Citation: arXiv preprint arXiv 1603, 2016.
-          <!-- Add links or additional information here -->
-        </div>
-        <br/>
-        <button onclick="hideReview(this)">close ⌃</button>
-        <button onclick="copyReview(this)">copy to clipboard</button>
-    </td>
-  </tr>
-
-  <tr>
-    <td>Lazier Than Lazy Greedy</td>
-    <td>Authors not available</td>
-    <td class="small">2015</td>
-    <td>arXiv preprint arXiv:1409.7938</td>
-    <td class="center read">
-        <button onclick="toggleReview(this)">read ▿</button>
-    </td>
-  </tr>
-
-  <tr class="full">
-    <td colspan="5">
-        <div>
-          Citation: arXiv preprint arXiv:1409.7938, 2015.
-          <!-- Add links or additional information here -->
-        </div>
-        <br/>
-        <button onclick="hideReview(this)">close ⌃</button>
-        <button onclick="copyReview(this)">copy to clipboard</button>
-    </td>
-  </tr>
-
-  <tr>
-    <td>Sequential information maximization: When is greedy near-optimal?</td>
-    <td>Authors not available</td>
-    <td class="small">2015</td>
-    <td>Conference on Learning Theory</td>
-    <td class="center read">
-        <button onclick="toggleReview(this)">read ▿</button>
-    </td>
-  </tr>
-
-  <tr class="full">
-    <td colspan="5">
-        <div>
-          Citation: Conference on Learning Theory, 338-363, 2015.
-          <!-- Add links or additional information here -->
-        </div>
-        <br/>
-        <button onclick="hideReview(this)">close ⌃</button>
-        <button onclick="copyReview(this)">copy to clipboard</button>
-    </td>
-  </tr>
-
-  <tr>
-    <td>Distributed submodular cover: Succinctly summarizing massive data</td>
-    <td>Authors not available</td>
-    <td class="small">2015</td>
-    <td>Advances in Neural Information Processing Systems 28</td>
-    <td class="center read">
-        <button onclick="toggleReview(this)">read ▿</button>
-    </td>
-  </tr>
-
-  <tr class="full">
-    <td colspan="5">
-        <div>
-          Citation: Advances in Neural Information Processing Systems 28, 2015.
-          <!-- Add links or additional information here -->
-        </div>
-        <br/>
-        <button onclick="hideReview(this)">close ⌃</button>
-        <button onclick="copyReview(this)">copy to clipboard</button>
-    </td>
-  </tr>
-
-  <tr>
-    <td>Submodular surrogates for value of information</td>
-    <td>Authors not available</td>
-    <td class="small">2015</td>
-    <td>Proceedings of the AAAI Conference on Artificial Intelligence 29 (1)</td>
-    <td class="center read">
-        <button onclick="toggleReview(this)">read ▿</button>
-    </td>
-  </tr>
-
-  <tr class="full">
-    <td colspan="5">
-        <div>
-          Citation: Proceedings of the AAAI Conference on Artificial Intelligence 29 (1), 2015.
-          <!-- Add links or additional information here -->
-        </div>
-        <br/>
-        <button onclick="hideReview(this)">close ⌃</button>
-        <button onclick="copyReview(this)">copy to clipboard</button>
-    </td>
-  </tr>
-
-  <tr>
-    <td>Non-Monotone Adaptive Submodular Maximization.</td>
-    <td>Authors not available</td>
-    <td class="small">2015</td>
-    <td>IJCAI</td>
-    <td class="center read">
-        <button onclick="toggleReview(this)">read ▿</button>
-    </td>
-  </tr>
-
-  <tr class="full">
-    <td colspan="5">
-        <div>
-          Citation: IJCAI, 1996-2003, 2015.
-          <!-- Add links or additional information here -->
-        </div>
-        <br/>
-        <button onclick="hideReview(this)">close ⌃</button>
-        <button onclick="copyReview(this)">copy to clipboard</button>
-    </td>
-  </tr>
-
-  <tr>
-    <td>Fast mixing for discrete point processes</td>
-    <td>Authors not available</td>
-    <td class="small">2015</td>
-    <td>Conference on Learning Theory</td>
-    <td class="center read">
-        <button onclick="toggleReview(this)">read ▿</button>
-    </td>
-  </tr>
-
-  <tr class="full">
-    <td colspan="5">
-        <div>
-          Citation: Conference on Learning Theory, 1480-1500, 2015.
-          <!-- Add links or additional information here -->
-        </div>
-        <br/>
-        <button onclick="hideReview(this)">close ⌃</button>
-        <button onclick="copyReview(this)">copy to clipboard</button>
-    </td>
-  </tr>
-
-  <tr>
-    <td>Tradeoffs for Space, Time, Data and Risk in Unsupervised Learning</td>
-    <td>Authors not available</td>
-    <td class="small">2015</td>
-    <td>Venue/Journal not available</td>
-    <td class="center read">
-        <button onclick="toggleReview(this)">read ▿</button>
-    </td>
-  </tr>
-
-  <tr class="full">
-    <td colspan="5">
-        <div>
-          Citation: Description not available.
-          <!-- Add links or additional information here -->
-        </div>
-        <br/>
-        <button onclick="hideReview(this)">close ⌃</button>
-        <button onclick="copyReview(this)">copy to clipboard</button>
-    </td>
-  </tr>
-
-  <tr>
-    <td>From Small-World Networks to Comparison-Based Search</td>
-    <td>Authors not available</td>
-    <td class="small">2015</td>
-    <td>Transactions on Information Theory</td>
-    <td class="center read">
-        <button onclick="toggleReview(this)">read ▿</button>
-    </td>
-  </tr>
-
-  <tr class="full">
-    <td colspan="5">
-        <div>
-          Citation: Transactions on Information Theory, 2015.
-          <!-- Add links or additional information here -->
-        </div>
-        <br/>
-        <button onclick="hideReview(this)">close ⌃</button>
-        <button onclick="copyReview(this)">copy to clipboard</button>
-    </td>
-  </tr>
-
-  <tr>
-    <td>Normalization Phenomena in Asynchronous Networks</td>
-    <td>Authors not available</td>
-    <td class="small">2015</td>
-    <td>Venue/Journal not available</td>
-    <td class="center read">
-        <button onclick="toggleReview(this)">read ▿</button>
-    </td>
-  </tr>
-
-  <tr class="full">
-    <td colspan="5">
-        <div>
-          Citation: Description not available.
-          <!-- Add links or additional information here -->
-        </div>
-        <br/>
-        <button onclick="hideReview(this)">close ⌃</button>
-        <button onclick="copyReview(this)">copy to clipboard</button>
-    </td>
-  </tr>
-
-  <tr>
-    <td>Asynchronous decoding of LDPC codes over BEC</td>
-    <td>Authors not available</td>
-    <td class="small">2015</td>
-    <td>2015 IEEE International Symposium on Information Theory (ISIT)</td>
-    <td class="center read">
-        <button onclick="toggleReview(this)">read ▿</button>
-    </td>
-  </tr>
-
-  <tr class="full">
-    <td colspan="5">
-        <div>
-          Citation: 2015 IEEE International Symposium on Information Theory (ISIT), 2678-2682, 2015.
-          <!-- Add links or additional information here -->
-        </div>
-        <br/>
-        <button onclick="hideReview(this)">close ⌃</button>
-        <button onclick="copyReview(this)">copy to clipboard</button>
-    </td>
-  </tr>
-
-  <tr>
-    <td>Decision Region Determination for Touch Based Localization</td>
-    <td>Authors not available</td>
-    <td class="small">2015</td>
-    <td>Venue/Journal not available</td>
-    <td class="center read">
-        <button onclick="toggleReview(this)">read ▿</button>
-    </td>
-  </tr>
-
-  <tr class="full">
-    <td colspan="5">
-        <div>
-          Citation: Description not available.
-          <!-- Add links or additional information here -->
-        </div>
-        <br/>
-        <button onclick="hideReview(this)">close ⌃</button>
-        <button onclick="copyReview(this)">copy to clipboard</button>
-    </td>
-  </tr>
-
-  <tr>
-    <td>Streaming submodular maximization: Massive data summarization on the fly</td>
-    <td>Authors not available</td>
-    <td class="small">2014</td>
-    <td>Proceedings of the 20th ACM SIGKDD international conference on Knowledge …</td>
-    <td class="center read">
-        <button onclick="toggleReview(this)">read ▿</button>
-    </td>
-  </tr>
-
-  <tr class="full">
-    <td colspan="5">
-        <div>
-          Citation: Proceedings of the 20th ACM SIGKDD international conference on Knowledge …, 2014.
-          <!-- Add links or additional information here -->
-        </div>
-        <br/>
-        <button onclick="hideReview(this)">close ⌃</button>
-        <button onclick="copyReview(this)">copy to clipboard</button>
-    </td>
-  </tr>
-
-  <tr>
-    <td>Near-optimally teaching the crowd to classify</td>
-    <td>Authors not available</td>
-    <td class="small">2014</td>
-    <td>International Conference on Machine Learning</td>
-    <td class="center read">
-        <button onclick="toggleReview(this)">read ▿</button>
-    </td>
-  </tr>
-
-  <tr class="full">
-    <td colspan="5">
-        <div>
-          Citation: International Conference on Machine Learning, 154-162, 2014.
-          <!-- Add links or additional information here -->
-        </div>
-        <br/>
-        <button onclick="hideReview(this)">close ⌃</button>
-        <button onclick="copyReview(this)">copy to clipboard</button>
-    </td>
-  </tr>
-
-  <tr>
-    <td>Near optimal bayesian active learning for decision making</td>
-    <td>Authors not available</td>
-    <td class="small">2014</td>
-    <td>Artificial Intelligence and Statistics</td>
-    <td class="center read">
-        <button onclick="toggleReview(this)">read ▿</button>
-    </td>
-  </tr>
-
-  <tr class="full">
-    <td colspan="5">
-        <div>
-          Citation: Artificial Intelligence and Statistics, 430-438, 2014.
-          <!-- Add links or additional information here -->
-        </div>
-        <br/>
-        <button onclick="hideReview(this)">close ⌃</button>
-        <button onclick="copyReview(this)">copy to clipboard</button>
-    </td>
-  </tr>
-
-  <tr>
-    <td>Allocating tasks to machines in computing clusters</td>
-    <td>Authors not available</td>
-    <td class="small">2014</td>
-    <td>US Patent 8</td>
-    <td class="center read">
-        <button onclick="toggleReview(this)">read ▿</button>
-    </td>
-  </tr>
-
-  <tr class="full">
-    <td colspan="5">
-        <div>
-          Citation: US Patent 8,695,009, 2014.
-          <!-- Add links or additional information here -->
-        </div>
-        <br/>
-        <button onclick="hideReview(this)">close ⌃</button>
-        <button onclick="copyReview(this)">copy to clipboard</button>
-    </td>
-  </tr>
-
-  <tr>
-    <td>Noise facilitation in associative memories of exponential capacity</td>
-    <td>Authors not available</td>
-    <td class="small">2014</td>
-    <td>Neural computation 26 (11)</td>
-    <td class="center read">
-        <button onclick="toggleReview(this)">read ▿</button>
-    </td>
-  </tr>
-
-  <tr class="full">
-    <td colspan="5">
-        <div>
-          Citation: Neural computation 26 (11), 2493-2526, 2014.
-          <!-- Add links or additional information here -->
-        </div>
-        <br/>
-        <button onclick="hideReview(this)">close ⌃</button>
-        <button onclick="copyReview(this)">copy to clipboard</button>
-    </td>
-  </tr>
-
-  <tr>
-    <td>Convolutional neural associative memories: Massive capacity with noise tolerance</td>
-    <td>Authors not available</td>
-    <td class="small">2014</td>
-    <td>arXiv preprint arXiv:1407.6513</td>
-    <td class="center read">
-        <button onclick="toggleReview(this)">read ▿</button>
-    </td>
-  </tr>
-
-  <tr class="full">
-    <td colspan="5">
-        <div>
-          Citation: arXiv preprint arXiv:1407.6513, 2014.
-          <!-- Add links or additional information here -->
-        </div>
-        <br/>
-        <button onclick="hideReview(this)">close ⌃</button>
-        <button onclick="copyReview(this)">copy to clipboard</button>
-    </td>
-  </tr>
-
-  <tr>
-    <td>Coupled Neural Associative Memories</td>
-    <td>Authors not available</td>
-    <td class="small">2014</td>
-    <td>Venue/Journal not available</td>
-    <td class="center read">
-        <button onclick="toggleReview(this)">read ▿</button>
-    </td>
-  </tr>
-
-  <tr class="full">
-    <td colspan="5">
-        <div>
-          Citation: Description not available.
-          <!-- Add links or additional information here -->
-        </div>
-        <br/>
-        <button onclick="hideReview(this)">close ⌃</button>
-        <button onclick="copyReview(this)">copy to clipboard</button>
-    </td>
-  </tr>
-
-  <tr>
-    <td>Streaming Submodular Maximization: Massive Data Summarization on the Fly</td>
-    <td>Authors not available</td>
-    <td class="small">2014</td>
-    <td>Venue/Journal not available</td>
-    <td class="center read">
-        <button onclick="toggleReview(this)">read ▿</button>
-    </td>
-  </tr>
-
-  <tr class="full">
-    <td colspan="5">
-        <div>
-          Citation: Description not available.
-          <!-- Add links or additional information here -->
-        </div>
-        <br/>
-        <button onclick="hideReview(this)">close ⌃</button>
-        <button onclick="copyReview(this)">copy to clipboard</button>
-    </td>
-  </tr>
-
-  <tr>
-    <td>Distributed submodular maximization: Identifying representative elements in massive data</td>
-    <td>Authors not available</td>
-    <td class="small">2013</td>
-    <td>Advances in Neural Information Processing Systems 26</td>
-    <td class="center read">
-        <button onclick="toggleReview(this)">read ▿</button>
-    </td>
-  </tr>
-
-  <tr class="full">
-    <td colspan="5">
-        <div>
-          Citation: Advances in Neural Information Processing Systems 26, 2013.
-          <!-- Add links or additional information here -->
-        </div>
-        <br/>
-        <button onclick="hideReview(this)">close ⌃</button>
-        <button onclick="copyReview(this)">copy to clipboard</button>
-    </td>
-  </tr>
-
-  <tr>
-    <td>Iterative learning and denoising in convolutional neural associative memories</td>
-    <td>Authors not available</td>
-    <td class="small">2013</td>
-    <td>International Conference on Machine Learning</td>
-    <td class="center read">
-        <button onclick="toggleReview(this)">read ▿</button>
-    </td>
-  </tr>
-
-  <tr class="full">
-    <td colspan="5">
-        <div>
-          Citation: International Conference on Machine Learning, 445-453, 2013.
-          <!-- Add links or additional information here -->
-        </div>
-        <br/>
-        <button onclick="hideReview(this)">close ⌃</button>
-        <button onclick="copyReview(this)">copy to clipboard</button>
-    </td>
-  </tr>
-
-  <tr>
-    <td>On actively teaching the crowd to classify</td>
-    <td>Authors not available</td>
-    <td class="small">2013</td>
-    <td>NIPS Workshop on Data Driven Education</td>
-    <td class="center read">
-        <button onclick="toggleReview(this)">read ▿</button>
-    </td>
-  </tr>
-
-  <tr class="full">
-    <td colspan="5">
-        <div>
-          Citation: NIPS Workshop on Data Driven Education, 2013.
-          <!-- Add links or additional information here -->
-        </div>
-        <br/>
-        <button onclick="hideReview(this)">close ⌃</button>
-        <button onclick="copyReview(this)">copy to clipboard</button>
-    </td>
-  </tr>
-
-  <tr>
-    <td>Calibration using matrix completion with application to ultrasound tomography</td>
-    <td>Authors not available</td>
-    <td class="small">2013</td>
-    <td>IEEE transactions on signal processing 61 (20)</td>
-    <td class="center read">
-        <button onclick="toggleReview(this)">read ▿</button>
-    </td>
-  </tr>
-
-  <tr class="full">
-    <td colspan="5">
-        <div>
-          Citation: IEEE transactions on signal processing 61 (20), 4923-4933, 2013.
-          <!-- Add links or additional information here -->
-        </div>
-        <br/>
-        <button onclick="hideReview(this)">close ⌃</button>
-        <button onclick="copyReview(this)">copy to clipboard</button>
-    </td>
-  </tr>
-
-  <tr>
-    <td>Noise-enhanced associative memories</td>
-    <td>Authors not available</td>
-    <td class="small">2013</td>
-    <td>Advances in Neural Information Processing Systems 26</td>
-    <td class="center read">
-        <button onclick="toggleReview(this)">read ▿</button>
-    </td>
-  </tr>
-
-  <tr class="full">
-    <td colspan="5">
-        <div>
-          Citation: Advances in Neural Information Processing Systems 26, 2013.
-          <!-- Add links or additional information here -->
-        </div>
-        <br/>
-        <button onclick="hideReview(this)">close ⌃</button>
-        <button onclick="copyReview(this)">copy to clipboard</button>
-    </td>
-  </tr>
-
-  <tr>
-    <td>Constrained Binary Identification Problem</td>
-    <td>Authors not available</td>
-    <td class="small">2013</td>
-    <td>Proceedings of the 30th Symposium on Theoretical Aspects of Computer Science</td>
-    <td class="center read">
-        <button onclick="toggleReview(this)">read ▿</button>
-    </td>
-  </tr>
-
-  <tr class="full">
-    <td colspan="5">
-        <div>
-          Citation: Proceedings of the 30th Symposium on Theoretical Aspects of Computer Science, 2013.
-          <!-- Add links or additional information here -->
-        </div>
-        <br/>
-        <button onclick="hideReview(this)">close ⌃</button>
-        <button onclick="copyReview(this)">copy to clipboard</button>
-    </td>
-  </tr>
-
-  <tr>
-    <td>Neural networks built from unreliable components</td>
-    <td>Authors not available</td>
-    <td class="small">2013</td>
+    <td>2024</td>
+</tr>
+<tr>
+    <td><a href="https://arxiv.org/pdf/2410.11272">Cognitive Overload Attack: Prompt Injection for Long Context</a></td>
+    <td>Bibek Upadhayay, Vahid Behzadan, Amin Karbasi</td>
     <td>arXiv</td>
-    <td class="center read">
-        <button onclick="toggleReview(this)">read ▿</button>
-    </td>
-  </tr>
+    <td>2024</td>
+</tr>
+<tr>
+    <td><a href="https://arxiv.org/pdf/2410.02536">Intelligence at the Edge of Chaos</a></td>
+    <td>Shiyang Zhang, Aakash Patel, Syed A Rizvi, Nianchen Liu, Sizhuang He, Amin Karbasi, Emanuele Zappala, David van Dijk</td>
+    <td>arXiv</td>
+    <td>2024</td>
+</tr>
+<tr>
+    <td><a href="https://arxiv.org/pdf/2410.11303">TSDS: Data Selection for Task-Specific Model Finetuning</a></td>
+    <td>Zifan Liu, Amin Karbasi, Theodoros Rekatsinas</td>
+    <td>arXiv preprint arXiv:2410.11303</td>
+    <td>2024</td>
+</tr>
+<tr>
+    <td><a href="https://arxiv.org/pdf/2409.12367">Extracting Memorized Training Data via Decomposition</a></td>
+    <td>Ellen Su, Anu Vellore, Amy Chang, Raffaele Mura, Blaine Nelson, Paul Kassianik, Amin Karbasi</td>
+    <td>arXiv</td>
+    <td>2024</td>
+</tr>
+<tr>
+    <td><a href="https://arxiv.org/pdf/2312.02119">Tree of Attacks: Jailbreaking Black-Box LLMs Automatically</a></td>
+    <td>Anay Mehrotra, Manolis Zampetakis, Paul Kassianik, Blaine Nelson, Hyrum Anderson, Yaron Singer, Amin Karbasi</td>
+    <td>arXiv preprint arXiv:2312.02119</td>
+    <td>2023</td>
+</tr>
+<tr>
+    <td><a href="https://arxiv.org/pdf/2302.02451">KDeformer: Accelerating Transformers via Kernel Density Estimation</a></td>
+    <td>Amir Zandieh, Insu Han, Majid Daliri, Amin Karbasi</td>
+    <td>International Conference on Machine Learning</td>
+    <td>2023</td>
+</tr>
+<tr>
+    <td><a href="https://arxiv.org/pdf/2310.05869">Hyperattention: Long-context Attention in Near-linear Time</a></td>
+    <td>Insu Han, Rajesh Jayaram, Amin Karbasi, Vahab Mirrokni, David P. Woodruff, Amir Zandieh</td>
+    <td>arXiv preprint arXiv:2310.05869</td>
+    <td>2023</td>
+</tr>
+<tr>
+    <td><a href="https://arxiv.org/pdf/2305.14311">Statistical Indistinguishability of Learning Algorithms</a></td>
+    <td>Alkis Kalavasis, Amin Karbasi, Shay Moran, Grigoris Velegkas</td>
+    <td>International Conference on Machine Learning</td>
+    <td>2023</td>
+</tr>
+<tr>
+    <td><a href="https://www.biorxiv.org/content/10.1101/2023.09.12.557460v1.full.pdf">BrainLM: A Foundation Model for Brain Activity Recordings</a></td>
+    <td>Josue Ortega Caro, Antonio H. de O. Fonseca, Christopher Averill, Syed A. Rizvi, Matteo Rosati, James L. Cross, Prateek Mittal, Emanuele Zappala, Daniel Levine, Rahul M. Dhodapkar, Chadi G. Abdallah, David van Dijk</td>
+    <td>bioRxiv</td>
+    <td>2023</td>
+</tr>
+<tr>
+    <td><a href="https://arxiv.org/pdf/2307.03848">Optimal Learners for Realizable Regression: PAC Learning and Online Learning</a></td>
+    <td>Idan Attias, Steve Hanneke, Alkis Kalavasis, Amin Karbasi, Grigoris Velegkas</td>
+    <td>Advances in Neural Information Processing Systems 36</td>
+    <td>2023</td>
+</tr>
+<tr>
+    <td><a href="https://arxiv.org/pdf/2009.13998">How Do You Want Your Greedy: Simultaneous or Repeated?</a></td>
+    <td>Moran Feldman, Christopher Harshaw, Amin Karbasi</td>
+    <td>Journal of Machine Learning Research 24 (72)</td>
+    <td>2023</td>
+</tr>
+<tr>
+    <td><a href="https://arxiv.org/pdf/2305.19562">Replicability in Reinforcement Learning</a></td>
+    <td>Amin Karbasi, Grigoris Velegkas, Lin F. Yang, Felix Zhou</td>
+    <td>Advances in Neural Information Processing Systems 36</td>
+    <td>2023</td>
+</tr>
+<tr>
+    <td><a href="https://proceedings.mlr.press/v206/lee23b/lee23b.pdf">Exact Gradient Computation for Spiking Neural Networks via Forward Propagation</a></td>
+    <td>Jane H. Lee, Saeid Haghighatshoar, Amin Karbasi</td>
+    <td>International Conference on Artificial Intelligence and Statistics</td>
+    <td>2023</td>
+</tr>
+<tr>
+    <td><a href="https://www.biorxiv.org/content/10.1101/2023.09.11.557287v1.full.pdf">Cell2sentence: Teaching Large Language Models the Language of Biology</a></td>
+    <td>Daniel Levine, Syed Asad Rizvi, Sacha Lévy, Nazreen Pallikkavaliyaveetil, Ruiming Wu, Zihe Zheng, Antonio Oliveira Fonseca, Xingyu Chen, Sina Ghadermarzi, Rahul M. Dhodapkar, David van Dijk</td>
+    <td>bioRxiv</td>
+    <td>2023</td>
+</tr>
+<tr>
+    <td><a href="https://arxiv.org/pdf/2306.08803">Langevin Thompson Sampling with Logarithmic Communication: Bandits and Reinforcement Learning</a></td>
+    <td>Amin Karbasi, Nikki Lijing Kuang, Yi-An Ma, Siddharth Mitra</td>
+    <td>International Conference on Machine Learning</td>
+    <td>2023</td>
+</tr>
+<tr>
+    <td><a href="https://arxiv.org/pdf/2305.18424">Repeated Random Sampling for Minimizing the Time-to-Accuracy of Learning</a></td>
+    <td>Patrik Okanovic, Roger Waleffe, Vasilis Mageirakos, Konstantinos E. Nikolakakis, Amin Karbasi, Dionysis Kalogerias, Nezihe Merve Gürel, Theodoros Rekatsinas</td>
+    <td>arXiv preprint arXiv:2305.18424</td>
+    <td>2023</td>
+</tr>
+<tr>
+    <td><a href="https://arxiv.org/pdf/2305.09557">Learning from Aggregated Data: Curated Bags versus Random Bags</a></td>
+    <td>Lin Chen, Gang Fu, Amin Karbasi, Vahab Mirrokni</td>
+    <td>arXiv preprint arXiv:2305.09557</td>
+    <td>2023</td>
+</tr>
+<tr>
+    <td><a href="https://www.biorxiv.org/content/10.1101/2022.07.19.500642v2.full.pdf">Cross Atlas Remapping via Optimal Transport (CAROT): Creating Connectomes for Different Atlases When Raw Data Is Not Available</a></td>
+    <td>Javid Dadashkarimi, Amin Karbasi, Qinghao Liang, Matthew Rosenblatt, Stephanie Noble, Maya Foster, Raimundo Rodriguez, Brendan Adkinson, Jean Ye, Huili Sun, Chris Camp, Michael Farruggia, Link Tejavibulya, Wei Dai, Rongtao Jiang, Angeliki Pollatou, Dustin Scheinost</td>
+    <td>Medical Image Analysis 88</td>
+    <td>2023</td>
+</tr>
+<tr>
+    <td><a href="https://arxiv.org/pdf/2305.02247">Select Without Fear: Almost All Mini-Batch Schedules Generalize Optimally</a></td>
+    <td>Konstantinos E. Nikolakakis, Amin Karbasi, Dionysis Kalogerias</td>
+    <td>arXiv preprint arXiv:2305.02247</td>
+    <td>2023</td>
+</tr>
+<tr>
+    <td><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC9934563/">Stacking Multiple Optimal Transport Policies to Map Functional Connectomes</a></td>
+    <td>Javid Dadashkarimi, Matthew Rosenblatt, Amin Karbasi, Dustin Scheinost</td>
+    <td>2023 57th Annual Conference on Information Sciences and Systems (CISS)</td>
+    <td>2023</td>
+</tr>
+<tr>
+  <td><a href="https://proceedings.neurips.cc/paper_files/paper/2022/hash/b8362385b08348d21162310c5b4e9541-Abstract-Conference.html">Universal Rates for Active Learning</a></td>
+  <td>Steve Hanneke, Amin Karbasi, Shay Moran, Grigoris Velegkas</td>
+  <td>Neural Information Processing Systems</td>
+  <td>2022</td>
+</tr>
+<tr>
+    <td><a href="https://arxiv.org/pdf/2211.14103">Conditional Gradient Methods</a></td>
+    <td>Gábor Braun, Alejandro Carderera, Cyrille W. Combettes, Hamed Hassani, Amin Karbasi, Aryan Mokhtari, Sebastian Pokutta</td>
+    <td>arXiv preprint arXiv:2211.14103</td>
+    <td>2022</td>
+</tr>
+<tr>
+    <td><a href="https://arxiv.org/pdf/2204.12446">Beyond Lipschitz: Sharp Generalization and Excess Risk Bounds for Full-Batch GD</a></td>
+    <td>Konstantinos E. Nikolakakis, Farzin Haddadpour, Amin Karbasi, Dionysios S. Kalogerias</td>
+    <td>arXiv preprint arXiv:2204.12446</td>
+    <td>2022</td>
+</tr>
+
+<tr>
+    <td><a href="https://arxiv.org/pdf/2210.01898">Replicable Bandits</a></td>
+    <td>Hossein Esfandiari, Alkis Kalavasis, Amin Karbasi, Andreas Krause, Vahab Mirrokni, Grigoris Velegkas</td>
+    <td>arXiv preprint arXiv:2210.01898</td>
+    <td>2022</td>
+</tr>
+<tr>
+    <td><a href="https://arxiv.org/pdf/2006.09327">Submodular Maximization in Clean Linear Time</a></td>
+    <td>Wenxin Li, Moran Feldman, Ehsan Kazemi, Amin Karbasi</td>
+    <td>Advances in Neural Information Processing Systems 35</td>
+    <td>2022</td>
+</tr>
+<tr>
+    <td><a href="https://arxiv.org/pdf/2209.04121">Fast Neural Kernel Embeddings for General Activations</a></td>
+    <td>Insu Han, Amir Zandieh, Jaehoon Lee, Roman Novak, Lechao Xiao, Amin Karbasi</td>
+    <td>Advances in Neural Information Processing Systems 35</td>
+    <td>2022</td>
+</tr>
+<tr>
+    <td><a href="https://arxiv.org/pdf/2210.02297">Multiclass Learnability Beyond the PAC Framework: Universal Rates and Partial Concept Classes</a></td>
+    <td>Alkis Kalavasis, Grigoris Velegkas, Amin Karbasi</td>
+    <td>Advances in Neural Information Processing Systems 35</td>
+    <td>2022</td>
+</tr>
+<tr>
+    <td><a href="https://arxiv.org/pdf/2206.00860">Self-Consistency of the Fokker Planck Equation</a></td>
+    <td>Zebang Shen, Zhenfu Wang, Satyen Kale, Alejandro Ribeiro, Amin Karbasi, Hamed Hassani</td>
+    <td>Conference on Learning Theory</td>
+    <td>2022</td>
+</tr>
+<tr>
+    <td><a href="https://arxiv.org/pdf/2202.08833">What Functions Can Graph Neural Networks Generate?</a></td>
+    <td>Mohammad Fereydounian, Hamed Hassani, Amin Karbasi</td>
+    <td>arXiv preprint arXiv:2202.08833</td>
+    <td>2022</td>
+</tr>
+<tr>
+    <td><a href="https://arxiv.org/pdf/2103.06972">Federated Functional Gradient Boosting</a></td>
+    <td>Zebang Shen, Hamed Hassani, Satyen Kale, Amin Karbasi</td>
+    <td>International Conference on Artificial Intelligence and Statistics</td>
+    <td>2022</td>
+</tr>
+<tr>
+    <td><a href="https://proceedings.neurips.cc/paper_files/paper/2022/file/b8362385b08348d21162310c5b4e9541-Paper-Conference.pdf">Universal Rates for Interactive Learning</a></td>
+    <td>Steve Hanneke, Shay Moran, Qian Zhang</td>
+    <td>Advances in Neural Information Processing Systems 35</td>
+    <td>2022</td>
+</tr>
+<tr>
+    <td><a href="https://arxiv.org/pdf/2210.02713">On Optimal Learning Under Targeted Data Poisoning</a></td>
+    <td>Steve Hanneke, Amin Karbasi, Mohammad Mahmoody, Idan Mehalel, Shay Moran</td>
+    <td>Advances in Neural Information Processing Systems 35</td>
+    <td>2022</td>
+</tr>
+<tr>
+    <td><a href="https://arxiv.org/pdf/2104.02772">The Power of Subsampling in Submodular Maximization</a></td>
+    <td>Christopher Harshaw, Ehsan Kazemi, Moran Feldman, Amin Karbasi</td>
+    <td>Mathematics of Operations Research 47 (2)</td>
+    <td>2022</td>
+</tr>
+<tr>
+    <td><a href="https://arxiv.org/pdf/2203.09607">Learning Distributionally Robust Models at Scale via Composite Optimization</a></td>
+    <td>Farzin Haddadpour, Mohammad Mahdi Kamani, Mehrdad Mahdavi, Amin Karbasi</td>
+    <td>arXiv preprint arXiv:2203.09607</td>
+    <td>2022</td>
+</tr>
+<tr>
+    <td><a href="https://arxiv.org/pdf/2203.01491">Reinforcement Learning with Logarithmic Regret and Policy Switches</a></td>
+    <td>Grigoris Velegkas, Zhuoran Yang, Amin Karbasi</td>
+    <td>Advances in Neural Information Processing Systems 35</td>
+    <td>2022</td>
+</tr>
+<tr>
+    <td><a href="https://arxiv.org/pdf/2207.00486">Scalable MCMC Sampling for Nonsymmetric Determinantal Point Processes</a></td>
+    <td>Insu Han, Mike Gartrell, Elvis Dohmatob, Amin Karbasi</td>
+    <td>International Conference on Machine Learning</td>
+    <td>2022</td>
+</tr>
+<tr>
+    <td><a href="https://arxiv.org/pdf/2201.08417">Scalable Sampling for Nonsymmetric Determinantal Point Processes</a></td>
+    <td>Insu Han, Mike Gartrell, Jennifer Gillenwater, Elvis Dohmatob, Amin Karbasi</td>
+    <td>arXiv preprint arXiv:2201.08417</td>
+    <td>2022</td>
+</tr>
+<tr>
+    <td><a href="https://link.springer.com/chapter/10.1007/978-3-031-16431-6_37">Combining Multiple Atlases to Estimate Data-Driven Mappings Between Functional Connectomes Using Optimal Transport</a></td>
+    <td>Javid Dadashkarimi, Amin Karbasi, Dustin Scheinost</td>
+    <td>International Conference on Medical Image Computing and Computer-Assisted …</td>
+    <td>2022</td>
+</tr>
+<tr>
+  <td><a href="https://arxiv.org/pdf/2210.15415">Exact Gradient Computation for Spiking Neural Networks Through Forward Propagation</a></td>
+  <td>Jane H. Lee, Saeid Haghighatshoar, Amin Karbasi</td>
+  <td>arXiv preprint</td>
+  <td>2022</td>
+</tr>
+<tr>
+  <td><a href="https://link.springer.com/chapter/10.1007/978-3-031-21083-9_12">Transforming Connectomes to “Any” Parcellation via Graph Matching</a></td>
+  <td>Qinghao Liang, Javid Dadashkarimi, Wei Dai, Amin Karbasi, Joseph Chang, Harrison H. Zhou & Dustin Scheinost</td>
+  <td>MICCAI Workshop</td>
+  <td>2022</td>
+</tr>
+<tr>
+  <td><a href="https://arxiv.org/pdf/2002.11080">The curious case of adversarially robust models: More data can help, double descend, or hurt generalization</a></td>
+  <td>Yifei Min, Lin Chen, Amin Karbasi</td>
+  <td>UAI</td>
+  <td>2021</td>
+</tr>
+<tr>
+  <td><a href="https://arxiv.org/pdf/1910.04959">Regret bounds for batched bandits</a></td>
+  <td>Hossein Esfandiari, Amin Karbasi, Abbas Mehrabian, Vahab Mirrokni</td>
+  <td>AAAI</td>
+  <td>2021</td>
+</tr>
+<tr>
+  <td><a href="https://arxiv.org/pdf/2008.01036">Multiple descent: Design your own generalization curve</a></td>
+  <td>Lin Chen, Yifei Min, Mikhail Belkin, Amin Karbasi</td>
+  <td>NeurIPS</td>
+  <td>2021</td>
+</tr>
+<tr>
+  <td><a href="https://arxiv.org/pdf/2002.03503">Regularized submodular maximization at scale</a></td>
+  <td>Ehsan Kazemi, Shervin Minaee, Moran Feldman, Amin Karbasi</td>
+  <td>ICML</td>
+  <td>2021</td>
+</tr>
+<tr>
+  <td><a href="https://arxiv.org/pdf/1911.03620">Adaptivity in adaptive submodularity</a></td>
+  <td>Hossein Esfandiari, Amin Karbasi, Vahab Mirrokni</td>
+  <td>COLT</td>
+  <td>2021</td>
+</tr>
+<tr>
+  <td><a href="https://arxiv.org/pdf/2106.01420">Parallelizing Thompson sampling</a></td>
+  <td>Amin Karbasi, Vahab Mirrokni, Mohammad Shadravan</td>
+  <td>NeurIPS</td>
+  <td>2021</td>
+</tr>
+<tr>
+  <td><a href="https://arxiv.org/pdf/2106.07724">An exponential improvement on the memorization capacity of deep threshold networks</a></td>
+  <td>Shashank Rajput, Kartik Sreenivasan, Dimitris Papailiopoulos, Amin Karbasi</td>
+  <td>NeurIPS</td>
+  <td>2021</td>
+</tr>
+<tr>
+  <td><a href="https://arxiv.org/abs/2106.04769">Submodular+ concave</a></td>
+  <td>Siddharth Mitra, Moran Feldman, Amin Karbasi</td>
+  <td>NeurIPS</td>
+  <td>2021</td>
+</tr>
+<tr>
+  <td><a href="https://arxiv.org/pdf/2006.10921">Meta learning in the continuous time limit</a></td>
+  <td>Ruitu Xu, Lin Chen, Amin Karbasi</td>
+  <td>AISTATS</td>
+  <td>2021</td>
+</tr>
+<tr>
+  <td><a href="https://arxiv.org/pdf/2105.08709">Learning and certification under instance-targeted poisoning</a></td>
+  <td>Ji Gao, Amin Karbasi, Mohammad Mahmoody</td>
+  <td>UAI</td>
+  <td>2021</td>
+</tr>
+<tr>
+  <td><a href="https://arxiv.org/pdf/2107.01303">Data-driven mapping between functional connectomes using optimal transport</a></td>
+  <td>Javid Dadashkarimi, Amin Karbasi, Dustin Scheinost</td>
+  <td>MICCAI</td>
+  <td>2021</td>
+</tr>
+<tr>
+  <td><a href="https://pdf.sciencedirectassets.com/...">There is no single functional atlas even for a single individual: Functional parcel definitions change with task</a></td>
+  <td>Mehraveh Salehi, Abigail S. Greene, Amin Karbasi, Xilin Shen, Dustin Scheinost, R. Todd Constable</td>
+  <td>NeuroImage</td>
+  <td>2020</td>
+</tr>
+<tr>
+  <td><a href="https://arxiv.org/pdf/1804.09554">Stochastic conditional gradient methods: From convex minimization to submodular maximization</a></td>
+  <td>Aryan Mokhtari, Hamed Hassani, Amin Karbasi</td>
+  <td>JMLR</td>
+  <td>2020</td>
+</tr>
+<tr>
+  <td><a href="https://arxiv.org/pdf/1910.04322">One sample stochastic frank-wolfe</a></td>
+  <td>Mingrui Zhang, Zebang Shen, Aryan Mokhtari, Hamed Hassani, Amin Karbasi</td>
+  <td>AISTATS</td>
+  <td>2020</td>
+</tr>
+<tr>
+  <td><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC7216521/">Individualized functional networks reconfigure with cognitive state</a></td>
+  <td>Mehraveh Salehi, Amin Karbasi, Daniel S Barron, Dustin Scheinost, R Todd Constable</td>
+  <td>NeuroImage</td>
+  <td>2020</td>
+</tr>
+<tr>
+  <td><a href="https://proceedings.mlr.press/v119/chen20q/chen20q.pdf">More data can expand the generalization gap between adversarially robust and standard models</a></td>
+  <td>Lin Chen, Yifei Min, Mingrui Zhang, Amin Karbasi</td>
+  <td>ICML</td>
+  <td>2020</td>
+</tr>
+<tr>
+  <td><a href="https://arxiv.org/pdf/2006.13326">Safe learning under uncertain objectives and constraints</a></td>
+  <td>Mohammad Fereydounian, Zebang Shen, Aryan Mokhtari, Amin Karbasi, Hamed Hassani</td>
+  <td>arXiv preprint</td>
+  <td>2020</td>
+</tr>
+<tr>
+  <td><a href="https://proceedings.neurips.cc/...">Continuous submodular maximization: Beyond dr-submodularity</a></td>
+  <td>Moran Feldman, Amin Karbasi</td>
+  <td>NeurIPS</td>
+  <td>2020</td>
+</tr>
+<tr>
+  <td><a href="https://arxiv.org/pdf/1802.08183">Projection-free online optimization with stochastic gradient: From convexity to submodularity</a></td>
+  <td>Lin Chen, Christopher Harshaw, Hamed Hassani, Amin Karbasi</td>
+  <td>ICML</td>
+  <td>2018</td>
+</tr>
+<tr>
+  <td><a href="https://arxiv.org/pdf/1711.01660">Conditional gradient method for stochastic submodular maximization: Closing the gap</a></td>
+  <td>Aryan Mokhtari, Hamed Hassani, Amin Karbasi</td>
+  <td>AISTATS</td>
+  <td>2018</td>
+</tr>
+<tr>
+  <td><a href="https://arxiv.org/pdf/1802.07098">Do less, get more: Streaming submodular maximization with subsampling</a></td>
+  <td>Moran Feldman, Amin Karbasi, Ehsan Kazemi</td>
+  <td>NeurIPS</td>
+  <td>2018</td>
+</tr>
+<tr>
+  <td><a href="https://arxiv.org/pdf/1806.02815">Data summarization at scale: A two-stage submodular approach</a></td>
+  <td>Marko Mitrovic, Ehsan Kazemi, Morteza Zadimoghaddam, Amin Karbasi</td>
+  <td>ICML</td>
+  <td>2018</td>
+</tr>
+<tr>
+  <td><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC5905726/">An exemplar-based approach to individualized parcellation reveals the need for sex-specific functional networks</a></td>
+  <td>Mehraveh Salehi, Amin Karbasi, Xilin Shen, Dustin Scheinost, R Todd Constable</td>
+  <td>Neuroimage 170</td>
+  <td>2018</td>
+</tr>
+<tr>
+  <td><a href="https://arxiv.org/pdf/1707.04347">Weakly submodular maximization beyond cardinality constraints: Does randomization help greedy?</a></td>
+  <td>Lin Chen, Moran Feldman, Amin Karbasi</td>
+  <td>ICML</td>
+  <td>2018</td>
+</tr>
+<tr>
+  <td><a href="https://arxiv.org/pdf/1802.03825">Decentralized submodular maximization: Bridging discrete and continuous settings</a></td>
+  <td>Aryan Mokhtari, Hamed Hassani, Amin Karbasi</td>
+  <td>ICML</td>
+  <td>2018</td>
+</tr>
+
+<tr>
+  <td><a href="https://arxiv.org/pdf/1802.09110">Submodularity on hypergraphs: From sets to sequences</a></td>
+  <td>Marko Mitrovic, Moran Feldman, Andreas Krause, Amin Karbasi</td>
+  <td>AISTATS</td>
+  <td>2018</td>
+</tr>
+<tr>
+  <td><a href="https://arxiv.org/pdf/1802.06942">Comparison based learning from weak oracles</a></td>
+  <td>Ehsan Kazemi, Lin Chen, Sanjoy Dasgupta, Amin Karbasi</td>
+  <td>AISTATS</td>
+  <td>2018</td>
+</tr>
+<tr>
+  <td><a href="https://www.biorxiv.org/content/10.1101/372110v1.full.pdf">State-specific individualized functional networks form a predictive signature of brain state</a></td>
+  <td>Mehraveh Salehi, Amin Karbasi, Daniel S. Barron, Dustin Scheinost, R. Todd Constable</td>
+  <td>BioRxiv</td>
+  <td>2018</td>
+</tr>
+<tr>
+  <td><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC5851696/pdf/10827_2018_Article_678.pdf">Learning neural connectivity from firing activity: efficient algorithms with provable guarantees on topology</a></td>
+  <td>Amin Karbasi, Amir Hesam Salavati, Martin Vetterli</td>
+  <td>Journal of Computational Neuroscience 44</td>
+  <td>2018</td>
+</tr>
+<tr>
+  <td><a href="https://arxiv.org/pdf/1708.03949">Gradient methods for submodular maximization</a></td>
+  <td>Hamed Hassani, Mahdi Soltanolkotabi, Amin Karbasi</td>
+  <td>NeurIPS</td>
+  <td>2017</td>
+</tr>
+
+<tr>
+  <td><a href="https://arxiv.org/pdf/1703.02647">Streaming weak submodularity: Interpreting neural networks on the fly</a></td>
+  <td>Ethan R. Elenberg, Alexandros G. Dimakis, Moran Feldman, Amin Karbasi</td>
+  <td>NeurIPS</td>
+  <td>2017</td>
+</tr>
+<tr>
+  <td><a href="https://arxiv.org/pdf/1704.01652">Greed is good: Near-optimal submodular maximization via greedy optimization</a></td>
+  <td>Moran Feldman, Christopher Harshaw, Amin Karbasi</td>
+  <td>COLT</td>
+  <td>2017</td>
+</tr>
+<tr>
+  <td><a href="https://proceedings.mlr.press/v70/mirzasoleiman17a/mirzasoleiman17a.pdf">Deletion-robust submodular maximization: Data summarization with “the right to be forgotten”</a></td>
+  <td>Baharan Mirzasoleiman, Amin Karbasi, Andreas Krause</td>
+  <td>ICML</td>
+  <td>2017</td>
+</tr>
+<tr>
+  <td><a href="https://proceedings.mlr.press/v70/mitrovic17a/mitrovic17a.pdf">Differentially private submodular maximization: Data summarization in disguise</a></td>
+  <td>Marko Mitrovic, Mark Bun, Andreas Krause, Amin Karbasi</td>
+  <td>ICML</td>
+  <td>2017</td>
+</tr>
+<tr>
+  <td><a href="https://proceedings.mlr.press/v70/stan17a/stan17a.pdf">Probabilistic submodular maximization in sub-linear time</a></td>
+  <td>Serban Stan, Morteza Zadimoghaddam, Andreas Krause, Amin Karbasi</td>
+  <td>ICML</td>
+  <td>2017</td>
+</tr>
+<tr>
+  <td><a href="https://papers.nips.cc/paper_files/paper/2017/file/f0935e4cd5920aa6c7c996a5ee53a70f-Paper.pdf">Interactive submodular bandit</a></td>
+  <td>Lin Chen, Andreas Krause, Amin Karbasi</td>
+  <td>NeurIPS</td>
+  <td>2017</td>
+</tr>
+<tr>
+  <td><a href="https://arxiv.org/pdf/1603.03515">Near-optimal active learning of halfspaces via query synthesis in the noisy setting</a></td>
+  <td>Lin Chen, Hamed Hassani, Amin Karbasi</td>
+  <td>AAAI</td>
+  <td>2017</td>
+</tr>
+<tr>
+  <td><a href="https://link.springer.com/chapter/10.1007/978-3-319-66182-7_55">A submodular approach to create individualized parcellations of the human brain</a></td>
+  <td>Mehraveh Salehi, Amin Karbasi, Dustin Scheinost & R. Todd Constable</td>
+  <td>MICCAI</td>
+  <td>2017</td>
+</tr>
+<tr>
+  <td><a href="https://proceedings.mlr.press/v70/mitrovic17a/mitrovic17a.pdf">Differentially Private Submodular Maximization: Data Summarization in Disguise (Full version)</a></td>
+  <td>Marko Mitrovic, Mark Bun, Andreas Krause, Amin Karbasi</td>
+  <td>Venue/Journal not available</td>
+  <td>2017</td>
+</tr>
+<tr>
+  <td><a href="https://proceedings.mlr.press/v48/mirzasoleiman16.pdf">Fast constrained submodular maximization: Personalized data summarization</a></td>
+  <td>Baharan Mirzasoleiman, Ashwinkumar Badanidiyuru, Amin Karbasi</td>
+  <td>ICML</td>
+  <td>2016</td>
+</tr>
+<tr>
+  <td><a href="https://arxiv.org/pdf/1411.0541">Distributed submodular maximization</a></td>
+  <td>Baharan Mirzasoleiman, Amin Karbasi, Rik Sarkar, Andreas Krause</td>
+  <td>Journal of Machine Learning Research</td>
+  <td>2016</td>
+</tr>
+<tr>
+  <td><a href="https://papers.nips.cc/paper_files/paper/2016/file/052335232b11864986bb2fa20fa38748-Paper.pdf">Fast distributed submodular cover: Public-private data summarization</a></td>
+  <td>Baharan Mirzasoleiman, Morteza Zadimoghaddam, Amin Karbasi</td>
+  <td>NeurIPS</td>
+  <td>2016</td>
+</tr>
+<tr>
+  <td><a href="https://papers.nips.cc/paper_files/paper/2016/file/8c00dee24c9878fea090ed070b44f1ab-Paper.pdf">Estimating the size of a large network and its communities from a random sample</a></td>
+  <td>Lin Chen, Amin Karbasi, Forrest W. Crawford</td>
+  <td>NeurIPS</td>
+  <td>2016</td>
+</tr>
+<tr>
+  <td><a href="https://arxiv.org/pdf/1511.04137">Seeing the unseen network: Inferring hidden social ties from respondent-driven sampling</a></td>
+  <td>Lin Chen, Forrest W. Crawford, Amin Karbasi</td>
+  <td>AAAI</td>
+  <td>2016</td>
+</tr>
+<tr>
+  <td><a href="https://ieeexplore.ieee.org/document/7471765">Learning network structures from firing patterns</a></td>
+  <td>Amin Karbasi, Amir Hesam Salavati, Martin Vetterli</td>
+  <td>IEEE International Conference on Acoustics</td>
+  <td>2016</td>
+</tr>
+<tr>
+  <td><a href="https://arxiv.org/pdf/1603.08616">Submodular variational inference for network reconstruction</a></td>
+  <td>Lin Chen, Forrest W Crawford, Amin Karbasi</td>
+  <td>arXiv preprint</td>
+  <td>2016</td>
+</tr>
+<tr>
+  <td><a href="https://arxiv.org/pdf/1603.03515">Dimension coupling: Optimal active learning of halfspaces via query synthesis</a></td>
+  <td>Lin Chen, Hamed Hassani, Amin Karbasi</td>
+  <td>arXiv preprint</td>
+  <td>2016</td>
+</tr>
+<tr>
+  <td><a href="https://arxiv.org/pdf/1409.7938">Lazier Than Lazy Greedy</a></td>
+  <td>Baharan Mirzasoleiman, Ashwinkumar Badanidiyuru, Amin Karbasi, Jan Vondrak, Andreas Krause</td>
+  <td>arXiv preprint</td>
+  <td>2015</td>
+</tr>
+<tr>
+  <td><a href="https://proceedings.mlr.press/v40/Chen15b.pdf">Sequential information maximization: When is greedy near-optimal?</a></td>
+  <td>Yuxin Chen, S. Hamed Hassani, Amin Karbasi, Andreas Krause</td>
+  <td>COLT</td>
+  <td>2015</td>
+</tr>
+<tr>
+  <td><a href="https://papers.nips.cc/paper_files/paper/2015/hash/c1fea270c48e8079d8ddf7d06d26ab52-Abstract.html">Distributed submodular cover: Succinctly summarizing massive data</a></td>
+  <td>Baharan Mirzasoleiman, Amin Karbasi, Ashwinkumar Badanidiyuru, Andreas Krause</td>
+  <td>NeurIPS</td>
+  <td>2015</td>
+</tr>
+<tr>
+  <td><a href="https://cdn.aaai.org/ojs/9694/9694-13-13222-1-2-20201228.pdf">Submodular surrogates for value of information</a></td>
+  <td>Yuxin Chen, Shervin Javdani, Amin Karbasi, J. Bagnell, Siddhartha Srinivasa, Andreas Krause</td>
+  <td>AAAI</td>
+  <td>2015</td>
+</tr>
+<tr>
+  <td><a href="https://www.ijcai.org/Proceedings/15/Papers/283.pdf">Non-Monotone Adaptive Submodular Maximization</a></td>
+  <td>Alkis Gotovos, Amin Karbasi, Andreas Krause</td>
+  <td>IJCAI</td>
+  <td>2015</td>
+</tr>
+<tr>
+  <td><a href="https://arxiv.org/pdf/1506.02194">Fast mixing for discrete point processes</a></td>
+  <td>Patrick Rebeschini, Amin Karbasi</td>
+  <td>COLT</td>
+  <td>2015</td>
+</tr>
+<tr>
+  <td><a href="https://arxiv.org/pdf/1605.00529">Tradeoffs for Space, Time, Data and Risk in Unsupervised Learning</a></td>
+  <td>Mario Lucic, Mesrob I. Ohannessian, Amin Karbasi, Andreas Krause</td>
+  <td>Venue/Journal not available</td>
+  <td>2015</td>
+</tr>
+<tr>
+  <td><a href="https://arxiv.org/pdf/1107.3059">From Small-World Networks to Comparison-Based Search</a></td>
+  <td>Amin Karbasi, Stratis Ioannidis, Laurent Massoulie</td>
+  <td>Transactions on Information Theory</td>
+  <td>2015</td>
+</tr>
+<tr>
+  <td><a href="https://citeseerx.ist.psu.edu/document?repid=rep1&type=pdf&doi=082d26e93656fa9fcd5910f7b9a9922caa64835b">Normalization Phenomena in Asynchronous Networks</a></td>
+  <td>Amin Karbasi, Johannes Lengler, Angelika Steger</td>
+  <td>Venue/Journal not available</td>
+  <td>2015</td>
+</tr>
+<tr>
+  <td><a href="https://infoscience.epfl.ch/server/api/core/bitstreams/37b51b59-3d07-4822-8413-c0eaf039ea47/content">Asynchronous decoding of LDPC codes over BEC</a></td>
+  <td>Saeid Haghighatshoar, Amin Karbasi, Amir Hesam Salavati</td>
+  <td>ISIT</td>
+  <td>2015</td>
+</tr>
+<tr>
+  <td><a href="https://www.cs.cmu.edu/~sjavdani/papers/rss_2014_workshop_abstract.pdf">Decision Region Determination for Touch Based Localization</a></td>
+  <td>Shervin Javdani, Yuxin Chen, Amin Karbasi, Andreas Krause, J. Andrew Bagnell, Siddhartha Srinivasa</td>
+  <td>arXiv</td>
+  <td>2015</td>
+</tr>
+<tr>
+  <td><a href="https://las.inf.ethz.ch/files/badanidiyuru14streaming.pdf">Streaming submodular maximization: Massive data summarization on the fly</a></td>
+  <td>Badanidiyuru, Ashwinkumar, Baharan Mirzasoleiman, Amin Karbasi, Andreas Krause</td>
+  <td>ACM SIGKDD</td>
+  <td>2014</td>
+</tr>
+<tr>
+  <td><a href="https://arxiv.org/pdf/1402.2092">Near-optimally teaching the crowd to classify</a></td>
+  <td>Adish Singla, Ilija Bogunovic, Gábor Bartók, Amin Karbasi, Andreas Krause</td>
+  <td>ICML</td>
+  <td>2014</td>
+</tr>
+<tr>
+  <td><a href="https://proceedings.mlr.press/v33/javdani14.pdf">Near optimal bayesian active learning for decision making</a></td>
+  <td>Shervin Javdani, Yuxin Chen, Amin Karbasi, Andreas Krause, Drew Bagnell, Siddhartha Srinivasa</td>
+  <td>AISTATS</td>
+  <td>2014</td>
+</tr>
+<tr>
+  <td><a href="https://patentimages.storage.googleapis.com/f6/2d/c7/3371b471ebdb9e/US8695009.pdf">Allocating tasks to machines in computing clusters</a></td>
+  <td>M Vojnovic, A Karbasi</td>
+  <td>US Patent</td>
+  <td>2014</td>
+</tr>
+<tr>
+  <td><a href="https://arxiv.org/pdf/1403.3305">Noise facilitation in associative memories of exponential capacity</a></td>
+  <td>Amin Karbasi, Amir Hesam Salavati, Amin Shokrollahi, Lav R. Varshney</td>
+  <td>Neural Computation</td>
+  <td>2014</td>
+</tr>
+<tr>
+  <td><a href="https://arxiv.org/pdf/1407.6513">Convolutional neural associative memories: Massive capacity with noise tolerance</a></td>
+  <td>Amin Karbasi, Amir Hesam Salavati, Amin Shokrollahi</td>
+  <td>arXiv</td>
+  <td>2014</td>
+</tr>
+<tr>
+  <td><a href="https://arxiv.org/pdf/1301.1555">Coupled Neural Associative Memories</a></td>
+  <td>Amin Karbasi, Amir Hesam Salavati, Amin Shokrollahi</td>
+  <td>arXiv</td>
+  <td>2014</td>
+</tr>
+<tr>
+  <td><a href="https://arxiv.org/pdf/1411.0541">Distributed submodular maximization: Identifying representative elements in massive data</a></td>
+  <td>Baharan Mirzasoleiman, Amin Karbasi, Rik Sarkar, Andreas Krause</td>
+  <td>NeurIPS</td>
+  <td>2013</td>
+</tr>
+<tr>
+  <td><a href="https://proceedings.mlr.press/v28/karbasi13.html">Iterative learning and denoising in convolutional neural associative memories</a></td>
+  <td>Amin Karbasi, Amir Hesam Salavati, Amin Shokrollahi</td>
+  <td>ICML</td>
+  <td>2013</td>
+</tr>
+<tr>
+  <td><a href="https://proceedings.mlr.press/v32/singla14.pdf">On actively teaching the crowd to classify</a></td>
+  <td>Adish Singla, Ilija Bogunovic, Gábor Bartók, Amin Karbasi, Andreas Krause</td>
+  <td>NIPS Workshop on Data Driven Education</td>
+  <td>2013</td>
+</tr>
+<tr>
+  <td><a href="https://arxiv.org/pdf/1012.4928">Calibration using matrix completion with application to ultrasound tomography</a></td>
+  <td>Reza Parhizkar, Amin Karbasi, Sewoong Oh, Martin Vetterli</td>
+  <td>IEEE Transactions on Signal Processing</td>
+  <td>2013</td>
+</tr>
+<tr>
+  <td><a href="https://arxiv.org/pdf/1403.3305">Noise-enhanced associative memories</a></td>
+  <td>Amin Karbasi, Amir Hesam Salavati, Amin Shokrollahi, Lav R. Varshney</td>
+  <td>NeurIPS</td>
+  <td>2013</td>
+</tr>
+<tr>
+  <td><a href="https://drops.dagstuhl.de/storage/00lipics/lipics-vol020-stacs2013/LIPIcs.STACS.2013.550/LIPIcs.STACS.2013.550.pdf">Constrained Binary Identification Problem</a></td>
+  <td>Amin Karbasi, Morteza Zadimoghaddam</td>
+  <td>STACS</td>
+  <td>2013</td>
+</tr>
+
+<tr>
+  <td><a href="https://arxiv.org/pdf/1001.1445">Graph-constrained group testing</a></td>
+  <td>Mahdi Cheraghchi, Amin Karbasi, Soheil Mohajer, Venkatesh Saligrama</td>
+  <td>IEEE Transactions on Information Theory</td>
+  <td>2012</td>
+</tr>
+<tr>
+  <td><a href="files/amin-12d.pdf">Sequential group testing with graph constraints</a></td>
+  <td>Amin Karbasi, Morteza Zadimoghaddam</td>
+  <td>IEEE Information Theory Workshop</td>
+  <td>2012</td>
+</tr>
+<tr>
+  <td><a href="https://arxiv.org/pdf/1110.3018">Robust localization from incomplete local information</a></td>
+  <td>Amin Karbasi, Sewoong Oh</td>
+  <td>IEEE/ACM Transactions on Networking</td>
+  <td>2012</td>
+</tr>
+<tr>
+  <td><a href="https://arxiv.org/pdf/1206.4674">Comparison-based learning with rank nets</a></td>
+  <td>Amin Karbasi, Stratis Ioannidis, Laurent Massoulie</td>
+  <td>arXiv</td>
+  <td>2012</td>
+</tr>
+<tr>
+  <td><a href="https://arxiv.org/pdf/1202.2770">Multi-level error-resilient neural networks</a></td>
+  <td>Amir Hesam Salavati, Amin Karbasi</td>
+  <td>IEEE ISIT Proceedings</td>
+  <td>2012</td>
+</tr>
+<tr>
+  <td><a href="https://ieeexplore.ieee.org/document/6017118">Low-Rank Matrix Approximation Using Point-Wise Operators</a></td>
+  <td>Arash Amini, Amin Karbasi, Farokh Marvasti</td>
+  <td>IEEE Transactions on Information Theory</td>
+  <td>2012</td>
+</tr>
+<tr>
+  <td><a href="files/amin-12c.pdf">Hot or Not: Interactive Content Search Using Comparisons</a></td>
+  <td>Amin Karbasi, Stratis Ioannidis, Laurent Massoulié</td>
+  <td>Information Theory and Applications</td>
+  <td>2012</td>
+</tr>
+<tr>
+  <td><a href="https://arxiv.org/pdf/1202.2770">Multi-Level Error-Resilient Neural Networks with Learning</a></td>
+  <td>Amir Hesam Salavati, Amin Karbasi</td>
+  <td>arXiv</td>
+  <td>2012</td>
+</tr>
+<tr>
+  <td><a href="files/amin_thesis.pdf">Graph-Based Information Processing: Scaling Laws and Applications</a></td>
+  <td>Amin Karbasi, Martin Vetterli, Rüdiger Urbanke</td>
+  <td>EPFL</td>
+  <td>2012</td>
+</tr>
+<tr>
+  <td><a href="https://arxiv.org/pdf/1009.3186">Group testing with probabilistic tests: Theory, design, and application</a></td>
+  <td>Mahdi Cheraghchi, Ali Hormati, Amin Karbasi, Martin Vetterli</td>
+  <td>IEEE Transactions on Information Theory</td>
+  <td>2011</td>
+</tr>
+<tr>
+  <td><a href="https://link.springer.com/chapter/10.1007/978-3-642-22012-8_48">Content search through comparisons</a></td>
+  <td>Amin Karbasi, Stratis Ioannidis, Laurent Massoulié</td>
+  <td>International Colloquium on Automata</td>
+  <td>2011</td>
+</tr>
+<tr>
+  <td><a href="files/amin-11c.pdf">Calibration in circular ultrasound tomography devices</a></td>
+  <td>Reza Parhizkar, Amin Karbasi, Martin Vetterli</td>
+  <td>IEEE ICASSP</td>
+  <td>2011</td>
+</tr>
+<tr>
+  <td><a href="https://citeseerx.ist.psu.edu/document?repid=rep1&type=pdf&doi=a279445a4e0603b8b2768c1f1439e998c1072080">Adaptive content search through comparisons</a></td>
+  <td>Amin Karbasi, Stratis Ioannidis, Laurent Massoulié</td>
+  <td>MIT Press</td>
+  <td>2011</td>
+</tr>
+<tr>
+  <td><a href="files/amin-11b.pdf">Compression with graphical constraints: An interactive browser</a></td>
+  <td>Amin Karbasi, Morteza Zadimoghaddam</td>
+  <td>IEEE ISIT Proceedings</td>
+  <td>2011</td>
+</tr>
+<tr>
+  <td><a href="https://infoscience.epfl.ch/entities/patent/8ce181cf-6797-41f3-9134-21970f143428">Greedy Scheduling for Distributed Computing Clusters</a></td>
+  <td>Karbasi, Amin and Vojnovic, Milan</td>
+  <td>Not Available</td>
+  <td>2011</td>
+</tr>
+<tr>
+  <td><a href="https://swoh.web.engr.illinois.edu/paper_positioning_central.pdf">Sensor network localization from local connectivity: Performance analysis for the mds-map algorithm</a></td>
+  <td>Sewoong Oh, Andrea Montanari, Amin Karbasi</td>
+  <td>2010 IEEE Information Theory Workshop</td>
+  <td>2010</td>
+</tr>
+<tr>
+  <td><a href="https://homes.cs.washington.edu/~sewoong/paper_positioning_distributed.pdf">Distributed sensor network localization from local connectivity: performance analysis for the hop-terrain algorithm</a></td>
+  <td>Amin Karbasi, Sewoong Oh</td>
+  <td>ACM SIGMETRICS International Conference</td>
+  <td>2010</td>
+</tr>
+<tr>
+  <td><a href="https://www.acoustics.asn.au/conference_proceedings/ICA2010/cdrom-ICA2010/papers/p539.pdf">Ultrasound tomography calibration using structured matrix completion</a></td>
+  <td>Amin Karbasi, Sewoong Oh, Reza Parhizkar, Martin Vetterli</td>
+  <td>20th International Congress on Acoustics</td>
+  <td>2010</td>
+</tr>
+<tr>
+  <td><a href="https://citeseerx.ist.psu.edu/document?repid=rep1&type=pdf&doi=4bd4f520a6375f2702f2b595c9dc5f742bac5334">From centralized to distributed sensor localization</a></td>
+  <td>Amin Karbasi</td>
+  <td>ACM Workshop on Wireless of the Students</td>
+  <td>2010</td>
+</tr>
+<tr>
+  <td><a href="https://infoscience.epfl.ch/server/api/core/bitstreams/0d790e8c-e7a8-4501-a723-ab51552e99fc/content">Compressed sensing with probabilistic measurements: A group testing solution</a></td>
+  <td>Mahdi Cheraghchi, Ali Hormati, Amin Karbasi, Martin Vetterli</td>
+  <td>47th Annual Allerton Conference</td>
+  <td>2009</td>
+</tr>
+<tr>
+  <td><a href="https://ieeexplore.ieee.org/abstract/document/5206485">Support recovery in compressed sensing: An estimation theoretic approach</a></td>
+  <td>Amin Karbasi, Ali Hormati, Soheil Mohajer, Martin Vetterli</td>
+  <td>IEEE International Symposium on Information Theory</td>
+  <td>2009</td>
+</tr>
+<tr>
+  <td><a href="https://arxiv.org/pdf/0911.4880">An estimation theoretic approach for sparsity pattern recovery in the noisy setting</a></td>
+  <td>Ali Hormati, Amin Karbasi, Soheil Mohajer, Martin Vetterli</td>
+  <td>arXiv</td>
+  <td>2009</td>
+</tr>
+<tr>
+  <td><a href="https://www.eurasip.org/Proceedings/Eusipco/Eusipco2007/Papers/b1l-d05.pdf">A new DOA estimation method using a circular microphone array</a></td>
+  <td>Amin Karbasi, Akihiko Sugiyama</td>
+  <td>15th European Signal Processing Conference</td>
+  <td>2007</td>
+</tr>
+<tr>
+  <td><a href="https://www.eurasip.org/Proceedings/Eusipco/Eusipco2006/papers/1568981824.pdf">A DOA estimation method for an arbitrary triangular microphone arrangement</a></td>
+  <td>Amin Karbasi, Akihiko Sugiyama</td>
+  <td>14th European Signal Processing Conference</td>
+  <td>2006</td>
+</tr>
 
-  <tr class="full">
-    <td colspan="5">
-        <div>
-          Citation: arXiv, Jan, 2013.
-          <!-- Add links or additional information here -->
-        </div>
-        <br/>
-        <button onclick="hideReview(this)">close ⌃</button>
-        <button onclick="copyReview(this)">copy to clipboard</button>
-    </td>
-  </tr>
 
-  <tr>
-    <td>Graph-constrained group testing</td>
-    <td>Authors not available</td>
-    <td class="small">2012</td>
-    <td>IEEE Transactions on Information Theory 58 (1)</td>
-    <td class="center read">
-        <button onclick="toggleReview(this)">read ▿</button>
-    </td>
-  </tr>
 
-  <tr class="full">
-    <td colspan="5">
-        <div>
-          Citation: IEEE Transactions on Information Theory 58 (1), 248-262, 2012.
-          <!-- Add links or additional information here -->
-        </div>
-        <br/>
-        <button onclick="hideReview(this)">close ⌃</button>
-        <button onclick="copyReview(this)">copy to clipboard</button>
-    </td>
-  </tr>
-
-  <tr>
-    <td>Sequential group testing with graph constraints</td>
-    <td>Authors not available</td>
-    <td class="small">2012</td>
-    <td>2012 IEEE information theory workshop</td>
-    <td class="center read">
-        <button onclick="toggleReview(this)">read ▿</button>
-    </td>
-  </tr>
-
-  <tr class="full">
-    <td colspan="5">
-        <div>
-          Citation: 2012 IEEE information theory workshop, 292-296, 2012.
-          <!-- Add links or additional information here -->
-        </div>
-        <br/>
-        <button onclick="hideReview(this)">close ⌃</button>
-        <button onclick="copyReview(this)">copy to clipboard</button>
-    </td>
-  </tr>
-
-  <tr>
-    <td>Robust localization from incomplete local information</td>
-    <td>Authors not available</td>
-    <td class="small">2012</td>
-    <td>IEEE/ACM Transactions on Networking 21 (4)</td>
-    <td class="center read">
-        <button onclick="toggleReview(this)">read ▿</button>
-    </td>
-  </tr>
-
-  <tr class="full">
-    <td colspan="5">
-        <div>
-          Citation: IEEE/ACM Transactions on Networking 21 (4), 1131-1144, 2012.
-          <!-- Add links or additional information here -->
-        </div>
-        <br/>
-        <button onclick="hideReview(this)">close ⌃</button>
-        <button onclick="copyReview(this)">copy to clipboard</button>
-    </td>
-  </tr>
-
-  <tr>
-    <td>Comparison-based learning with rank nets</td>
-    <td>Authors not available</td>
-    <td class="small">2012</td>
-    <td>arXiv preprint arXiv:1206.4674</td>
-    <td class="center read">
-        <button onclick="toggleReview(this)">read ▿</button>
-    </td>
-  </tr>
-
-  <tr class="full">
-    <td colspan="5">
-        <div>
-          Citation: arXiv preprint arXiv:1206.4674, 2012.
-          <!-- Add links or additional information here -->
-        </div>
-        <br/>
-        <button onclick="hideReview(this)">close ⌃</button>
-        <button onclick="copyReview(this)">copy to clipboard</button>
-    </td>
-  </tr>
-
-  <tr>
-    <td>Multi-level error-resilient neural networks</td>
-    <td>Authors not available</td>
-    <td class="small">2012</td>
-    <td>2012 IEEE International Symposium on Information Theory Proceedings</td>
-    <td class="center read">
-        <button onclick="toggleReview(this)">read ▿</button>
-    </td>
-  </tr>
-
-  <tr class="full">
-    <td colspan="5">
-        <div>
-          Citation: 2012 IEEE International Symposium on Information Theory Proceedings, 1064-1068, 2012.
-          <!-- Add links or additional information here -->
-        </div>
-        <br/>
-        <button onclick="hideReview(this)">close ⌃</button>
-        <button onclick="copyReview(this)">copy to clipboard</button>
-    </td>
-  </tr>
-
-  <tr>
-    <td>Low-Rank Matrix Approximation Using Point-Wise Operators</td>
-    <td>Authors not available</td>
-    <td class="small">2012</td>
-    <td>IEEE Transactions on Information Theory 58 (1)</td>
-    <td class="center read">
-        <button onclick="toggleReview(this)">read ▿</button>
-    </td>
-  </tr>
-
-  <tr class="full">
-    <td colspan="5">
-        <div>
-          Citation: IEEE Transactions on Information Theory 58 (1), 302, 2012.
-          <!-- Add links or additional information here -->
-        </div>
-        <br/>
-        <button onclick="hideReview(this)">close ⌃</button>
-        <button onclick="copyReview(this)">copy to clipboard</button>
-    </td>
-  </tr>
-
-  <tr>
-    <td>Hot or Not: Interactive Content Search Using Comparisons</td>
-    <td>Authors not available</td>
-    <td class="small">2012</td>
-    <td>Information Theory and Applications (ITA)</td>
-    <td class="center read">
-        <button onclick="toggleReview(this)">read ▿</button>
-    </td>
-  </tr>
-
-  <tr class="full">
-    <td colspan="5">
-        <div>
-          Citation: Information Theory and Applications (ITA), 2012.
-          <!-- Add links or additional information here -->
-        </div>
-        <br/>
-        <button onclick="hideReview(this)">close ⌃</button>
-        <button onclick="copyReview(this)">copy to clipboard</button>
-    </td>
-  </tr>
-
-  <tr>
-    <td>Multi-Level Error-Resilient Neural Networks with Learning</td>
-    <td>Authors not available</td>
-    <td class="small">2012</td>
-    <td>arXiv preprint arXiv:1202.2770</td>
-    <td class="center read">
-        <button onclick="toggleReview(this)">read ▿</button>
-    </td>
-  </tr>
-
-  <tr class="full">
-    <td colspan="5">
-        <div>
-          Citation: arXiv preprint arXiv:1202.2770, 2012.
-          <!-- Add links or additional information here -->
-        </div>
-        <br/>
-        <button onclick="hideReview(this)">close ⌃</button>
-        <button onclick="copyReview(this)">copy to clipboard</button>
-    </td>
-  </tr>
-
-  <tr>
-    <td>Graph-Based Information Processing: Scaling Laws and Applications</td>
-    <td>Authors not available</td>
-    <td class="small">2012</td>
-    <td>EPFL</td>
-    <td class="center read">
-        <button onclick="toggleReview(this)">read ▿</button>
-    </td>
-  </tr>
-
-  <tr class="full">
-    <td colspan="5">
-        <div>
-          Citation: EPFL, 2012.
-          <!-- Add links or additional information here -->
-        </div>
-        <br/>
-        <button onclick="hideReview(this)">close ⌃</button>
-        <button onclick="copyReview(this)">copy to clipboard</button>
-    </td>
-  </tr>
-
-  <tr>
-    <td>Group testing with probabilistic tests: Theory, design and application</td>
-    <td>Authors not available</td>
-    <td class="small">2011</td>
-    <td>IEEE Transactions on Information Theory 57 (10)</td>
-    <td class="center read">
-        <button onclick="toggleReview(this)">read ▿</button>
-    </td>
-  </tr>
-
-  <tr class="full">
-    <td colspan="5">
-        <div>
-          Citation: IEEE Transactions on Information Theory 57 (10), 7057-7067, 2011.
-          <!-- Add links or additional information here -->
-        </div>
-        <br/>
-        <button onclick="hideReview(this)">close ⌃</button>
-        <button onclick="copyReview(this)">copy to clipboard</button>
-    </td>
-  </tr>
-
-  <tr>
-    <td>Content search through comparisons</td>
-    <td>Authors not available</td>
-    <td class="small">2011</td>
-    <td>International Colloquium on Automata</td>
-    <td class="center read">
-        <button onclick="toggleReview(this)">read ▿</button>
-    </td>
-  </tr>
-
-  <tr class="full">
-    <td colspan="5">
-        <div>
-          Citation: International Colloquium on Automata, Languages, and Programming, 601-612, 2011.
-          <!-- Add links or additional information here -->
-        </div>
-        <br/>
-        <button onclick="hideReview(this)">close ⌃</button>
-        <button onclick="copyReview(this)">copy to clipboard</button>
-    </td>
-  </tr>
-
-  <tr>
-    <td>Calibration in circular ultrasound tomography devices</td>
-    <td>Authors not available</td>
-    <td class="small">2011</td>
-    <td>2011 IEEE International Conference on Acoustics</td>
-    <td class="center read">
-        <button onclick="toggleReview(this)">read ▿</button>
-    </td>
-  </tr>
-
-  <tr class="full">
-    <td colspan="5">
-        <div>
-          Citation: 2011 IEEE International Conference on Acoustics, Speech and Signal …, 2011.
-          <!-- Add links or additional information here -->
-        </div>
-        <br/>
-        <button onclick="hideReview(this)">close ⌃</button>
-        <button onclick="copyReview(this)">copy to clipboard</button>
-    </td>
-  </tr>
-
-  <tr>
-    <td>Adaptive content search through comparisons</td>
-    <td>Authors not available</td>
-    <td class="small">2011</td>
-    <td>Massachusetts Institute of Technology Press</td>
-    <td class="center read">
-        <button onclick="toggleReview(this)">read ▿</button>
-    </td>
-  </tr>
-
-  <tr class="full">
-    <td colspan="5">
-        <div>
-          Citation: Massachusetts Institute of Technology Press, 2011.
-          <!-- Add links or additional information here -->
-        </div>
-        <br/>
-        <button onclick="hideReview(this)">close ⌃</button>
-        <button onclick="copyReview(this)">copy to clipboard</button>
-    </td>
-  </tr>
-
-  <tr>
-    <td>Compression with graphical constraints: An interactive browser</td>
-    <td>Authors not available</td>
-    <td class="small">2011</td>
-    <td>2011 IEEE International Symposium on Information Theory Proceedings</td>
-    <td class="center read">
-        <button onclick="toggleReview(this)">read ▿</button>
-    </td>
-  </tr>
-
-  <tr class="full">
-    <td colspan="5">
-        <div>
-          Citation: 2011 IEEE International Symposium on Information Theory Proceedings, 953-957, 2011.
-          <!-- Add links or additional information here -->
-        </div>
-        <br/>
-        <button onclick="hideReview(this)">close ⌃</button>
-        <button onclick="copyReview(this)">copy to clipboard</button>
-    </td>
-  </tr>
-
-  <tr>
-    <td>Greedy Scheduling for Distributed Computing Clusters</td>
-    <td>Authors not available</td>
-    <td class="small">2011</td>
-    <td>Venue/Journal not available</td>
-    <td class="center read">
-        <button onclick="toggleReview(this)">read ▿</button>
-    </td>
-  </tr>
-
-  <tr class="full">
-    <td colspan="5">
-        <div>
-          Citation: Description not available.
-          <!-- Add links or additional information here -->
-        </div>
-        <br/>
-        <button onclick="hideReview(this)">close ⌃</button>
-        <button onclick="copyReview(this)">copy to clipboard</button>
-    </td>
-  </tr>
-
-  <tr>
-    <td>Graph-constrained group testing</td>
-    <td>Authors not available</td>
-    <td class="small">2010</td>
-    <td>Information Theory Proceedings (ISIT)</td>
-    <td class="center read">
-        <button onclick="toggleReview(this)">read ▿</button>
-    </td>
-  </tr>
-
-  <tr class="full">
-    <td colspan="5">
-        <div>
-          Citation: Information Theory Proceedings (ISIT), 2010 IEEE International Symposium on …, 2010.
-          <!-- Add links or additional information here -->
-        </div>
-        <br/>
-        <button onclick="hideReview(this)">close ⌃</button>
-        <button onclick="copyReview(this)">copy to clipboard</button>
-    </td>
-  </tr>
-
-  <tr>
-    <td>Sensor network localization from local connectivity: Performance analysis for the mds-map algorithm</td>
-    <td>Authors not available</td>
-    <td class="small">2010</td>
-    <td>2010 IEEE Information Theory Workshop on Information Theory (ITW 2010</td>
-    <td class="center read">
-        <button onclick="toggleReview(this)">read ▿</button>
-    </td>
-  </tr>
-
-  <tr class="full">
-    <td colspan="5">
-        <div>
-          Citation: 2010 IEEE Information Theory Workshop on Information Theory (ITW 2010, Cairo …, 2010.
-          <!-- Add links or additional information here -->
-        </div>
-        <br/>
-        <button onclick="hideReview(this)">close ⌃</button>
-        <button onclick="copyReview(this)">copy to clipboard</button>
-    </td>
-  </tr>
-
-  <tr>
-    <td>Distributed sensor network localization from local connectivity: performance analysis for the hop-terrain algorithm</td>
-    <td>Authors not available</td>
-    <td class="small">2010</td>
-    <td>Proceedings of the ACM SIGMETRICS international conference on Measurement …</td>
-    <td class="center read">
-        <button onclick="toggleReview(this)">read ▿</button>
-    </td>
-  </tr>
-
-  <tr class="full">
-    <td colspan="5">
-        <div>
-          Citation: Proceedings of the ACM SIGMETRICS international conference on Measurement …, 2010.
-          <!-- Add links or additional information here -->
-        </div>
-        <br/>
-        <button onclick="hideReview(this)">close ⌃</button>
-        <button onclick="copyReview(this)">copy to clipboard</button>
-    </td>
-  </tr>
-
-  <tr>
-    <td>Ultrasound tomography calibration using structured matrix completion</td>
-    <td>Authors not available</td>
-    <td class="small">2010</td>
-    <td>The 20th International Congress on Acoustics</td>
-    <td class="center read">
-        <button onclick="toggleReview(this)">read ▿</button>
-    </td>
-  </tr>
-
-  <tr class="full">
-    <td colspan="5">
-        <div>
-          Citation: The 20th International Congress on Acoustics, 2010.
-          <!-- Add links or additional information here -->
-        </div>
-        <br/>
-        <button onclick="hideReview(this)">close ⌃</button>
-        <button onclick="copyReview(this)">copy to clipboard</button>
-    </td>
-  </tr>
-
-  <tr>
-    <td>From centralized to distributed sensor localization</td>
-    <td>Authors not available</td>
-    <td class="small">2010</td>
-    <td>Proceedings of the 2010 ACM workshop on Wireless of the students</td>
-    <td class="center read">
-        <button onclick="toggleReview(this)">read ▿</button>
-    </td>
-  </tr>
-
-  <tr class="full">
-    <td colspan="5">
-        <div>
-          Citation: Proceedings of the 2010 ACM workshop on Wireless of the students, by the …, 2010.
-          <!-- Add links or additional information here -->
-        </div>
-        <br/>
-        <button onclick="hideReview(this)">close ⌃</button>
-        <button onclick="copyReview(this)">copy to clipboard</button>
-    </td>
-  </tr>
-
-  <tr>
-    <td>Calibration for Ultrasound Breast Tomography Using Matrix Completion</td>
-    <td>Authors not available</td>
-    <td class="small">2010</td>
-    <td>arXiv preprint arXiv:1012.4928</td>
-    <td class="center read">
-        <button onclick="toggleReview(this)">read ▿</button>
-    </td>
-  </tr>
-
-  <tr class="full">
-    <td colspan="5">
-        <div>
-          Citation: arXiv preprint arXiv:1012.4928, 2010.
-          <!-- Add links or additional information here -->
-        </div>
-        <br/>
-        <button onclick="hideReview(this)">close ⌃</button>
-        <button onclick="copyReview(this)">copy to clipboard</button>
-    </td>
-  </tr>
-
-  <tr>
-    <td>Compressed sensing with probabilistic measurements: A group testing solution</td>
-    <td>Authors not available</td>
-    <td class="small">2009</td>
-    <td>2009 47th Annual Allerton Conference on Communication</td>
-    <td class="center read">
-        <button onclick="toggleReview(this)">read ▿</button>
-    </td>
-  </tr>
-
-  <tr class="full">
-    <td colspan="5">
-        <div>
-          Citation: 2009 47th Annual Allerton Conference on Communication, Control, and …, 2009.
-          <!-- Add links or additional information here -->
-        </div>
-        <br/>
-        <button onclick="hideReview(this)">close ⌃</button>
-        <button onclick="copyReview(this)">copy to clipboard</button>
-    </td>
-  </tr>
-
-  <tr>
-    <td>Support recovery in compressed sensing: An estimation theoretic approach</td>
-    <td>Authors not available</td>
-    <td class="small">2009</td>
-    <td>2009 IEEE International Symposium on Information Theory</td>
-    <td class="center read">
-        <button onclick="toggleReview(this)">read ▿</button>
-    </td>
-  </tr>
-
-  <tr class="full">
-    <td colspan="5">
-        <div>
-          Citation: 2009 IEEE International Symposium on Information Theory, 679-683, 2009.
-          <!-- Add links or additional information here -->
-        </div>
-        <br/>
-        <button onclick="hideReview(this)">close ⌃</button>
-        <button onclick="copyReview(this)">copy to clipboard</button>
-    </td>
-  </tr>
-
-  <tr>
-    <td>An estimation theoretic approach for sparsity pattern recovery in the noisy setting</td>
-    <td>Authors not available</td>
-    <td class="small">2009</td>
-    <td>arXiv preprint arXiv:0911.4880</td>
-    <td class="center read">
-        <button onclick="toggleReview(this)">read ▿</button>
-    </td>
-  </tr>
-
-  <tr class="full">
-    <td colspan="5">
-        <div>
-          Citation: arXiv preprint arXiv:0911.4880, 2009.
-          <!-- Add links or additional information here -->
-        </div>
-        <br/>
-        <button onclick="hideReview(this)">close ⌃</button>
-        <button onclick="copyReview(this)">copy to clipboard</button>
-    </td>
-  </tr>
-
-  <tr>
-    <td>A new DOA estimation method using a circular microphone array</td>
-    <td>Authors not available</td>
-    <td class="small">2007</td>
-    <td>2007 15th European Signal Processing Conference</td>
-    <td class="center read">
-        <button onclick="toggleReview(this)">read ▿</button>
-    </td>
-  </tr>
-
-  <tr class="full">
-    <td colspan="5">
-        <div>
-          Citation: 2007 15th European Signal Processing Conference, 778-782, 2007.
-          <!-- Add links or additional information here -->
-        </div>
-        <br/>
-        <button onclick="hideReview(this)">close ⌃</button>
-        <button onclick="copyReview(this)">copy to clipboard</button>
-    </td>
-  </tr>
-
-  <tr>
-    <td>A DOA estimation method for an arbitrary triangular microphone arrangement</td>
-    <td>Authors not available</td>
-    <td class="small">2006</td>
-    <td>2006 14th European Signal Processing Conference</td>
-    <td class="center read">
-        <button onclick="toggleReview(this)">read ▿</button>
-    </td>
-  </tr>
-
-  <tr class="full">
-    <td colspan="5">
-        <div>
-          Citation: 2006 14th European Signal Processing Conference, 1-5, 2006.
-          <!-- Add links or additional information here -->
-        </div>
-        <br/>
-        <button onclick="hideReview(this)">close ⌃</button>
-        <button onclick="copyReview(this)">copy to clipboard</button>
-    </td>
-  </tr>
-
-  <tr>
-    <td>Learning local error bars for nonlinear regression</td>
-    <td>Authors not available</td>
-    <td class="small">1994</td>
-    <td>Advances in neural information processing systems 7</td>
-    <td class="center read">
-        <button onclick="toggleReview(this)">read ▿</button>
-    </td>
-  </tr>
-
-  <tr class="full">
-    <td colspan="5">
-        <div>
-          Citation: Advances in neural information processing systems 7, 1994.
-          <!-- Add links or additional information here -->
-        </div>
-        <br/>
-        <button onclick="hideReview(this)">close ⌃</button>
-        <button onclick="copyReview(this)">copy to clipboard</button>
-    </td>
-  </tr>
-
-  <tr>
-    <td>Universal Rates for Active Learning</td>
-    <td>Authors not available</td>
-    <td class="small">Year not available</td>
-    <td>The Thirty-eighth Annual Conference on Neural Information Processing Systems</td>
-    <td class="center read">
-        <button onclick="toggleReview(this)">read ▿</button>
-    </td>
-  </tr>
-
-  <tr class="full">
-    <td colspan="5">
-        <div>
-          Citation: The Thirty-eighth Annual Conference on Neural Information Processing Systems, 0.
-          <!-- Add links or additional information here -->
-        </div>
-        <br/>
-        <button onclick="hideReview(this)">close ⌃</button>
-        <button onclick="copyReview(this)">copy to clipboard</button>
-    </td>
-  </tr>
-
-  <tr>
-    <td>Injecting Undetectable Backdoors in Obfuscated Neural Networks and Language Models</td>
-    <td>Authors not available</td>
-    <td class="small">Year not available</td>
-    <td>The Thirty-eighth Annual Conference on Neural Information Processing Systems</td>
-    <td class="center read">
-        <button onclick="toggleReview(this)">read ▿</button>
-    </td>
-  </tr>
-
-  <tr class="full">
-    <td colspan="5">
-        <div>
-          Citation: The Thirty-eighth Annual Conference on Neural Information Processing Systems, 0.
-          <!-- Add links or additional information here -->
-        </div>
-        <br/>
-        <button onclick="hideReview(this)">close ⌃</button>
-        <button onclick="copyReview(this)">copy to clipboard</button>
-    </td>
-  </tr>
-
-  <tr>
-    <td>Learning Task Representations from In-Context Learning</td>
-    <td>Authors not available</td>
-    <td class="small">Year not available</td>
-    <td>ICML 2024 Workshop on In-Context Learning</td>
-    <td class="center read">
-        <button onclick="toggleReview(this)">read ▿</button>
-    </td>
-  </tr>
-
-  <tr class="full">
-    <td colspan="5">
-        <div>
-          Citation: ICML 2024 Workshop on In-Context Learning, 0.
-          <!-- Add links or additional information here -->
-        </div>
-        <br/>
-        <button onclick="hideReview(this)">close ⌃</button>
-        <button onclick="copyReview(this)">copy to clipboard</button>
-    </td>
-  </tr>
-
-  <tr>
-    <td>Exact Gradient Computation for Spiking Neural Networks</td>
-    <td>Authors not available</td>
-    <td class="small">Year not available</td>
-    <td>OPT 2022: Optimization for Machine Learning (NeurIPS 2022 Workshop)</td>
-    <td class="center read">
-        <button onclick="toggleReview(this)">read ▿</button>
-    </td>
-  </tr>
-
-  <tr class="full">
-    <td colspan="5">
-        <div>
-          Citation: OPT 2022: Optimization for Machine Learning (NeurIPS 2022 Workshop), 0.
-          <!-- Add links or additional information here -->
-        </div>
-        <br/>
-        <button onclick="hideReview(this)">close ⌃</button>
-        <button onclick="copyReview(this)">copy to clipboard</button>
-    </td>
-  </tr>
-
-  <tr>
-    <td>LTHC</td>
-    <td>Authors not available</td>
-    <td class="small">Year not available</td>
-    <td>Venue/Journal not available</td>
-    <td class="center read">
-        <button onclick="toggleReview(this)">read ▿</button>
-    </td>
-  </tr>
-
-  <tr class="full">
-    <td colspan="5">
-        <div>
-          Citation: Description not available.
-          <!-- Add links or additional information here -->
-        </div>
-        <br/>
-        <button onclick="hideReview(this)">close ⌃</button>
-        <button onclick="copyReview(this)">copy to clipboard</button>
-    </td>
-  </tr>
-
-  <tr>
-    <td>LCAV</td>
-    <td>Authors not available</td>
-    <td class="small">Year not available</td>
-    <td>Venue/Journal not available</td>
-    <td class="center read">
-        <button onclick="toggleReview(this)">read ▿</button>
-    </td>
-  </tr>
-
-  <tr class="full">
-    <td colspan="5">
-        <div>
-          Citation: Description not available.
-          <!-- Add links or additional information here -->
-        </div>
-        <br/>
-        <button onclick="hideReview(this)">close ⌃</button>
-        <button onclick="copyReview(this)">copy to clipboard</button>
-    </td>
-  </tr>
-
-  <tr>
-    <td>Mode Finding for SLC Distributions via Regularized Submodular Maximization</td>
-    <td>Authors not available</td>
-    <td class="small">Year not available</td>
-    <td>Venue/Journal not available</td>
-    <td class="center read">
-        <button onclick="toggleReview(this)">read ▿</button>
-    </td>
-  </tr>
-
-  <tr class="full">
-    <td colspan="5">
-        <div>
-          Citation: Description not available.
-          <!-- Add links or additional information here -->
-        </div>
-        <br/>
-        <button onclick="hideReview(this)">close ⌃</button>
-        <button onclick="copyReview(this)">copy to clipboard</button>
-    </td>
-  </tr>
-
-  <tr>
-    <td>PSML 2017</td>
-    <td>Authors not available</td>
-    <td class="small">Year not available</td>
-    <td>Venue/Journal not available</td>
-    <td class="center read">
-        <button onclick="toggleReview(this)">read ▿</button>
-    </td>
-  </tr>
-
-  <tr class="full">
-    <td colspan="5">
-        <div>
-          Citation: Description not available.
-          <!-- Add links or additional information here -->
-        </div>
-        <br/>
-        <button onclick="hideReview(this)">close ⌃</button>
-        <button onclick="copyReview(this)">copy to clipboard</button>
-    </td>
-  </tr>
 </tbody>
 </table>
 

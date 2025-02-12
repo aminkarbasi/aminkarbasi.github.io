@@ -1,0 +1,26 @@
+<section class="container list">
+  <h1 class="title">Peopl</h1>
+  <ul>
+{{ $v1 := where .Site.Pages "Params.description" "Postdoc" }}
+{{ $filtered := $v1 }}
+{{ range $filtered }}
+    <li>
+      <span>{{ .Description }}</span><a href="{{ .Permalink }}">{{ .Title }}</a>
+    </li>
+    {{ end }}
+  </ul>
+  {{ partial "postpagination.html" . }}
+</section>
+
+<section class="container list">
+  <ul>
+{{ $v1 := where .Site.Pages "Params.description" "Graduate" }}
+{{ $filtered := $v1 }}
+{{ range $filtered }}
+    <li>
+      <span>{{ .Description }}</span><a href="{{ .Permalink }}">{{ .Title }}</a>
+    </li>
+    {{ end }}
+  </ul>
+  {{ partial "pagination.html" . }}
+</section>

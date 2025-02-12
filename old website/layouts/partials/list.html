@@ -1,0 +1,411 @@
+{{ $v0 := where .Site.Pages "Params.description" "Faculty" }}
+{{ $v1 := where .Site.Pages "Params.description" "Postdoc" }}
+{{ $v2 := where .Pages "Type" "==" "people" }}
+{{ $v3 := where .Pages "Type" "==" "publications" }}
+{{ $v4 := where .Pages "Type" "==" "courses" }}
+{{ $v5 := where .Pages "Type" "==" "openings" }}
+{{ $v6 := where .Pages "Type" "==" "contact" }}
+{{ $v7 := where .Pages "Type" "==" "research" }}
+
+{{ with .Site.Params.coursesurl }}
+{{if $v4}}
+<section class="container">
+	<div style="text-align:center;"><img style="width:30%;border-radius:1%"  align="middle" src="{{ . | absURL }}" alt="avatar"></div>
+</section>
+{{ end }}
+{{ end }}
+
+    <style type="text/css">
+        a.research {text-decoration: none; }
+    </style>
+
+<section class="container list">
+	{{if or $v2 $v7}}
+	<h1 class="title"></h1>
+	{{ end }}
+	<ul>
+		{{ $filtered := $v0 | intersect $v2 }}
+		{{with $filtered}}
+		<h1 class="title">Faculty</h1>
+		{{ range first 1 $filtered }}
+		<li>
+			<div class="x-column x-sm x-5-6 last" style="">
+				<table>
+					<tr>
+						<td style="border:0px">
+							<a href="{{ .Permalink }}"><img class="x-img x-img-thumbnail none" src="../../{{.Params.thumbnail}}"  style="max-width:11rem"></a>
+						</td>
+						<td style="border:0px">
+							<ul class="x-ul-icons">
+								<a href="{{ .Permalink }}">{{ .Title }}</a>
+								<li class="x-li-icon"><i class="x-icon-user" data-x-icon=""></i> 
+									<i class="far fa-user-graduate"></i> {{.Description}}</li>
+								<div>
+									<i class="fas fa-envelope"></i>
+										{{.Params.email}}
+								</div>
+								<div>
+									<i class="fas fa-map-marker"></i>
+									{{.Params.address}}
+								</div>
+
+							</ul>
+						</td>
+					</tr>
+				</table>
+			</div>
+		</li>
+		
+		{{ end }}
+		{{ end }}
+	</ul>
+</section>
+
+<section class="container list">
+	{{if or (or $v2 $v7) $v4}}
+	<h1 class="title"></h1>
+	{{else}}
+	<h1 class="title">{{.Title}}</h1>
+	{{ end }}
+	<ul>
+		{{ $filtered := $v1 | intersect $v2 }}
+		{{with $filtered}}
+		<h1 class="title">Postdocs</h1>
+		{{ range $filtered }}
+		<li>
+			<div class="x-column x-sm x-5-6 last" style="">
+				<table>
+					<tr>
+						<td style="border:0px">
+							<a href="{{ .Permalink }}"><img class="x-img x-img-thumbnail none" src="../../{{.Params.thumbnail}}"  style="max-width:11rem"></a>
+						</td>
+						<td style="border:0px">
+							<ul class="x-ul-icons">
+								<a href="{{ .Permalink }}">{{ .Title }}</a>
+								<li class="x-li-icon"><i class="x-icon-user" data-x-icon=""></i> 
+									<i class="far fa-user-graduate"></i> {{.Description}}</li>
+								<div>
+									<i class="fas fa-envelope"></i>
+									{{.Params.email}}
+								</div>
+								<div>
+									<i class="fas fa-map-marker"></i>
+									{{.Params.address}}
+								</div>
+
+							</ul>
+						</td>
+					</tr>
+				</table>
+			</div>
+		</li>
+
+		{{ end }}
+		{{ end }}
+	</ul>
+</section>
+
+<section class="container list">
+	{{ $v1 := where .Site.Pages "Params.description" "Graduate" }}
+	{{ $filtered := $v1 | intersect $v2 }}
+	{{ $tagshalf := int (div (len $filtered) 2) }}
+	{{with $filtered}}
+	<h1 class="title">PhD students</h1>
+	<div class="floatLeft">
+		<table style="float:left">
+			{{ range first $tagshalf $filtered }}
+			<tr>
+				<td style="border:0px">
+					<a href="{{ .Permalink }}"><img class="x-img x-img-thumbnail none" src="../../{{.Params.thumbnail}}"  style="max-width:11rem;"></a>
+				</td>
+				<td style="border:0px">
+					<ul class="x-ul-icons">
+						<a href="{{ .Permalink }}">{{ .Title }}</a>
+						<li class="x-li-icon"><i class="x-icon-user" data-x-icon=""></i> 
+							<i class="far fa-user-graduate"></i> {{.Description}}</li>
+						<div>
+							<i class="fas fa-envelope"></i>
+							<span style="font-size:1.2rem">{{.Params.email}}</span>
+						</div>
+						<div>
+							<i class="fas fa-map-marker"></i>
+							<span style="font-size:1.2rem">{{.Params.address}}</span>
+						</div>
+
+					</ul>
+
+				</td>
+			</tr>
+			{{end}}
+		</table>
+	</div>
+
+	<div class="floatRight">
+		<table>
+			{{ $tagshalf := sub (len $filtered) $tagshalf }}
+			{{ range last  $tagshalf $filtered }}
+			<tr>
+				<td style="border:0px">
+					<a href="{{ .Permalink }}"><img class="x-img x-img-thumbnail none" src="../../{{.Params.thumbnail}}"  style="max-width:11rem;"></a>
+				</td>
+				<td style="border:0px">
+					<ul class="x-ul-icons">
+						<a href="{{ .Permalink }}">{{ .Title }}</a>
+						<li class="x-li-icon"><i class="x-icon-user" data-x-icon=""></i> 
+							<i class="far fa-user-graduate"></i> {{.Description}}</li>
+						<div>
+							<i class="fas fa-envelope"></i>
+							<span style="font-size:1.2rem">{{.Params.email}}</span>
+						</div>
+						<div>
+							<i class="fas fa-map-marker"></i>
+								<span style="font-size:1.2rem">{{.Params.address}}</span>
+						</div>
+
+					</ul>
+
+				</td>
+			</tr>
+			{{end}}
+
+		</table>
+	</div>
+	{{ end }}
+</section>
+
+<script type="text/javascript" src="//platform.twitter.com/widgets.js"></script>
+
+<section class="container list">
+	{{ $v0 := where .Site.Pages "Params.description" "Former PhD" }}
+	{{ $v1 := where .Site.Pages "Params.description" "Former Postdoc" }}
+	{{ $un := $v0 | union $v1 }}
+	{{ $filtered := $un | intersect $v2}}
+	{{ $tagshalf := int (div (len $filtered) 2) }}
+	{{with $filtered}}
+	<h1 class="title">Former Members</h1>
+	<div class="container">
+		<div class="floatLeft">
+			<table style="float:left">
+				{{ range first $tagshalf $filtered }}
+				<tr>
+					<td style="border:0px">
+						<a href="{{ .Permalink }}"><img class="x-img x-img-thumbnail none" src="../../{{.Params.thumbnail}}"  style="max-width:11rem;"></a>
+					</td>
+					<td style="border:0px">
+						<ul class="x-ul-icons">
+							<a href="{{ .Permalink }}">{{ .Title }}</a>
+							<li class="x-li-icon"><i class="x-icon-user" data-x-icon=""></i> 
+								<i class="far fa-user-graduate"></i> {{.Description}}</li>
+							<div>
+								<i class="fas fa-envelope"></i>
+								<span style="font-size:1.2rem">{{.Params.email}}</span>
+							</div>
+							<div>
+								<i class="fas fa-map-marker"></i>
+								<span style="font-size:1.2rem">{{.Params.address}}</span>
+							</div>
+
+						</ul>
+
+					</td>
+				</tr>
+				{{end}}
+			</table>
+		</div>
+
+		<div class="floatRight">
+			<table style="float:left">
+				{{ $tagshalf := sub (len $filtered) $tagshalf }}
+				{{ range last $tagshalf $filtered }}
+				<tr>
+					<td style="border:0px">
+						<a href="{{ .Permalink }}"><img class="x-img x-img-thumbnail none" src="../../{{.Params.thumbnail}}"  style="max-width:11rem;"></a>
+					</td>
+					<td style="border:0px">
+						<ul class="x-ul-icons">
+							<a href="{{ .Permalink }}">{{ .Title }}</a>
+							<li class="x-li-icon"><i class="x-icon-user" data-x-icon=""></i> 
+								<i class="far fa-user-graduate"></i> {{.Description}}</li>
+							<div>
+								<i class="fas fa-envelope"></i>
+								<span style="font-size:1.2rem">{{.Params.email}}</span>
+							</div>
+							<div>
+								<i class="fas fa-map-marker"></i>
+								<span style="font-size:1.2rem">{{.Params.address}}</span>
+							</div>
+
+						</ul>
+
+					</td>
+				</tr>
+				{{end}}
+
+			</table>
+		</div>
+	</div>
+	{{end}}
+</section>
+
+<section class="container list">
+	{{ range where .Pages "Type" "==" "projects"}}
+	<li>
+		<span>{{ .Description }}</span><a href="{{ .Permalink }}">{{ .Title }}</a>
+	</li>
+	{{ end }}
+
+	</ul>
+</section>
+
+<section class="container list">
+	<ul>
+		{{ $v0 := where .Site.Pages "Params.description" "publication" }}
+		{{ $v1 := where .Site.Pages "Params.description" "thesis" }}
+		{{ $filtered := $v0 | intersect $v3}}
+		{{ $thesis := $v1 }}
+		<table>
+			{{range $filtered.GroupByDate "2006-01-01"}}
+			{{range .Pages.ByParam "publish"}}
+			<li>
+				<tr>
+					<td style="border:0px">
+						<div class="input-color">
+							{{ if eq .Params.Category "journal" }}
+							<div  style="background-color: #c32b72;display: inline-block;left: 5px;top: 5px; width: 10px;height: 10px;;background-color: #c32b72;"></div>
+							{{ else if eq .Params.Category "thesis"}}
+							<div  style="background-color: #c32b72;;display: inline-block;left: 5px;top: 5px; width: 10px;height: 10px;;background-color: #33c3ba;"></div>
+							    {{ else if eq .Params.Category "patent"}}
+							    <div  style="background-color: #c32b72;;display: inline-block;left: 5px;top: 5px; width: 10px;height: 10px;;background-color: #FFA500;"></div>
+							{{ else if eq .Params.Category "conference"}}
+							<div  style="background-color: #c32b72;display: inline-block;left: 5px;top: 5px; width: 10px;height: 10px;;background-color: #196ca3;"></div>
+							{{ else }}
+							<div  style="background-color: #c32b72;display: inline-block;left: 5px;top: 5px; width: 10px;height: 10px;;background-color: #606b70;"></div>
+							{{end}}
+						</div>
+					</td>
+					<td style="border:0px">{{.Params.Publish}}</td>
+					<td style="border:0px" >{{.Date.Format "2006"}} </td>
+					{{if .Params.Award}}
+					<td style="border:0px"> <a href="{{ .Permalink }}">{{.Title}}</a> &nbsp;<span style="color:red;text-decoration:none">|&nbsp;{{ .Params.Award }}</i></span><span>&nbsp;</span></td>
+					{{else}}
+					<td style="border:0px"> <a href="{{ .Permalink }}">{{ .Title }}</a></td>
+					{{end}}
+					<td style="border:0px"><span style="font-size:1.4rem"> {{.Params.Author}} </span>
+					</td >
+					{{ if or (in .Params.Award "Award") (in .Params.Award "Prize")}}
+					<td style="border:0px">  <i class="fas fa-award"></i></td>
+					{{end}}
+				</tr>
+			</li>
+			{{ end }}
+			{{ end }}
+		</table>
+	</ul>
+</section>
+
+<section class="container list">
+	<ul>
+		{{ $v0 := where .Site.Pages "Params.description" "course" }}
+		{{ $filtered := $v0 | intersect $v4}}
+		
+				<table>
+			{{ range $filtered }}
+
+			<li>
+				<tr>
+					<td style="border:0px" >{{.Date.Format "2006"}} </td>
+					<td style="border:0px"> {{ .Params.semester }}</td>
+					<td style="border:0px"> <a href="{{ .Permalink }}">{{ .Title }}</a></td>
+					<td style="border:0px"> {{ .Params.id }}</td>
+					</td >
+				</tr>
+
+			</li>
+			{{ end }}
+		</table>
+	</ul>
+</section>
+
+
+<section class="container list">
+	{{ $v0 := where .Site.Pages "Params.description" "research" }}
+	{{ $filtered := $v0 | intersect $v7}}
+	{{ $tagslen := int (div (len $filtered) 2) }}
+	{{with $filtered}}
+	<!--div id="research" style="margin-top:-9%"-->
+	<div class="floatLeft">
+		<table style="float:left;margin-right: 7rem;margin-top:0%;">
+			{{ range first $tagslen $filtered }}
+			<tr>
+				<td style="border:0px solid black ;text-align:center">
+
+					{{if eq .Title "Non-convex Optimization"}}
+						<a id="research1"href="{{ .Permalink }}"><img src="../../{{.Params.thumbnail}}"  style="max-width:30rem;text-decoration:none;"></a>
+					{{else}}
+						<a id="research1"href="{{ .Permalink }}"><img src="../../{{.Params.thumbnail}}"  style="max-width:45rem;text-decoration:none;"></a>
+					{{end}}
+					<div style="border:0px;text-align:center;"> <a href="{{ .Permalink }}">{{ .Title }}</a></div>
+				</td>
+			</tr>
+			{{end}}
+		</table>
+	</div>
+	<div class="floatLeft">
+	<table style="margin-top:-7%;">
+			{{ range last $tagslen $filtered }}
+			<tr>
+				<td style="border:0.0px solid black ;text-align:center">
+
+					<a id="research1"href="{{ .Permalink }}"><img src="../../{{.Params.thumbnail}}"  style="max-width:41rem;text-decoration:none;"></a>
+					<div style="border:0px;text-align:center;"> <a href="{{ .Permalink }}">{{ .Title }}</a></div>
+				</td>
+			</tr>
+			{{end}}
+		</table>
+	
+
+	</div>
+	<div class="floatLeft">
+		<table style="margin-top:0%;">
+			{{$i:=0}}
+			{{ range after (3) $filtered}}
+			{{if eq .Title "Hunala"}}
+			<tr>
+				<td style="border:0.0px solid black ;text-align:center">
+
+					<a id="research1"href="{{ .Permalink }}"><img src="../../{{.Params.thumbnail}}"  style="max-width:41rem;text-decoration:none;"></a>
+					<div style="border:0px;text-align:center;"> <a href="{{ .Permalink }}">{{ .Title }}</a></div>
+				</td>
+			</tr>
+			{{end}}
+			{{end}}
+		</table>
+	</div>
+	{{ end }}
+</section>
+
+
+<section class="container list">
+	<ul>
+		{{ $v0 := where .Site.Pages "Params.description" "openings" }}
+		{{ $filtered :=  $v5}}
+		{{ range $filtered }}
+		<li>
+			<a href="{{ .Permalink }}">{{ .Title }} </a> {{.Description}}
+
+		</li>
+		{{ end }}
+	</ul>
+</section>
+
+<section class="container list">
+	<ul>
+		{{ $filtered :=  $v6}}
+		{{ range $filtered }}
+		<li>
+			<div>{{ .Content }} </div>
+
+		</li>
+		{{ end }}
+	</ul>
+</section>

@@ -1,0 +1,15 @@
+{{ define "og-title" }}
+  {{ .Title }} - {{ .Site.Title }}
+{{ end }}
+{{ define "title" }}
+{{ if eq .Title "Peoples"}}
+  {{singularize .Title}} - {{ .Site.Title }}
+{{else if eq .Title "Researches"}}
+  {{singularize .Title}} - {{ .Site.Title }}
+{{else}}
+  {{pluralize .Title}} - {{ .Site.Title }}
+{{end}}
+{{ end }}
+{{ define "content" }}
+  {{ partial "list.html" . }}
+{{ end }}
